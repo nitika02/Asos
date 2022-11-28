@@ -19,12 +19,13 @@
         "Fitted cuffs and hem",
         "Regular fit"
       ],
-      "images": [
+      "thumbnails": [
         "https://images.asos-media.com/products/asos-design-lightweight-bomber-jacket-in-black/201560664-1-black?$n_240w$&wid=75&fit=constrain",
         "https://images.asos-media.com/products/asos-design-lightweight-bomber-jacket-in-black/201560664-2?$n_240w$&wid=75&fit=constrain",
         "https://images.asos-media.com/products/asos-design-lightweight-bomber-jacket-in-black/201560664-3?$n_240w$&wid=75&fit=constrain",
         "https://images.asos-media.com/products/asos-design-lightweight-bomber-jacket-in-black/201560664-4?$n_240w$&wid=75&fit=constrain"
-      ]
+      ],
+      "image": "https://images.asos-media.com/products/asos-design-lightweight-bomber-jacket-in-black/201560664-1-black?$n_640w$&wid=513&fit=constrain"
     },
     {
       "title": "ASOS DESIGN puffer jacket in ecru",
@@ -330,7 +331,7 @@
       "images": [
         "https://images.asos-media.com/products/levis-512-slim-taper-jeans-with-distressing-in-light-blue-wash/203005872-1-midblue?$n_240w$&wid=75&fit=constrain",
         "https://images.asos-media.com/products/levis-512-slim-taper-jeans-with-distressing-in-light-blue-wash/203005872-2?$n_240w$&wid=75&fit=constrain",
-        "https://images.asos-media.com/products/levis-512-slim-taper-jeans-with-distressing-in-light-blue-wash/203005872-2?$n_240w$&wid=75&fit=constrain",
+        "https://images.asos-media.com/products/levis-512-slim-taper-jeans-with-distressing-in-light-blue-wash/203005872-3?$n_240w$&wid=75&fit=constrain",
         "https://images.asos-media.com/products/levis-512-slim-taper-jeans-with-distressing-in-light-blue-wash/203005872-4?$n_240w$&wid=75&fit=constrain"
       ]
     },
@@ -358,7 +359,7 @@
         "https://images.asos-media.com/products/collusion-nylon-printed-jogger/203590773-1-multi?$n_240w$&wid=75&fit=constrain",
         "https://images.asos-media.com/products/collusion-nylon-printed-jogger/203590773-2?$n_240w$&wid=75&fit=constrain",
         "https://images.asos-media.com/products/collusion-nylon-printed-jogger/203590773-3?$n_240w$&wid=75&fit=constrain",
-        "https://images.asos-media.com/products/collusion-nylon-printed-jogger/203590773-3?$n_240w$&wid=75&fit=constrain"
+        "https://images.asos-media.com/products/collusion-nylon-printed-jogger/203590773-4?$n_240w$&wid=75&fit=constrain"
       ]
     },
     {
@@ -508,7 +509,7 @@
       "images": [
         "https://images.asos-media.com/products/puma-ca-pro-acid-brights-trainers-in-white-and-pink/203313139-1-multi?$n_240w$&wid=75&fit=constrain",
         "https://images.asos-media.com/products/puma-ca-pro-acid-brights-trainers-in-white-and-pink/203313139-2?$n_240w$&wid=75&fit=constrain",
-        "https://images.asos-media.com/products/puma-ca-pro-acid-brights-trainers-in-white-and-pink/203313139-2?$n_240w$&wid=75&fit=constrain",
+        "https://images.asos-media.com/products/puma-ca-pro-acid-brights-trainers-in-white-and-pink/203313139-3?$n_240w$&wid=75&fit=constrain",
         "https://images.asos-media.com/products/puma-ca-pro-acid-brights-trainers-in-white-and-pink/203313139-4?$n_240w$&wid=75&fit=constrain"
       ]
     },
