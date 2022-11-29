@@ -109,7 +109,7 @@ function saveData() {
     let user_records = new Array();
     user_records = JSON.parse(localStorage.getItem("users")) ? JSON.parse(localStorage.getItem("users")) : []
     if (user_records.some((v) => { return v.email == email })) {
-        alert("duplicate data");
+        alert("User is already created");
     }
     else {
         user_records.push({
