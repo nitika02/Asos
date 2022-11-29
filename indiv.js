@@ -1,42 +1,40 @@
 let product = {
-    title: "French Connection Tall long sleeve cord shirt in navy",
-    price: 63.0,
-    discount: -49,
-    discounted_price: 32.0,
-    rating: 4.2,
-    brand: "French Connection",
-    color: "Blue",
-    category: "Shirt",
-    images: [
-        "https://images.asos-media.com/products/french-connection-tall-long-sleeve-cord-shirt-in-navy/203534639-1-navy?$n_640w$&wid=513&fit=constrain",
-        "https://images.asos-media.com/products/french-connection-tall-long-sleeve-cord-shirt-in-navy/203534639-2?$n_640w$&wid=513&fit=constrain",
-        "https://images.asos-media.com/products/french-connection-tall-long-sleeve-cord-shirt-in-navy/203534639-3?$n_640w$&wid=513&fit=constrain",
-        "https://images.asos-media.com/products/french-connection-tall-long-sleeve-cord-shirt-in-navy/203534639-4?$n_640w$&wid=513&fit=constrain"
-    ],
+    title: "Nike classic longline padded jacket with hood in olive grey",
+    price: 134.95,
+    discount: -15,
+    discounted_price: 114.70,
+    brand: "Nike",
+    images: ["https://images.asos-media.com/products/nike-classic-longline-padded-jacket-with-hood-in-olive-grey/202897100-1-grey?$n_480w$&wid=476&fit=constrain",
+        "https://images.asos-media.com/products/nike-classic-longline-padded-jacket-with-hood-in-olive-grey/202897100-2?$n_750w$&wid=750&fit=constrain",
+        "https://images.asos-media.com/products/nike-classic-longline-padded-jacket-with-hood-in-olive-grey/202897100-3?$n_750w$&wid=750&fit=constrain",
+        "https://images.asos-media.com/products/nike-classic-longline-padded-jacket-with-hood-in-olive-grey/202897100-4?$n_750w$&wid=750&fit=constrain"],
+    video: "https://video.asos-media.com/products/nike-classic-longline-padded-jacket-with-hood-in-olive-grey/202897100-catwalk-AVS.m3u8",
+    category: "Jacket",
+    color: "grey",
+    rating: 4,
     details: {
-        product_details: [
-            "Shirts by French Connection",
-            "Add-to-bag material",
-            "Button-down collar",
-            "Button placket",
-            "Chest pocket",
-            "Long sleeves",
-            "Regular fit"
-        ],
-        product_code: "121329178",
-        brand: "Founded in 1972 by Stephen Marks and driven by innovation, French Connection is known for its wearable, intelligent collections and off-beat advertising campaigns. French Connection PLUS sees a fresh crop of jersey and outerwear in a variety of shapes and sizes also added to the mix.",
-        size_and_fit: [
-            "Model's height: 190cm/6'3",
-            "Model is wearing: Size Medium"
-        ],
-        look_after_me: "Machine wash according to instructions on care label",
-        about_me: [
-            "Cotton: lightweight, soft and strong",
-            "Main: 100% Cotton."
-        ]
+        product_details: ["Coats by Nike", "That new-coat feeling", "Fixed hood", "Nike logo print to chest", "Zip fastening", "Zip side pockets", "Regular fit"],
+        product_code: 118888991,
+        brand: "Key players in everything activewear-related, it doesn't get more iconic than Nike. Sporting some of the most wanted trainers in the game, browse Air Max 90s and Air Force 1s, as well as Blazer and Waffle One styles. Get off-duty looks down with tracksuits, T-shirts and accessories in our Nike at ASOS edit, or scroll performance leggings and sports bras from Nike Training and Nike Running for an extra dose of motivation.",
+        size_and_fit: ["Model wears: UK S/ EU S/ US XS", "Model's height: 175cm/5'9"],
+        look_after_me: "Wipe clean with a damp cloth or sponge",
+        about_me: ["Smooth woven fabric", "Uses Nike Therma-FIT technology", "Helps to regulate body temperature and retain heat to keep you warm in cold-weather conditions", "main: 100% Cotton."],
     }
 };
 
+let addToCart = () => {
+
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.push(product);
+    localStorage.setItem('cart', JSON.stringify(cart));
+}
+
+let addToWishlist = () => {
+
+    let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+    wishlist.push(product);
+    localStorage.setItem('wishlist', JSON.stringify(wishlist));
+}
 
 let showRating = (rating) => {
 
@@ -117,7 +115,8 @@ let displayProduct = () => {
 
     let discounted_price = document.createElement('h3');
     discounted_price.innerText = `Now  £ ${product.discounted_price}`;
-    discounted_price.style.color = "maroon";
+    discounted_price.style.color = "#d01345";
+    discounted_price.style.font = "18px";
 
     let price = document.createElement('h4');
     price.innerText = `Was  £ ${product.price}  `;
@@ -126,7 +125,8 @@ let displayProduct = () => {
     let discount = document.createElement("h4");
     discount.innerText = `(${product.discount}%)`;
     discount.style.display = "inline";
-    discount.style.color = "red";
+    discount.style.color = "#d01345";
+    discount.style.font = "14px";
 
     let ratingDiv = document.createElement('div');
     ratingDiv.setAttribute('id', 'ratingDiv');
@@ -168,8 +168,12 @@ let displayProduct = () => {
 
     let cartBtn = document.createElement('button');
     cartBtn.innerText = "ADD TO BAG";
+    cartBtn.addEventListener('click', addToCart);
+
+
     let wishlistBtn = document.createElement('button');
     wishlistBtn.innerHTML = `<i class="fa-regular fa-heart"></i>`;
+    wishlistBtn.addEventListener('click', addToWishlist);
 
     addingDiv.append(cartBtn, wishlistBtn);
 

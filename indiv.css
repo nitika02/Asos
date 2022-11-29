@@ -75,12 +75,14 @@
     padding: 15px;
     width: 70%;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 #addingDiv button:last-child {
     border: none;
     border-radius: 50%;
     width: 40px;
+    cursor: pointer;
 }
 
 #deliveryDiv {
