@@ -1,4 +1,4 @@
-let men_products = [
+let men = [
     {
         "title": "ASOS DESIGN lightweight bomber jacket in black",
         "price": 30.0,
@@ -147,40 +147,6 @@ let men_products = [
                 "It's a win-win, improving the environment for both wildlife and cotton farmers",
                 "Main: 96% Cotton, 4% Elastane, Trim: 97% Polyester, 3% Elastane."
             ]
-        }
-    },
-    {
-        "title": "ASOS DESIGN oversized t-shirt in black with rose print",
-        "price": 18.0,
-        "discount": -38,
-        "discounted_price": 11.0,
-        "rating": 4.6,
-        "brand": "Asos Design",
-        "color": "Black",
-        "category": "T-Shirt",
-        "images": [
-            "https://images.asos-media.com/products/asos-design-oversized-t-shirt-in-black-with-rose-print/21913885-1-black?$n_640w$&wid=513&fit=constrain",
-            "https://images.asos-media.com/products/asos-design-oversized-t-shirt-in-black-with-rose-print/21913885-2?$n_640w$&wid=513&fit=constrain",
-            "https://images.asos-media.com/products/asos-design-oversized-t-shirt-in-black-with-rose-print/21913885-3?$n_640w$&wid=513&fit=constrain",
-            "https://images.asos-media.com/products/asos-design-oversized-t-shirt-in-black-with-rose-print/21913885-4?$n_640w$&wid=513&fit=constrain"
-        ],
-        "details": {
-            "product_details": [
-                "T-shirt by ASOS DESIGN",
-                "Laid-back looks",
-                "Crew neck",
-                "Drop shoulders",
-                "Rose print to chest",
-                "Oversized fit"
-            ],
-            "product_code": "1837159",
-            "brand": "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in Plus and Tall. Created by us, styled by you.",
-            "size_and_fit": [
-                "Model's height: 188cm/6'2",
-                "Model is wearing: Size Medium"
-            ],
-            "look_after_me": "Machine wash according to instructions on care label",
-            "about_me": ["Jersey: soft and stretchy", "Main: 100% Cotton."]
         }
     },
     {
@@ -892,4 +858,55 @@ let men_products = [
             ]
         }
     }
-]
+];
+
+// displaying items
+
+let displaySection = document.getElementById("main-product-section-div");
+let wishlistArr = [];
+
+let displayData = (product) => {
+    product.map((ele) => {
+        let productDiv = document.createElement("div");
+        productDiv.setAttribute("id", "product-section-card");
+
+        let img = document.createElement("img");
+        img.src = ele.images[0];
+        img.setAttribute("id", "product-img")
+
+        let title = document.createElement("h2");
+        title.innerText = ele.title;
+        title.setAttribute("id", "product-title");
+
+        let priceDiv = document.createElement("div");
+        priceDiv.setAttribute("id", "product-price-div");
+
+        let price = document.createElement("p");
+        price.innerText = `£${ele.price}`;
+        price.setAttribute("id", "product-price");
+
+        let discountedPrice = document.createElement("p");
+        discountedPrice.innerText = `£${ele.discounted_price}`;
+        discountedPrice.setAttribute("id", "product-discount-price");
+
+        let discount = document.createElement("p");
+        discount.innerText = `${ele.discount} %`;
+        discount.setAttribute("id", "product-discount");
+
+        let favIcon = document.createElement("i");
+        favIcon.setAttribute("class", "fa-regular fa-heart faclass")
+        favIcon.addEventListener("click", () => {
+            wishlistArr.push(ele);
+            localStorage.setItem("wishlist", JSON.stringify(wishlistArr));
+            favIcon.setAttribute("class", "fa-solid fa-heart faclass");
+            //  window.location.href = "../wishlist/wishlist.html"
+        })
+
+        priceDiv.append(price, discountedPrice);
+
+        productDiv.append(img, favIcon, title, priceDiv, discount);
+        displaySection.append(productDiv);
+    })
+}
+
+displayData(men);
