@@ -869,6 +869,9 @@ let displayData = (product) => {
     product.map((ele) => {
         let productDiv = document.createElement("div");
         productDiv.setAttribute("id", "product-section-card");
+        productDiv.addEventListener('click', () => {
+            localStorage.setItem('selected_product', JSON.stringify(ele));
+        });
 
         let img = document.createElement("img");
         img.src = ele.images[0];

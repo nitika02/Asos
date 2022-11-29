@@ -1,17 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap');
-
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
 
 #body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     position: relative;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 #path {
-    border: 1px solid grey;
-    padding: 5px 15px;
+    padding: 10px 15px;
+}
+
+#path a {
+    text-decoration: none;
+    margin: 0px 10px;
+    color: black;
 }
 
 #container {
@@ -34,6 +39,33 @@
     list-style: none;
 }
 
+#imageDiv {
+    position: relative;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 40%;
+    padding: 10px;
+    font-size: 40px;
+    cursor: pointer;
+    background: none;
+    color: black;
+    border: none;
+}
+
+.carousel-button:hover {
+    border: 1px solid black;
+}
+
+#carousel-button-prev {
+    left: 10px;
+}
+
+#carousel-button-next {
+    right: 10px;
+}
+
 #imageDiv img {
     width: 100%;
     display: block;
@@ -48,10 +80,16 @@
     margin: 20px 0px;
 }
 
+#product-title {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
 #couponDiv {
     background-color: #cde2f5;
-    padding: 5px 20px;
+    padding: 20px;
     width: 80%;
+    line-height: 25px;
 }
 
 #sizeDiv select {
@@ -96,14 +134,18 @@
     padding: 10px;
 }
 
-#deliveryDiv P {
+#deliveryDiv p, #deliveryDiv span {
     margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 14px;
 }
 
 #helpDiv {
     background-color: rgb(238,238,238);
     padding: 10px;
     margin-top: 20px;
+    font-size: 14px;
+    line-height: 10px;
 }
 
 #ratingDiv span {
@@ -115,6 +157,11 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
+    line-height: 20px;
+}
+
+#bottom-section li {
+    line-height: 30px;
 }
 
 #bottom-section > div {

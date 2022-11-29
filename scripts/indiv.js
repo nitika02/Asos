@@ -1,26 +1,4 @@
-let product = {
-    title: "Nike classic longline padded jacket with hood in olive grey",
-    price: 134.95,
-    discount: -15,
-    discounted_price: 114.70,
-    brand: "Nike",
-    images: ["https://images.asos-media.com/products/nike-classic-longline-padded-jacket-with-hood-in-olive-grey/202897100-1-grey?$n_480w$&wid=476&fit=constrain",
-        "https://images.asos-media.com/products/nike-classic-longline-padded-jacket-with-hood-in-olive-grey/202897100-2?$n_750w$&wid=750&fit=constrain",
-        "https://images.asos-media.com/products/nike-classic-longline-padded-jacket-with-hood-in-olive-grey/202897100-3?$n_750w$&wid=750&fit=constrain",
-        "https://images.asos-media.com/products/nike-classic-longline-padded-jacket-with-hood-in-olive-grey/202897100-4?$n_750w$&wid=750&fit=constrain"],
-    video: "https://video.asos-media.com/products/nike-classic-longline-padded-jacket-with-hood-in-olive-grey/202897100-catwalk-AVS.m3u8",
-    category: "Jacket",
-    color: "grey",
-    rating: 4,
-    details: {
-        product_details: ["Coats by Nike", "That new-coat feeling", "Fixed hood", "Nike logo print to chest", "Zip fastening", "Zip side pockets", "Regular fit"],
-        product_code: 118888991,
-        brand: "Key players in everything activewear-related, it doesn't get more iconic than Nike. Sporting some of the most wanted trainers in the game, browse Air Max 90s and Air Force 1s, as well as Blazer and Waffle One styles. Get off-duty looks down with tracksuits, T-shirts and accessories in our Nike at ASOS edit, or scroll performance leggings and sports bras from Nike Training and Nike Running for an extra dose of motivation.",
-        size_and_fit: ["Model wears: UK S/ EU S/ US XS", "Model's height: 175cm/5'9"],
-        look_after_me: "Wipe clean with a damp cloth or sponge",
-        about_me: ["Smooth woven fabric", "Uses Nike Therma-FIT technology", "Helps to regulate body temperature and retain heat to keep you warm in cold-weather conditions", "main: 100% Cotton."],
-    }
-};
+let product = JSON.parse(localStorage.getItem('selected_product')) || {};
 
 let addToCart = () => {
 
@@ -70,10 +48,8 @@ let displayProduct = () => {
     // path text
     let pathDiv = document.getElementById('path');
 
-    let path = document.createElement('p');
-    path.innerText = `Home > Men > ${product.title}`;
-    path.style.fontSize = "small";
-    pathDiv.appendChild(path);
+    let a = document.getElementById('file-path');
+    a.innerText = product.title;
 
     // thumbnails section
     let thumbDiv = document.getElementById("thumbDiv");
@@ -83,9 +59,10 @@ let displayProduct = () => {
     product.images.forEach((el) => {
         let li = document.createElement("li");
         let thumb = document.createElement("img");
+        thumb.setAttribute('class', 'thumbnail');
         thumb.src = el;
         thumb.addEventListener('click', () => {
-            let image = document.getElementById('image');
+            let image = document.getElementById('carouselImage');
             image.src = thumb.src;
         })
         li.append(thumb);
@@ -100,18 +77,44 @@ let displayProduct = () => {
     imageDiv.innerHTML = null;
 
     let image = document.createElement('img');
-    image.setAttribute('id', 'image');
-    image.src = product.images[0];
+    image.setAttribute('id', 'carouselImage');
+    let currIndex = 0;
+    image.src = product.images[currIndex];
 
-    imageDiv.append(image);
+    let prevBtn = document.createElement('button');
+    prevBtn.innerHTML = '<i class="fa-solid fa-chevron-left"></i>';
+    prevBtn.setAttribute('class', 'carousel-button');
+    prevBtn.setAttribute('id', 'carousel-button-prev');
+    prevBtn.addEventListener('click', () => {
+        currIndex--;
+        if(currIndex < 0){
+            currIndex = product.images.length-1;
+        }
+        image.src = product.images[currIndex];
+    });
+
+    let nextBtn = document.createElement('button');
+    nextBtn.innerHTML = '<i class="fa-solid fa-chevron-right"></i>';
+    nextBtn.setAttribute('class', 'carousel-button');
+    nextBtn.setAttribute('id', 'carousel-button-next');
+    nextBtn.addEventListener('click', () => {
+        currIndex++;
+        if(currIndex >= product.images.length){
+            currIndex = 0;
+        }
+        image.src = product.images[currIndex];
+    });
+
+    imageDiv.append(image, prevBtn, nextBtn);
 
 
     // description section
     let descDiv = document.getElementById('descDiv');
     descDiv.innerHTML = null;
 
-    let title = document.createElement('h3');
+    let title = document.createElement('p');
     title.innerText = product.title;
+    title.setAttribute('id', 'product-title');
 
     let discounted_price = document.createElement('h3');
     discounted_price.innerText = `Now  £ ${product.discounted_price}`;
@@ -135,8 +138,12 @@ let displayProduct = () => {
     let couponDiv = document.createElement('div');
     couponDiv.setAttribute('id', 'couponDiv');
     let couponText = document.createElement('p');
-    couponText.innerText = "EXTRA 20% OFF EVERYTHING! With code: PLAYER20";
-    couponDiv.append(couponText);
+    couponText.style.display = "inline";
+    couponText.innerText = "EXTRA 20% OFF EVERYTHING! With code: ";
+    let coupon = document.createElement('span');
+    coupon.setAttribute('class', 'bold');
+    coupon.innerText = "PLAYER20";
+    couponDiv.append(couponText, coupon);
 
     let color = document.createElement('p');
     color.innerText = `Color: ${product.color}`;
@@ -173,7 +180,10 @@ let displayProduct = () => {
 
     let wishlistBtn = document.createElement('button');
     wishlistBtn.innerHTML = `<i class="fa-regular fa-heart"></i>`;
-    wishlistBtn.addEventListener('click', addToWishlist);
+    wishlistBtn.addEventListener('click', () => {
+        addToWishlist();
+        wishlistBtn.innerHTML = '<i class="fa-solid fa-heart"></i>';
+    });
 
     addingDiv.append(cartBtn, wishlistBtn);
 
@@ -187,9 +197,13 @@ let displayProduct = () => {
     let p1 = document.createElement('p');
     p1.innerText = 'Free Delivery.';
     let p2 = document.createElement('p');
-    p2.innerText = 'Ts&Cs apply. More delivery info';
+    p2.innerText = 'Ts&Cs apply. ';
+    p2.style.display = "inline";
+    let span = document.createElement('span');
+    span.setAttribute('class', 'underlined');
+    span.innerText = ' More delivery info';
 
-    innerDiv2.append(p1, p2);
+    innerDiv2.append(p1, p2, span);
 
     deliveryDiv.append(innerDiv1, innerDiv2);
 
