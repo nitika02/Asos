@@ -1,36 +1,42 @@
-var product = {
-    title: "ASOS DESIGN lightweight bomber jacket in black",
-    price: 30.0,
-    discount: -25,
-    discounted_price: 22.5,
-    rating: 4.1,
-    brand: "Asos Design",
-    color: "Black",
-    category: "Jacket",
+let product = {
+    title: "French Connection Tall long sleeve cord shirt in navy",
+    price: 63.0,
+    discount: -49,
+    discounted_price: 32.0,
+    rating: 4.2,
+    brand: "French Connection",
+    color: "Blue",
+    category: "Shirt",
     images: [
-        "https://images.asos-media.com/products/asos-design-lightweight-bomber-jacket-in-black/201560664-1-black?$n_640w$&wid=513&fit=constrain",
-        "https://images.asos-media.com/products/asos-design-lightweight-bomber-jacket-in-black/201560664-2?$n_240w$&wid=75&fit=constrain",
-        "https://images.asos-media.com/products/asos-design-lightweight-bomber-jacket-in-black/201560664-3?$n_240w$&wid=75&fit=constrain",
-        "https://images.asos-media.com/products/asos-design-lightweight-bomber-jacket-in-black/201560664-4?$n_240w$&wid=75&fit=constrain"
+        "https://images.asos-media.com/products/french-connection-tall-long-sleeve-cord-shirt-in-navy/203534639-1-navy?$n_640w$&wid=513&fit=constrain",
+        "https://images.asos-media.com/products/french-connection-tall-long-sleeve-cord-shirt-in-navy/203534639-2?$n_640w$&wid=513&fit=constrain",
+        "https://images.asos-media.com/products/french-connection-tall-long-sleeve-cord-shirt-in-navy/203534639-3?$n_640w$&wid=513&fit=constrain",
+        "https://images.asos-media.com/products/french-connection-tall-long-sleeve-cord-shirt-in-navy/203534639-4?$n_640w$&wid=513&fit=constrain"
     ],
     details: {
         product_details: [
-            "Bomber jacket by ASOS DESIGN",
-            "Low-key layering",
-            "Baseball collar",
-            "Zip fastening",
-            "Side pockets",
-            "Fitted cuffs and hem",
-            "Regular fit",
+            "Shirts by French Connection",
+            "Add-to-bag material",
+            "Button-down collar",
+            "Button placket",
+            "Chest pocket",
+            "Long sleeves",
+            "Regular fit"
         ],
-        product_code: "113733931",
-        brand: "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in Plus and Tall. Created by us, styled by you.",
-        size_and_fit: ["Model wears: Medium", "Model's height: 188cm/6'2"],
+        product_code: "121329178",
+        brand: "Founded in 1972 by Stephen Marks and driven by innovation, French Connection is known for its wearable, intelligent collections and off-beat advertising campaigns. French Connection PLUS sees a fresh crop of jersey and outerwear in a variety of shapes and sizes also added to the mix.",
+        size_and_fit: [
+            "Model's height: 190cm/6'3",
+            "Model is wearing: Size Medium"
+        ],
         look_after_me: "Machine wash according to instructions on care label",
-        about_me: ["Plain-woven fabric", "Lightweight feel", "Lining: 100% Polyester, Shell: 57% Polyamide, 43% Polyester."],
+        about_me: [
+            "Cotton: lightweight, soft and strong",
+            "Main: 100% Cotton."
+        ]
     }
-
 };
+
 
 let showRating = (rating) => {
 
@@ -236,7 +242,7 @@ let displayDetails = () => {
 
     let product_code = document.createElement('p');
     product_code.innerText = product.details.product_code;
-    
+
     let div2_head2 = document.createElement('h4');
     div2_head2.innerText = "BRAND";
     div2_head2.setAttribute('class', 'bottom-section-headings');
@@ -272,7 +278,7 @@ let displayDetails = () => {
 
     div3.append(div3_head2, p);
 
-    let div3_head3 =  document.createElement("h4");
+    let div3_head3 = document.createElement("h4");
     div3_head3.innerText = "ABOUT ME";
     div3_head3.setAttribute('class', 'bottom-section-headings');
 
@@ -284,7 +290,7 @@ let displayDetails = () => {
         let p = document.createElement('p');
         p.innerText = el;
         div3.append(p);
-        
+
     });
 
 }
