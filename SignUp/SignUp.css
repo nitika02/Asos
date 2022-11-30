@@ -112,6 +112,14 @@
     border: 2px solid rgb(139, 139, 139);
     /* border-radius: 10px; */
     font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+
+}
+
+.three-option>div:hover{
+    background-color: rgb(243, 230, 230);
+    color: rgb(163, 161, 161);
+    transition: all 0.2s ease-in-out;
 }
 
 .space {
@@ -275,6 +283,7 @@
 .fa-google{
     margin-right: 15px;
     color:rgb(63, 136, 200);
+    cursor: pointer;
 }
 
 .fa-apple{
@@ -286,3 +295,22 @@
     margin-right: 15px;
     color:blue;
 }
+
+.fa-google:hover{
+    background-color: rgb(243, 230, 230);
+    color: rgb(163, 161, 161);
+    transition: all 0.2s ease-in-out;
+}
+
+.fa-apple:hover{
+    background-color: rgb(243, 230, 230);
+    color: rgb(163, 161, 161);
+    transition: all 0.2s ease-in-out;
+}
+
+.fa-square-facebook:hover{
+    background-color: rgb(243, 230, 230);
+    color: rgb(163, 161, 161);
+    transition: all 0.2s ease-in-out;
+}
+
