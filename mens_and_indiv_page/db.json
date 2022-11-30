@@ -894,7 +894,6 @@
       }
     }
   ],
-
   "women": [
     {
       "title": "Nike classic longline padded jacket with hood in olive grey",
@@ -1030,15 +1029,6 @@
       "discounted_price": 28.79,
       "product_code": 121658571,
       "brand": " Reclaimed Vintage",
-      "details": [
-        "Jeans by Reclaimed Vintage",
-        "Exclusive to ASOS",
-        "Flared skinny fit",
-        "High rise",
-        "Belt loops",
-        "Four pockets",
-        "Branded patch to reverse"
-      ],
       "images": [
         "https://images.asos-media.com/products/reclaimed-vintage-waistbandless-skinny-stretch-flare-in-mid-wash-blue/203614941-1-midblue?$n_640w$&wid=513&fit=constrain",
         "https://images.asos-media.com/products/reclaimed-vintage-waistbandless-skinny-stretch-flare-in-mid-wash-blue/203614941-2?$n_640w$&wid=513&fit=constrain",
@@ -1082,7 +1072,7 @@
         "https://images.asos-media.com/products/reclaimed-vintage-00s-baggy-jean-with-rips-in-light-blue/203279815-3?$n_640w$&wid=513&fit=constrain",
         "https://images.asos-media.com/products/reclaimed-vintage-00s-baggy-jean-with-rips-in-light-blue/203279815-4?$n_640w$&wid=513&fit=constrain"
       ],
-      "video": "	https://images.asos-media.com/products/reclaimed-v…ht-blue/203279815-4?$n_240w$&wid=40&fit=constrain",
+      "video": "https://images.asos-media.com/products/reclaimed-v…ht-blue/203279815-4?$n_240w$&wid=40&fit=constrain",
       "category": "Jean",
       "color": "blue",
       "rating": 5,
@@ -1238,7 +1228,7 @@
         "https://images.asos-media.com/products/reclaimed-vintage-plus-collar-smock-maxi-in-floral-print/203343540-3?$n_640w$&wid=513&fit=constrain",
         "https://images.asos-media.com/products/reclaimed-vintage-plus-collar-smock-maxi-in-floral-print/203343540-4?$n_640w$&wid=513&fit=constrain"
       ],
-      "video": "	https://images.asos-media.com/products/reclaimed-v…l-print/203343540-4?$n_240w$&wid=40&fit=constrain",
+      "video": "https://images.asos-media.com/products/reclaimed-v…l-print/203343540-4?$n_240w$&wid=40&fit=constrain",
       "category": "dress",
       "color": "black",
       "rating": 5,
