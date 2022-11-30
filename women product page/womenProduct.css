@@ -140,8 +140,7 @@ body {
 }
 
 #main-product-section-div img {
-    width: 320.6px;
-    height: 410.2px;
+   width: 100%;
 }
 
 #main-product-section-div h2 {
@@ -179,8 +178,8 @@ body {
     outline: none;
     padding: 10px 8px 8px;
     position: absolute;
-    top: 365px;
-    right: 20px;
+    top: 350px;
+    right: 10px;
     cursor: pointer;
     
 }
@@ -191,5 +190,5 @@ body {
     background-color: #ffffffcc;
     padding: 2px 4px;
     position: absolute;
-    bottom: 470px
+    bottom: 460px
 }

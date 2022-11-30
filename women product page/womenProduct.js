@@ -581,12 +581,16 @@ let women = [
 // displaying items
 
 let displaySection = document.getElementById("main-product-section-div");
-let wishlistArr = [];
+let wishlistArr = [] || JSON.parse(localStorage.getItem("wishlist")) ;
 
 let displayData = (product) => {
+    displaySection.innerText = "";
     product.map((ele) => {
         let productDiv = document.createElement("div");
         productDiv.setAttribute("id", "product-section-card");
+        productDiv.addEventListener("click", () => {
+            localStorage.setItem("selected_product", JSON.stringify(ele));
+        })
 
         let img = document.createElement("img");
         img.src = ele.images[0];
@@ -628,3 +632,101 @@ let displayData = (product) => {
 }
 
 displayData(women);
+
+// filtering data
+// sort by price
+let sortPrice = document.getElementById("sort-price");
+
+
+let changePrice = () => {
+    let selectedVal = sortPrice.value;
+    console.log(selectedVal);
+    if(selectedVal === "lth") {
+        women.sort(function(a,b) {
+            return a.discounted_price - b.discounted_price;
+        })
+    }
+    if(selectedVal === "htl") {
+        women.sort(function(a,b) {
+            return b.discounted_price - a.discounted_price;
+        })
+    }
+    displayData(women);
+}
+sortPrice.addEventListener("change", changePrice);
+
+// filter by brand 
+let filterBrand = document.getElementById("filter-by-sort");
+
+let brandFilter = () => {
+    let selectedVal = filterBrand.value;
+    console.log(selectedVal);
+    let filteredBrand = women.filter(function(e) {
+        if(selectedVal === "all") {
+            return true;
+        } else {
+            return e.brand === selectedVal;
+        }
+    });
+    console.log(filteredBrand);
+    displayData(filteredBrand);
+}
+
+filterBrand.addEventListener("change", brandFilter);
+
+// filter by category
+
+let filterCategory = document.getElementById("category");
+
+let categoryFilter = () => {
+    let selectedVal = filterCategory.value;
+    let filteredCategory = women.filter(function(e) {
+        if(selectedVal === "all") {
+            return true;
+        } else {
+            return e.category === selectedVal;
+        }
+    });
+    displayData(filteredCategory);
+}
+
+filterCategory.addEventListener("change", categoryFilter);
+
+// filter by color
+
+let filterColor = document.getElementById("filter-by-color");
+
+let colorFilter = () => {
+    let selectedVal = filterColor.value;
+    let filteredColor = women.filter(function(e) {
+        if(selectedVal === "all" ){
+            return true;
+        } else {
+            return e.color === selectedVal;
+        }
+    });
+    displayData(filteredColor);
+}
+
+filterColor.addEventListener("change", colorFilter);
+
+// filter by discount
+
+let filterDiscount = document.getElementById("filter-by-discount");
+
+let discountFilter = () => {
+    let selectedVal = filterDiscount.value;
+    console.log(selectedVal);
+    let filteredDiscount = women.filter(function(e) {
+        if(selectedVal === "all") {
+            return true;
+        } else {
+            return Number(e.discount) === selectedVal;
+        }
+    });
+    console.log(filteredDiscount);
+    displayData(filteredDiscount);
+}
+
+filterDiscount.addEventListener("change", discountFilter);
+
