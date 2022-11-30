@@ -140,7 +140,11 @@ body {
 }
 
 #main-product-section-div img {
+<<<<<<< HEAD:mens_and_indiv_page/styles/menProduct.css
     width: 100%;
+=======
+   width: 100%;
+>>>>>>> 47df927a80b1051bf46b8940762dcff8ee7453ea:women product page/womenProduct.css
 }
 
 #main-product-section-div h2 {
@@ -178,8 +182,8 @@ body {
     outline: none;
     padding: 10px 8px 8px;
     position: absolute;
-    top: 365px;
-    right: 20px;
+    top: 350px;
+    right: 10px;
     cursor: pointer;
     
 }
@@ -190,5 +194,5 @@ body {
     background-color: #ffffffcc;
     padding: 2px 4px;
     position: absolute;
-    bottom: 470px
+    bottom: 460px
 }
