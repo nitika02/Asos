@@ -573,6 +573,75 @@ let women = [
             "about_me" : ["Woven fabric: sequin embellished", "Main : 100% Polyester, Main: 93% Polyamide, 4% Elastane, 3% Metallised fibres."],
             
         }
+    },
+    
+    {
+        "title" : "Nike Unisex bold colour chest graphic long sleeve t-shirt in black",
+        "price" : 32.95,
+        "discount" : -20,
+        "discounted_price" : 28.33,
+        "brand" : "Nike",
+        "images" : ["https://images.asos-media.com/products/nike-unisex-bold-colour-chest-graphic-long-sleeve-t-shirt-in-black/202976624-1-black?$n_640w$&wid=513&fit=constrain",
+                    "https://images.asos-media.com/products/nike-unisex-bold-colour-chest-graphic-long-sleeve-t-shirt-in-black/202976624-2?$n_640w$&wid=513&fit=constrain",
+                    "https://images.asos-media.com/products/nike-unisex-bold-colour-chest-graphic-long-sleeve-t-shirt-in-black/202976624-3?$n_640w$&wid=513&fit=constrain",
+                    "https://images.asos-media.com/products/nike-unisex-bold-colour-chest-graphic-long-sleeve-t-shirt-in-black/202976624-4?$n_640w$&wid=513&fit=constrain"],
+        "category" : "Sweatshirt",
+        "color" : "black",
+        "rating" : 4,
+        "details" : {
+            "product_details" : ["Tops by Nike", "The ultimate all-rounder", "Crew neck", "Long sleeves", "Logo to chest", "Graphic prints to sleeve", "Regular fit", "Unisex style"],
+            "product_code" : 119208556,
+            "brand" : "When it comes to innovative sportswear, no brand does it better than Nike. Discover the best-selling trainers in the game in our Nike at ASOS edit, from Air Force 1s and Air Max 90s to Blazer and Waffle One styles. Browse techy T-shirts, shorts and joggers from Nike Training, Nike Running and Nike Football, as well as sports accessories like arm bands and fitness aids. Nike SB nails casual days with hoodies, sweatshirts and chinos, too.",
+            "size_and_fit" : ["Model's height: 188cm/6'2", "Model is wearing: Size Medium"],
+            "look_after_me" : "Machine wash according to instructions on care label",
+            "about_me" : ["Jersey: soft and stretchy", "Main: 100% Cotton."],
+        }
+    },
+
+    {
+        "title" : "ASOS DESIGN cropped embellished cami in silver",
+        "price" : 34.00,
+        "discount" : -15,
+        "discounted_price" : 29.00,
+        "brand" : "ASOS",
+        "images" : ["https://images.asos-media.com/products/asos-design-cropped-embellished-cami-in-silver/202818302-1-silver?$n_640w$&wid=513&fit=constrain",
+                    "https://images.asos-media.com/products/asos-design-cropped-embellished-cami-in-silver/202818302-2?$n_640w$&wid=513&fit=constrain",
+                    "https://images.asos-media.com/products/asos-design-cropped-embellished-cami-in-silver/202818302-3?$n_640w$&wid=513&fit=constrain",
+                    "https://images.asos-media.com/products/asos-design-cropped-embellished-cami-in-silver/202818302-4?$n_640w$&wid=513&fit=constrain"],
+        "category" : "dress",
+        "color" : "white",
+        "rating" : 5,
+        "details" : {
+            "product_details" : ["Tops by ASOS DESIGN", "Cos your jeans deserve a nice top", "Square neck", "Adjustable straps", "Faux pearl and diamante embellishment", "Cropped length", "Boxy fit"],
+            "product_code" : 118758821,
+            "brand" : "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
+            "size_and_fit" : ["Model wears: UK 8/ EU 36/ US 4", "Model's height: 168cm/5'6"],
+            "look_after_me" : "Machine wash according to instructions on care label",
+            "about_me" : ["Mesh: fine, soft and sheer", "Main: 100% Cotton."]
+        }
+    },
+
+    {
+        "title" : "Pull&Bear varisity bomber with collar and embroidery detail in red",
+        "price" : 59.00,
+        "discount" : -20,
+        "discounted_price" : 48.00,
+        "brand" : "Pull&Bear",
+        "images" : ["https://images.asos-media.com/products/pullbear-varisity-bomber-with-collar-and-embroidery-detail-in-red/203850391-1-red?$n_640w$&wid=513&fit=constrain",
+                    "https://images.asos-media.com/products/pullbear-varisity-bomber-with-collar-and-embroidery-detail-in-red/203850391-2?$n_640w$&wid=513&fit=constrain",
+                    "https://images.asos-media.com/products/pullbear-varisity-bomber-with-collar-and-embroidery-detail-in-red/203850391-3?$n_640w$&wid=513&fit=constrain",
+                    "https://images.asos-media.com/products/pullbear-varisity-bomber-with-collar-and-embroidery-detail-in-red/203850391-4?$n_640w$&wid=513&fit=constrain"],
+        "category" : "Jacket",
+        "color" : "red",
+        "rating" : 4,
+        "details" : {
+            "product_details" : ["Coats & Jackets by Pull&Bear", "Jacket upgrade: check", "Spread collar", "Press-stud placket", "Faux-leather panels", "Relaxed fit"],
+            "product_code" : 123111094,
+            "brand" : "When it comes to your casual rotation, no one does it better than Pull&Bear. Inspired by the laid-back vibe of Palm Springs, California, the brand references grunge influences, cool, sporty elements and street style across a collection of jeans, jackets, tops and trousers. And the good news is they’re all available in our Pull&Bear at ASOS edit, as well as shoes, bags and swimwear. What more could you want?",
+            "size_and_fit" : ["Model wears: UK S/ EU S/ US XS", "Model's height: 170cm/5'7"],
+            "look_after_me" : "Machine wash according to instructions on care label",
+            "about_me" : ["Felt: soft, brushed texture", "Main: 100% Polyester."],
+        }
     }
      
 ]
