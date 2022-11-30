@@ -871,6 +871,7 @@ let displayData = (product) => {
         productDiv.setAttribute("id", "product-section-card");
         productDiv.addEventListener('click', () => {
             localStorage.setItem('selected_product', JSON.stringify(ele));
+            window.location.href = "indiv.html";
         });
 
         let img = document.createElement("img");
