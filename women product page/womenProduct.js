@@ -19,8 +19,7 @@ let women = [
             "brand" : "Key players in everything activewear-related, it doesn't get more iconic than Nike. Sporting some of the most wanted trainers in the game, browse Air Max 90s and Air Force 1s, as well as Blazer and Waffle One styles. Get off-duty looks down with tracksuits, T-shirts and accessories in our Nike at ASOS edit, or scroll performance leggings and sports bras from Nike Training and Nike Running for an extra dose of motivation.",
             "size_and_fit" : ["Model wears: UK S/ EU S/ US XS", "Model's height: 175cm/5'9"],
             "look_after_me" : "Wipe clean with a damp cloth or sponge",
-            "about_me" : ["Smooth woven fabric", "Uses Nike Therma-FIT technology", "Helps to regulate body temperature and retain heat to keep you warm in cold-weather conditions"],
-            "main" : "100% Cotton.",
+            "about_me" : ["Smooth woven fabric", "Uses Nike Therma-FIT technology", "Helps to regulate body temperature and retain heat to keep you warm in cold-weather conditions", "Main : 100% Cotton."],
 
         }
     }, 
@@ -45,8 +44,8 @@ let women = [
             "brand" : "When it comes to your casual rotation, no one does it better than Pull&Bear. Inspired by the laid-back vibe of Palm Springs, California, the brand references grunge influences, cool, sporty elements and street style across a collection of jeans, jackets, tops and trousers. And the good news is they’re all available in our Pull&Bear at ASOS edit, as well as shoes, bags and swimwear. What more could you want?",
             "size_and_fit" : ["Model wears: UK S/ EU S/ US XS", "Model's height: 170cm/5'7"],
             "look_after_me" : "Machine wash according to instructions on care label",
-            "about_me" : ["Soft woven fabric"],
-            "main" : "93% Polyester, 7% Viscose",
+            "about_me" : ["Soft woven fabric", "Main : 93% Polyester, 7% Viscose"],
+            
         }
     },
 
@@ -69,8 +68,8 @@ let women = [
             "brand" : "When Quiksilver started sister label Roxy it was a pretty big deal. With a band of female pro surfers quite literally on board, Roxy give us a beach-bound collection of surf-ready flip flops, sticking to their feminine-but-functional mantra and with their signature heart shaped crest.",
             "size_and_fit" : ["Model wears: UK S/ EU S/ US XS", "Model's height: 168cm/5'6"],
             "look_after_me" : "Machine wash according to instructions on care label",
-            "about_me" : ["Plain-woven fabric", "Uses Roxy DryFlight 10K technology", "Waterproof to 10,000mm and breathable to 10,000gm", "Can hold its own in light-to-moderate rain or snow", "Helps keep you cool and dry during light exercise", "Uses Roxy WarmFlight technology", "Lightweight, synthetic insulation with high-warmth properties"],
-            "main" : "100% Polyester.",
+            "about_me" : ["Plain-woven fabric", "Uses Roxy DryFlight 10K technology", "Waterproof to 10,000mm and breathable to 10,000gm", "Can hold its own in light-to-moderate rain or snow", "Helps keep you cool and dry during light exercise", "Uses Roxy WarmFlight technology", "Lightweight, synthetic insulation with high-warmth properties", "Main : 100% Polyester."],
+            
         }
     },
 
@@ -96,8 +95,8 @@ let women = [
             "brand" : "If your aesthetic is part on-trend, part throwback vibes, then you’ll love Reclaimed Vintage. With two distinct collections, Reclaimed Vintage Inspired serves up fresh designs with a vintage twist, while Reclaimed Vintage Revived is all about handpicked vintage gems and customised pieces. From bold-printed dresses and utility trousers to embellished jackets and accessories, our Reclaimed Vintage at ASOS edit has it all and more.",
             "size_and_fit" : ["Model wears: UK 8/ W26 L32", "Model's height: 173cm/5'8"],
             "look_after_me" : "Machine wash according to instructions on care label",
-            "about_me" : ["Non-stretch denim: mid-blue wash"],
-            "main" : "100% Cotton.",
+            "about_me" : ["Non-stretch denim: mid-blue wash", "Main : 100% Cotton."],
+            
         }
     },
     
@@ -121,8 +120,8 @@ let women = [
             "brand" : "If your aesthetic is part on-trend, part throwback vibes, then you’ll love Reclaimed Vintage. With two distinct collections, Reclaimed Vintage Inspired serves up fresh designs with a vintage twist, while Reclaimed Vintage Revived is all about handpicked vintage gems and customised pieces. From bold-printed dresses and utility trousers to embellished jackets and accessories, our Reclaimed Vintage at ASOS edit has it all and more.",
             "size_and_fit" : ["Model wears: UK 8/ W26", "Model's height: 169cm/5'6"],
             "look_after_me" : "Machine wash according to instructions on care label",
-            "about_me" : ["Non-stretch denim: light-blue wash"],
-            "main" : "100% Cotton.",
+            "about_me" : ["Non-stretch denim: light-blue wash","Main : 100% Cotton."],
+            
         }
     },
 
@@ -146,8 +145,8 @@ let women = [
             "brand" : "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
             "size_and_fit" : ["Model wears: UK 8/ EU 36/ US 4", "Model's height: 173cm/5'8"],
             "look_after_me" : "Machine wash according to instructions on care label",
-            "about_me" : ["Jersey: soft and stretchy"],
-            "main" : "95% Viscose, 5% Elastane.",
+            "about_me" : ["Jersey: soft and stretchy", "Main : 95% Viscose, 5% Elastane."],
+            
         }
     }, 
 
@@ -171,8 +170,8 @@ let women = [
             "brand" : "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
             "size_and_fit" : ["Model wears: UK 8/ EU 36/ US 4", "Model's height: 170.5cm/5'7"],
             "look_after_me" : "Machine wash according to instructions on care label",
-            "about_me" : ["Dobby fabric: lightweight with a jacquard spot pattern"],
-            "main" : "Lining: 100% Polyester, Main: 100% Polyester.",
+            "about_me" : ["Dobby fabric: lightweight with a jacquard spot pattern", "Main : Lining: 100% Polyester, Main: 100% Polyester."],
+            
         }
     },
 
@@ -196,8 +195,8 @@ let women = [
             "brand" : "This is ASOS DESIGN – your go-to for all the latest trends, no matter who you are, where you’re from and what you’re up to. Exclusive to ASOS, our universal brand is here for you, and comes in all our fit ranges: ASOS Curve, Tall, Petite and Maternity. Created by us, styled by you.",
             "size_and_fit" : ["Model wears: UK 8/ EU 36/ US 4", "Model's height: 170cm/5'7"],
             "look_after_me" : "Machine wash according to instructions on care label",
-            "about_me" : ["Jacquard: structured fabric with an intricate, interwoven pattern"],
-            "main" : "99% Polyester, 1% Cotton.",
+            "about_me" : ["Jacquard: structured fabric with an intricate, interwoven pattern", "Main : 99% Polyester, 1% Cotton."],
+            
         }
     }, 
 
@@ -221,8 +220,8 @@ let women = [
             "brand" : "If your aesthetic is part on-trend, part throwback vibes, then you’ll love Reclaimed Vintage. With two distinct collections, Reclaimed Vintage Inspired serves up fresh designs with a vintage twist, while Reclaimed Vintage Revived is all about handpicked vintage gems and customised pieces. From bold-printed dresses and utility trousers to embellished jackets and accessories, our Reclaimed Vintage at ASOS edit has it all and more.",
             "size_and_fit" : ["Model wears: UK 18/ EU 46/ US 14", "Model's height: 173cm/5'8"],
             "look_after_me" : "Machine wash according to instructions on care label",
-            "about_me" : ["Cotton: lightweight, soft and strong"],
-            "main" : "100% Cotton.",
+            "about_me" : ["Cotton: lightweight, soft and strong", "Main : 100% Cotton."],
+            
         }
     },
 
@@ -246,8 +245,8 @@ let women = [
             "brand" : "When it comes to your casual rotation, no one does it better than Pull&Bear. Inspired by the laid-back vibe of Palm Springs, California, the brand references grunge influences, cool, sporty elements and street style across a collection of jeans, jackets, tops and trousers. And the good news is they’re all available in our Pull&Bear at ASOS edit, as well as shoes, bags and swimwear. What more could you want?",
             "size_and_fit" : ["Model wears: UK 8/ EU 36/ US 4", "Model's height: 170cm/5'7"],
             "look_after_me" : "Machine wash according to instructions on care label",
-            "about_me" : ["Cotton: lightweight, soft and strong", "Mid-blue wash"],
-            "main" : "100% Cotton.",
+            "about_me" : ["Cotton: lightweight, soft and strong", "Mid-blue wash", "Main : 100% Cotton."],
+            
         }
     },
 
@@ -271,8 +270,8 @@ let women = [
             "brand" : "Key players in everything activewear-related, it doesn’t get more iconic than Nike. Sporting some of the most wanted trainers in the game, browse Air Max 90s and Air Force 1s, as well as Blazer and Waffle One styles. Get off-duty looks down with tracksuits, T-shirts and accessories in our Nike at ASOS edit, or scroll performance leggings and sports bras from Nike Training and Nike Running for an extra dose of motivation.",
             "size_and_fit" : ["Model wears: UK XL/ EU XL/ US L", "Model's height: 166cm/5'5.5"],
             "look_after_me" : "Machine wash according to instructions on care label",
-            "about_me" : ["Faux fur: super-soft synthetic fabric"],
-            "main" : "100% Cotton.",
+            "about_me" : ["Faux fur: super-soft synthetic fabric", "Main : 100% Cotton."],
+            
         }
     },
 
@@ -296,8 +295,8 @@ let women = [
             "brand" : "Key players in everything activewear-related, it doesn’t get more iconic than Nike. Sporting some of the most wanted trainers in the game, browse Air Max 90s and Air Force 1s, as well as Blazer and Waffle One styles. Get off-duty looks down with tracksuits, T-shirts and accessories in our Nike at ASOS edit, or scroll performance leggings and sports bras from Nike Training and Nike Running for an extra dose of motivation.",
             "size_and_fit" : ["Model wears: UK S/ EU S/ US XS", "Model's height: 175cm/5'9"],
             "look_after_me" : "Wipe clean with a damp cloth or sponge",
-            "about_me" : ["Smooth woven fabric", "Uses Nike Therma-FIT technology", "Helps to regulate body temperature and retain heat to keep you warm in cold-weather conditions"],
-            "main" : "100% cotton",
+            "about_me" : ["Smooth woven fabric", "Uses Nike Therma-FIT technology", "Helps to regulate body temperature and retain heat to keep you warm in cold-weather conditions", "Main : 100% cotton"],
+            
         }
     },
 
@@ -321,8 +320,8 @@ let women = [
             "brand" : "Seeking inspiration from street and city style, Scandi favourite Vila combines quality fabrics and delicate cuts to create a collection of fashion-forward pieces. Signature floral prints and grown-up lace feature across a range of dresses and blouses, while the brand’s casual jackets and cosy knitwear are your new wardrobe staples.",
             "size_and_fit" : ["Model wears: UK 8/ EU 36/ US 4", "Model's height: 171cm/5'7.5"],
             "look_after_me" : "Machine wash according to instructions on care label",
-            "about_me" : ["Satin-style fabric: glossy, drapey and silky-smooth"],
-            "main" : "48% Viscose, 27% Polyester, 25% Polyamide.",
+            "about_me" : ["Satin-style fabric: glossy, drapey and silky-smooth", "Main : 48% Viscose, 27% Polyester, 25% Polyamide."],
+            
         }
     },
 
@@ -346,8 +345,8 @@ let women = [
             "brand" : "Seeking inspiration from street and city style, Danish label Vila Curve combine quality fabrics, textures and delicate cuts to create fashion-forward garments. Intricate feminine detailing and fine prints channel the brand's signature elegant style; with party dresses and cool casuals featuring prominently.",
             "size_and_fit" : ["Model wears: UK 8/ EU 36/ US 4", "Model's height: 171cm/5'7.5"],
             "look_after_me" : "Machine wash according to instructions on care label",
-            "about_me" : ["Satin-style fabric: glossy, drapey and silky-smooth"],
-            "main" : "48% Viscose, 27% Polyester, 25% Polyamide.",
+            "about_me" : ["Satin-style fabric: glossy, drapey and silky-smooth", "Main : 48% Viscose, 27% Polyester, 25% Polyamide."],
+            
         }
     },
 
@@ -371,8 +370,8 @@ let women = [
             "brand" : "Seeking inspiration from street and city style, Scandi favourite Vila combines quality fabrics and delicate cuts to create a collection of fashion-forward pieces. Signature floral prints and grown-up lace feature across a range of dresses and blouses, while the brand’s casual jackets and cosy knitwear are your new wardrobe staples.",
             "size_and_fit" : ["Model wears: UK 8/ EU 36/ US 4", "Model's height: 171cm/5'7.5"],
             "look_after_me" : "Machine wash according to instructions on care label",
-            "about_me" : ["Satin-style fabric: glossy, drapey and silky-smooth"],
-            "main" : "48% Viscose, 27% Polyester, 25% Polyamide.",
+            "about_me" : ["Satin-style fabric: glossy, drapey and silky-smooth", "Main : 48% Viscose, 27% Polyester, 25% Polyamide."],
+            
         }
     }, 
 
@@ -396,8 +395,8 @@ let women = [
             "brand" : "If your aesthetic is part on-trend, part throwback vibes, then you’ll love Reclaimed Vintage. With two distinct collections, Reclaimed Vintage Inspired serves up fresh designs with a vintage twist, while Reclaimed Vintage Revived is all about handpicked vintage gems and customised pieces. From bold-printed dresses and utility trousers to embellished jackets and accessories, our Reclaimed Vintage at ASOS edit has it all and more.",
             "size_and_fit" : ["Model wears: UK 8/ EU 36/ US 4", "Model's height: 171cm/5'7.5"],
             "look_after_me" : "Machine wash according to instructions on care label",
-            "about_me" : ["Satin-style fabric: glossy, drapey and silky-smooth"],
-            "main" : "48% Viscose, 27% Polyester, 25% Polyamide.",
+            "about_me" : ["Satin-style fabric: glossy, drapey and silky-smooth", "Main : 48% Viscose, 27% Polyester, 25% Polyamide."],
+            
         }
     },
 
@@ -421,8 +420,8 @@ let women = [
             "brand" : "If your aesthetic is part on-trend, part throwback vibes, then you’ll love Reclaimed Vintage. With two distinct collections, Reclaimed Vintage Inspired serves up fresh designs with a vintage twist, while Reclaimed Vintage Revived is all about handpicked vintage gems and customised pieces. From bold-printed dresses and utility trousers to embellished jackets and accessories, our Reclaimed Vintage at ASOS edit has it all and more.",
             "size_and_fit" : ["Model wears: UK 8/ EU 36/ US 4", "Model's height: 180cm/5'11"],
             "look_after_me" : "Machine wash according to instructions on care label",
-            "about_me" : ["Mesh: fine, soft and sheer"],
-            "main" : "95% Polyester, 5% Elastane.",
+            "about_me" : ["Mesh: fine, soft and sheer", "Main : 95% Polyester, 5% Elastane."],
+            
         }
     },
 
@@ -446,8 +445,8 @@ let women = [
             "brand" : "When it comes to your casual rotation, no one does it better than Pull&Bear. Inspired by the laid-back vibe of Palm Springs, California, the brand references grunge influences, cool, sporty elements and street style across a collection of jeans, jackets, tops and trousers. And the good news is they’re all available in our Pull&Bear at ASOS edit, as well as shoes, bags and swimwear. What more could you want?",
             "size_and_fit" : ["Model wears: UK 8/ EU 36/ US 4", "Model's height: 173cm/5'8"],
             "look_after_me" : "Machine wash according to instructions on care label",
-            "about_me" : ["Faux leather: matte finish"],
-            "main" : "50% Polyethylene, 47% Polyester, 3% Elastane.",
+            "about_me" : ["Faux leather: matte finish", "Main : 50% Polyethylene, 47% Polyester, 3% Elastane."],
+            
         }
     },
 
@@ -471,8 +470,8 @@ let women = [
             "brand" : "When it comes to your casual rotation, no one does it better than Pull&Bear. Inspired by the laid-back vibe of Palm Springs, California, the brand references grunge influences, cool, sporty elements and street style across a collection of jeans, jackets, tops and trousers. And the good news is they’re all available in our Pull&Bear at ASOS edit, as well as shoes, bags and swimwear. What more could you want?",
             "size_and_fit" : ["Model wears: UK 8/ EU 36/ US 4", "Model's height: 173cm/5'8"],
             "look_after_me" : "Machine wash according to instructions on care label",
-            "about_me" : ["Faux leather: matte finish"],
-            "main" : "50% Polyethylene, 47% Polyester, 3% Elastane.",
+            "about_me" : ["Faux leather: matte finish", "Main : 50% Polyethylene, 47% Polyester, 3% Elastane."],
+            
         }
     },
 
@@ -496,8 +495,8 @@ let women = [
             "brand" : "Serving up new-new trends, emerging brand AsYou is a big vibe. Whether you’re off-duty or going out-out, there’s a piece for every mood – from legging shorts and oversized sweatshirts to slinky bodycon dresses, underboob crop tops and plunging bodysuits. Scroll the AsYou at ASOS edit to shop the entire drop. You do you.",
             "size_and_fit" : ["Model wears: UK 8/ EU 36/ US 4", "Model's height: 169cm/5'6.5"],
             "look_after_me" : "Machine wash according to instructions on care label",
-            "about_me" : ["Mesh: fine, soft and sheer"],
-            "main" : "100% Polyester.",
+            "about_me" : ["Mesh: fine, soft and sheer", "Main : 100% Polyester."],
+            
         }
     },
 
@@ -521,8 +520,8 @@ let women = [
             "brand" : "Serving up new-new trends, emerging brand AsYou is a big vibe. Whether you’re off-duty or going out-out, there’s a piece for every mood – from legging shorts and oversized sweatshirts to slinky bodycon dresses, underboob crop tops and plunging bodysuits. Scroll the AsYou at ASOS edit to shop the entire drop. You do you",
             "size_and_fit" : ["Model wears: UK 8/ EU 36/ US 4", "Model's height: 175cm/5'9"],
             "look_after_me" : "Machine wash according to instructions on care label",
-            "about_me" : ["Woven fabric: sequin embellished"],
-            "main" : "100% Polyester, Main: 93% Polyamide, 4% Elastane, 3% Metallised fibres.",
+            "about_me" : ["Woven fabric: sequin embellished", "Main : 100% Polyester, Main: 93% Polyamide, 4% Elastane, 3% Metallised fibres."],
+            
         }
     },
 
@@ -546,8 +545,8 @@ let women = [
             "brand" : "Serving up new-new trends, emerging brand AsYou is a big vibe. Whether you’re off-duty or going out-out, there’s a piece for every mood – from legging shorts and oversized sweatshirts to slinky bodycon dresses, underboob crop tops and plunging bodysuits. Scroll the AsYou at ASOS edit to shop the entire drop. You do you.",
             "size_and_fit" : ["Model wears: UK 8/ EU 36/ US 4", "Model's height: 175cm/5'9"],
             "look_after_me" : "Machine wash according to instructions on care label",
-            "about_me" : ["Woven fabric: sequin embellished"],
-            "main" : "100% Polyester, Main: 93% Polyamide, 4% Elastane, 3% Metallised fibres.",
+            "about_me" : ["Woven fabric: sequin embellished", "Main : 100% Polyester, Main: 93% Polyamide, 4% Elastane, 3% Metallised fibres."],
+            
         }
     }, 
 
@@ -571,8 +570,8 @@ let women = [
             "brand" : "Serving up new-new trends, emerging brand AsYou is a big vibe. Whether you’re off-duty or going out-out, there’s a piece for every mood – from legging shorts and oversized sweatshirts to slinky bodycon dresses, underboob crop tops and plunging bodysuits. Scroll the AsYou at ASOS edit to shop the entire drop. You do you",
             "size_and_fit" : ["Model wears: UK 8/ EU 36/ US 4", "Model's height: 175cm/5'9"],
             "look_after_me" : "Machine wash according to instructions on care label",
-            "about_me" : ["Woven fabric: sequin embellished"],
-            "main" : "100% Polyester, Main: 93% Polyamide, 4% Elastane, 3% Metallised fibres.",
+            "about_me" : ["Woven fabric: sequin embellished", "Main : 100% Polyester, Main: 93% Polyamide, 4% Elastane, 3% Metallised fibres."],
+            
         }
     }
      
