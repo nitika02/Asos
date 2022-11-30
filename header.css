@@ -3,42 +3,33 @@
 {
     box-sizing: border-box;
 }
-a
-{
-    text-decoration: none;
-  
-    color: gray;
-}
+
 #container
 {
-    width: 102%;
     margin: auto;
-    /* margin-left: -8px; */
-    border: 2px solid green;
+    
 }
 #ltopnavbar
 {
     display: flex;
     justify-content: end;
     background-color: #f8f8f8;
-    margin-top:-6px;
-    width: 103%;
+    align-items: center;
     margin-left:-9px;
-    
-
+    margin-top: -10px;
     border: 1px solid #eeeeee;
-    /* border:2px solid pink; */
-    
-
 }
+#ltopnavbar a
+{
+    text-decoration: none;
+    color: gray;
+}
+
 #ltopnavbar >div
 {
-    /* padding: 10px 0px; */
     width: 10%;
     border: 1px solid #eeeeee;
     padding-top: 10px;
-
-    
 }
 #ltopnavbar >div:nth-child(3)
 {
@@ -49,21 +40,15 @@ a
 #ltopnavbar a
 {
     width: 10%;
-    /* border:2px solid pink; */
     padding: 0px 19px;
-
-    /* height: auto; */
-
 }
 
 
 #ltopnavbar >#country img
 {
-    width: 40%;
+    width: 60%;
 }
-#country{
-    
-}
+
 /* middle navbar */
 
 #lmiddlenavbar
@@ -71,7 +56,16 @@ a
     display: flex;
     background-color: #2d2d2d;
     align-items: center;
-    height: 80px;
+    height: 60px;
+   
+}
+#lmiddlenavbar a
+{
+    text-decoration: none;
+   
+    font-size: 14px;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #logo
@@ -83,10 +77,11 @@ a
     display: flex;
     justify-content: space-between;
     align-items: center;
+  
+
     
-    /* margin:17px */
-    /* padding: 17px; */
 }
+
 #lleftside div
 {
     border-right: 2px solid green;
@@ -94,9 +89,10 @@ a
 #lleftside a
 {
     padding: 0px 20px;
-    font-size: 22px;
-    font-weight: 900;
+    font-size: medium;
+    font-weight: 600;
     color:white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #lcenterside
 {
@@ -110,12 +106,12 @@ a
 #lcenterside input
 {
     width: 100%;
-    padding:15px 25px;
+    padding:10px 25px;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
     outline: none;
     border: none;
-    font-size: larger;
+    font-size:small;
     margin-left: 25px;
 }
 #lcenterside #lsearch
@@ -125,11 +121,11 @@ a
 #lcenterside button
 {
     width: 100%;
-    padding:15px 25px;
+    padding:10px 25px;
     background: white;
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
-    font-size: larger;
+    font-size:small;
     border:none;
     
 }
@@ -137,12 +133,12 @@ a
 {
     display: flex;
     justify-content: left;
-    margin-left: 50px;
+    margin-left: 20px;
 }
 #lrightside a
 {
     color:white;
-    font-size: 26px;
+    font-size: 20px;
  
 }
 #lrightside div
@@ -153,7 +149,7 @@ a
 {
     filter: invert(1);
     margin-right: 70px;
-    font-size: 26px;
+    font-size: 20px;
 }
 
 
@@ -162,29 +158,38 @@ a
 #lbottomnavbar
 {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     background-color:#525050;
-    height:65px;
-    margin: auto;
+    height:50px;
+    /* margin: auto; */
     
     
 }
 #lbottomnavbar div
 {
-    padding:25px 10px;
+    padding:0px 10px;
     /* border:1px solid red; */
+    font-size: small;
 }
 #lbottomnavbar div:nth-child(1)
 {
     transform: skew(-15deg);
     background-color: #d01345;
-    font-weight: 900;
+    margin-left: 30px;
+}
+#lbottomnavbar div:nth-child(1) a
+{
+    transform: skew(15deg);
 }
 #lbottomnavbar a
 {
     color: white;
+    text-decoration: none;
     /* padding:7px; */
-    font-size: large;
+    font-size: 14px;
+    line-height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
 #lpinknavbar
 {
