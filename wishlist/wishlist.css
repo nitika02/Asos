@@ -36,8 +36,7 @@ body {
 }
 
 #wishlist-items img {
-    width: 320.6px;
-    height: 410.2px;
+    width: 100%;
 }
 
 #wishlist-items h2 {

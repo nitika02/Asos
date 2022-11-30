@@ -49,9 +49,9 @@ let displayWishlist = (data) => {
         let button = document.createElement("button");
         button.innerText = "MOVE TO BAG";
         button.setAttribute("id", "product-button");
-        // button.addEventListener("click", () => {
-        //     addToCart(ele);
-        // })
+        button.addEventListener("click", () => {
+            addToCart(ele);
+        })
 
         priceDiv.append(price, discountedPrice);
 
@@ -68,4 +68,10 @@ let deleteItem = (index) => {
     localStorage.setItem("wishlist", JSON.stringify(wishlistItems));
     displayWishlist(wishlistItems);
     noOfItems.innerText = wishlistItems.length;
+}
+
+let cartProducts = [] || JSON.parse(localStorage.getItem("cart")) ;
+let addToCart = (product) => {
+    cartProducts.push(product);
+    localStorage.setItem("cart", JSON.stringify(cartProducts));
 }
