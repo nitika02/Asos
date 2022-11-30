@@ -140,7 +140,11 @@ body {
 }
 
 #main-product-section-div img {
+<<<<<<< HEAD:mens_and_indiv_page/styles/menProduct.css
+    width: 100%;
+=======
    width: 100%;
+>>>>>>> 47df927a80b1051bf46b8940762dcff8ee7453ea:women product page/womenProduct.css
 }
 
 #main-product-section-div h2 {
