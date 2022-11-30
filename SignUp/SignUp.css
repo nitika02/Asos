@@ -16,20 +16,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(210, 215, 212, 0.822);
+    background-color: rgba(218, 221, 221, 0.822);
 }
 
+  
+
 .modelForm {
-    margin-top: 20px;
+    margin-top: 120px;
+    position: absolute;
     width: 650px;
-    height: 140vh;
-    background-color: white;
+    height: 135vh;
+    background-color: rgb(255, 255, 255);
     /* border-radius: 10px; */
     display: flex;
     align-items: center;
     flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+#logo{
+   width:5%;
+   height:5%;
+   background:transparent;
+   margin-top:-900px;
+   margin-left:-20px;
+}
 .actionBtns {
     width: 80%;
     background-color: white;
@@ -91,21 +102,23 @@
 }
 
 .three-option>div {
+
+    width:150px;
     margin-top: 30px;
     display: inline-block;
     margin-left: 35px;
     margin-right: 5px;
     justify-content: space-around;
     border: 2px solid rgb(139, 139, 139);
-    /* border-radius: 30px; */
+    /* border-radius: 10px; */
     font-family: 'Nunito', sans-serif;
 }
 
 .space {
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
-    color: rgb(225, 89, 89);
+    color: rgb(16, 9, 9);
 }
 
 .detail {
@@ -257,7 +270,19 @@
     margin-top: 20px;
 }
 
-.fa-brands {
+
+
+.fa-google{
     margin-right: 15px;
-    color: black;
+    color:rgb(63, 136, 200);
+}
+
+.fa-apple{
+    margin-right: 15px;
+    color:black;
+}
+
+.fa-square-facebook{
+    margin-right: 15px;
+    color:blue;
 }
