@@ -1,7 +1,6 @@
 {
   "men": [
     {
-      "id": 1,
       "title": "ASOS DESIGN lightweight bomber jacket in black",
       "price": 30.0,
       "discount": -25,
@@ -39,7 +38,6 @@
     },
 
     {
-      "id": 2,
       "title": "French Connection Tall long sleeve cord shirt in navy",
       "price": 63.0,
       "discount": -49,
@@ -79,7 +77,6 @@
     },
 
     {
-      "id": 3,
       "title": "French Connection long sleeve multi check flannel shirt in blue",
       "price": 58.0,
       "discount": -44,
@@ -114,7 +111,6 @@
     },
 
     {
-      "id": 4,
       "title": "ASOS DESIGN Tall raglan polo shirt with contrast sleeves and tipping in navy",
       "price": 14.0,
       "discount": -42,
@@ -159,7 +155,6 @@
     },
 
     {
-      "id": 5,
       "title": "adidas Originals Universal trainers in blue",
       "price": 80.0,
       "discount": -20,
@@ -196,7 +191,6 @@
     },
 
     {
-      "id": 6,
       "title": "adidas Originals 'adicolor 70s' unisex flared trouser in red",
       "price": 70.0,
       "discount": -50,
@@ -236,7 +230,6 @@
     },
 
     {
-      "id": 7,
       "title": "adidas Originals adicolor three stripe quilted track pants in black",
       "price": 60.0,
       "discount": -45,
@@ -277,7 +270,6 @@
     },
 
     {
-      "id": 8,
       "title": "Puma Essentials large logo sweatshirt in black",
       "price": 38.0,
       "discount": -50,
@@ -317,7 +309,6 @@
     },
 
     {
-      "id": 9,
       "title": "Puma Essentials small logo sweatshirt in navy",
       "price": 60.0,
       "discount": -50,
@@ -353,7 +344,6 @@
     },
 
     {
-      "id": 10,
       "title": "ASOS DESIGN swim shorts in short length navy acid wash",
       "price": 18.0,
       "discount": -38,
@@ -392,7 +382,6 @@
     },
 
     {
-      "id": 11,
       "title": "Brave Soul funnel neck puffer jacket in khaki",
       "price": 44.99,
       "discount": -39,
@@ -432,7 +421,6 @@
     },
 
     {
-      "id": 12,
       "title": "Brave Soul puffer bomber jacket with faux fur hood in black",
       "price": 85.0,
       "discount": -43,
@@ -472,7 +460,6 @@
     },
 
     {
-      "id": 13,
       "title": "Nike legacy padded jacket in rattan",
       "price": 75.0,
       "discount": -25,
@@ -514,7 +501,6 @@
     },
 
     {
-      "id": 14,
       "title": "Nike Football World Cup 2022 Netherlands unisex shorts in blue",
       "price": 32.95,
       "discount": -50,
@@ -553,7 +539,6 @@
     },
 
     {
-      "id": 15,
       "title": "Puma Football Park shorts in dark khaki",
       "price": 24.0,
       "discount": -50,
@@ -590,7 +575,6 @@
     },
 
     {
-      "id": 16,
       "title": "Nike Golf Victory polo in red",
       "price": 37.95,
       "discount": -50,
@@ -631,7 +615,6 @@
     },
 
     {
-      "id": 17,
       "title": "Nike Golf Victory polo in grey",
       "price": 37.95,
       "discount": -50,
@@ -672,7 +655,6 @@
     },
 
     {
-      "id": 18,
       "title": "ASOS DESIGN tapered cargo trousers in sage green with 3D pockets",
       "price": 38.0,
       "discount": -50,
@@ -711,7 +693,6 @@
     },
 
     {
-      "id": 19,
       "title": "Jack & Jones Intelligence slim fit cuffed chino in dark grey",
       "price": 25.0,
       "discount": -20,
@@ -750,7 +731,6 @@
     },
 
     {
-      "id": 20,
       "title": "Jack & Jones Intelligence cuffed cargo trouser in beige",
       "price": 35.0,
       "discount": -30,
@@ -790,7 +770,6 @@
     },
 
     {
-      "id": 21,
       "title": "Converse Chuck CT70 AT-CX Hi trainers in black",
       "price": 110.0,
       "discount": -10,
@@ -829,7 +808,6 @@
     },
 
     {
-      "id": 22,
       "title": "Converse Chuck Taylor All Star hi trainers in brown",
       "price": 120.0,
       "discount": -50,
@@ -869,7 +847,6 @@
     },
 
     {
-      "id": 23,
       "title": "adidas Originals Jeans trainers in olive",
       "price": 80.0,
       "discount": -50,
@@ -907,7 +884,6 @@
   ],
   "women": [
     {
-      "id": 24,
       "title": "Nike classic longline padded jacket with hood in olive grey",
       "price": 134.95,
       "discount": -15,
@@ -919,7 +895,6 @@
         "https://images.asos-media.com/products/nike-classic-longline-padded-jacket-with-hood-in-olive-grey/202897100-3?$n_750w$&wid=750&fit=constrain",
         "https://images.asos-media.com/products/nike-classic-longline-padded-jacket-with-hood-in-olive-grey/202897100-4?$n_750w$&wid=750&fit=constrain"
       ],
-      "video": "https://video.asos-media.com/products/nike-classic-longline-padded-jacket-with-hood-in-olive-grey/202897100-catwalk-AVS.m3u8",
       "category": "Jacket",
       "color": "grey",
       "rating": 4,
@@ -950,7 +925,6 @@
     },
 
     {
-      "id": 25,
       "title": "Pull&Bear Exclusive oversized tailored coat in brown",
       "price": 59.99,
       "discount": -15,
@@ -961,8 +935,7 @@
         "https://images.asos-media.com/products/pullbear-exclusive-oversized-tailored-coat-in-brown/203881814-2?$n_750w$&wid=750&fit=constrain",
         "https://images.asos-media.com/products/pullbear-exclusive-oversized-tailored-coat-in-brown/203881814-3?$n_640w$&wid=513&fit=constrain",
         "https://images.asos-media.com/products/pullbear-exclusive-oversized-tailored-coat-in-brown/203881814-4?$n_640w$&wid=513&fit=constrain"
-      ],
-      "video": "https://video.asos-media.com/products/pullbear-exclusive-oversized-tailored-coat-in-brown/203881814-catwalk-AVS.m3u8",
+      ],      
       "category": "Jacket",
       "color": "brown",
       "rating": 3,
@@ -987,7 +960,6 @@
     },
 
     {
-      "id": 26,
       "title": "Roxy Meade ski jacket in back",
       "price": 221.0,
       "discount": -20,
@@ -1037,7 +1009,6 @@
     },
 
     {
-      "id": 27,
       "title": "Reclaimed Vintage waistbandless skinny stretch flare in mid wash blue",
       "price": 35.99,
       "discount": -20,
@@ -1050,7 +1021,6 @@
         "https://images.asos-media.com/products/reclaimed-vintage-waistbandless-skinny-stretch-flare-in-mid-wash-blue/203614941-3?$n_640w$&wid=513&fit=constrain",
         "https://images.asos-media.com/products/reclaimed-vintage-waistbandless-skinny-stretch-flare-in-mid-wash-blue/203614941-4?$n_640w$&wid=513&fit=constrain"
       ],
-      "video": "https://images.asos-media.com/products/reclaimed-v…sh-blue/203614941-4?$n_240w$&wid=40&fit=constrain",
       "category": "Jean",
       "color": "blue",
       "rating": 5,
@@ -1076,7 +1046,6 @@
     },
 
     {
-      "id": 28,
       "title": "Reclaimed Vintage 00's baggy jean with rips in light blue",
       "price": 38.0,
       "discount": -20,
@@ -1088,7 +1057,6 @@
         "https://images.asos-media.com/products/reclaimed-vintage-00s-baggy-jean-with-rips-in-light-blue/203279815-3?$n_640w$&wid=513&fit=constrain",
         "https://images.asos-media.com/products/reclaimed-vintage-00s-baggy-jean-with-rips-in-light-blue/203279815-4?$n_640w$&wid=513&fit=constrain"
       ],
-      "video": "https://images.asos-media.com/products/reclaimed-v…ht-blue/203279815-4?$n_240w$&wid=40&fit=constrain",
       "category": "Jean",
       "color": "blue",
       "rating": 5,
@@ -1114,7 +1082,6 @@
     },
 
     {
-      "id": 29,
       "title": "ASOS DESIGN Hourglass legging with side split in black",
       "price": 15.0,
       "discount": -20,
@@ -1155,7 +1122,6 @@
     },
 
     {
-      "id": 30,
       "title": "ASOS DESIGN ruched mini dress with hanky hem in black based floral",
       "price": 49.0,
       "discount": -20,
@@ -1167,7 +1133,6 @@
         "https://images.asos-media.com/products/asos-design-ruched-mini-dress-with-hanky-hem-in-black-based-floral/203355719-3?$n_640w$&wid=513&fit=constrain",
         "https://images.asos-media.com/products/asos-design-ruched-mini-dress-with-hanky-hem-in-black-based-floral/203355719-4?$n_640w$&wid=513&fit=constrain"
       ],
-      "video": "https://images.asos-media.com/products/asos-design…-floral/203355719-4?$n_240w$&wid=40&fit=constrain",
       "category": "dress",
       "color": "black",
       "rating": 5,
@@ -1195,7 +1160,6 @@
     },
 
     {
-      "id": 31,
       "title": "ASOS DESIGN belted midi skater dress in textured jacquard in rust",
       "price": 79.0,
       "discount": -20,
@@ -1207,7 +1171,6 @@
         "https://images.asos-media.com/products/asos-design-belted-midi-skater-dress-in-textured-jacquard-in-rust/203115488-3?$n_640w$&wid=513&fit=constrain",
         "https://images.asos-media.com/products/asos-design-belted-midi-skater-dress-in-textured-jacquard-in-rust/203115488-4?$n_640w$&wid=513&fit=constrain"
       ],
-      "video": "https://images.asos-media.com/products/asos-design…in-rust/203115488-4?$n_240w$&wid=40&fit=constrain",
       "category": "dress",
       "color": "red",
       "rating": 3,
@@ -1236,7 +1199,6 @@
     },
 
     {
-      "id": 32,
       "title": "Reclaimed Vintage plus collar smock maxi in floral print",
       "price": 41.99,
       "discount": -20,
@@ -1248,7 +1210,6 @@
         "https://images.asos-media.com/products/reclaimed-vintage-plus-collar-smock-maxi-in-floral-print/203343540-3?$n_640w$&wid=513&fit=constrain",
         "https://images.asos-media.com/products/reclaimed-vintage-plus-collar-smock-maxi-in-floral-print/203343540-4?$n_640w$&wid=513&fit=constrain"
       ],
-      "video": "https://images.asos-media.com/products/reclaimed-v…l-print/203343540-4?$n_240w$&wid=40&fit=constrain",
       "category": "dress",
       "color": "black",
       "rating": 5,
@@ -1276,7 +1237,6 @@
     },
 
     {
-      "id": 33,
       "title": "Pull&Bear high waisted mom jean in light blue",
       "price": 22.99,
       "discount": -15,
@@ -1310,7 +1270,6 @@
     },
 
     {
-      "id": 34,
       "title": "Nike Plus long faux fur swoosh coat in iron grey and white",
       "price": 199.95,
       "discount": -15,
@@ -1322,7 +1281,6 @@
         "https://images.asos-media.com/products/nike-plus-long-faux-fur-swoosh-coat-in-iron-grey-and-white/202931304-3?$n_640w$&wid=513&fit=constrain",
         "https://images.asos-media.com/products/nike-plus-long-faux-fur-swoosh-coat-in-iron-grey-and-white/202931304-4?$n_640w$&wid=513&fit=constrain"
       ],
-      "video": "https://video.asos-media.com/products/nike-plus-long-faux-fur-swoosh-coat-in-iron-grey-and-white/202931304-catwalk-AVS.m3u8",
       "category": "Sweatshirt",
       "color": "grey",
       "rating": 5,
@@ -1351,7 +1309,6 @@
     },
 
     {
-      "id": 35,
       "title": "Nike classic padded jacket with hood in olive grey",
       "price": 114.95,
       "discount": -15,
@@ -1363,7 +1320,6 @@
         "https://images.asos-media.com/products/nike-classic-longline-padded-jacket-with-hood-in-olive-grey/202897100-3?$n_640w$&wid=513&fit=constrain",
         "https://images.asos-media.com/products/nike-classic-longline-padded-jacket-with-hood-in-olive-grey/202897100-4?$n_640w$&wid=513&fit=constrain"
       ],
-      "video": "https://images.asos-media.com/products/nike-classi…ve-grey/202895744-4?$n_240w$&wid=40&fit=constrain",
       "category": "Jacket",
       "color": "grey",
       "rating": 5,
@@ -1394,7 +1350,6 @@
     },
 
     {
-      "id": 36,
       "title": "Vila Bridesmaid satin cowl neck maxi dress in sage",
       "price": 40.0,
       "discount": -20,
@@ -1406,7 +1361,6 @@
         "https://images.asos-media.com/products/vila-bridesmaid-satin-cowl-neck-maxi-dress-in-sage/203899951-3?$n_640w$&wid=513&fit=constrain",
         "https://images.asos-media.com/products/vila-bridesmaid-satin-cowl-neck-maxi-dress-in-sage/203899951-4?$n_640w$&wid=513&fit=constrain"
       ],
-      "video": "https://video.asos-media.com/products/vila-bridesmaid-satin-cowl-neck-maxi-dress-in-sage/203899951-catwalk-AVS.m3u8",
       "category": "dress",
       "color": "white",
       "rating": 3,
@@ -1433,7 +1387,6 @@
     },
 
     {
-      "id": 37,
       "title": "Vila satin maxi shirt dress in mono print",
       "price": 53.0,
       "discount": -20,
@@ -1445,7 +1398,6 @@
         "https://images.asos-media.com/products/vila-satin-maxi-shirt-dress-in-mono-print/203896832-3?$n_640w$&wid=513&fit=constrain",
         "https://images.asos-media.com/products/vila-satin-maxi-shirt-dress-in-mono-print/203896832-4?$n_640w$&wid=513&fit=constrain"
       ],
-      "video": "https://video.asos-media.com/products/vila-satin-maxi-shirt-dress-in-mono-print/203896832-catwalk-AVS.m3u8",
       "category": "dress",
       "color": "white",
       "rating": 5,
@@ -1472,7 +1424,6 @@
     },
 
     {
-      "id": 38,
       "title": "Vila fluffy mini dress in black",
       "price": 40.0,
       "discount": -20,
@@ -1484,7 +1435,6 @@
         "https://images.asos-media.com/products/vila-fluffy-mini-dress-in-black/203655884-3?$n_640w$&wid=513&fit=constrain",
         "https://images.asos-media.com/products/vila-fluffy-mini-dress-in-black/203655884-4?$n_640w$&wid=513&fit=constrain"
       ],
-      "video": "https://video.asos-media.com/products/vila-fluffy-mini-dress-in-black/203655884-catwalk-AVS.m3u8",
       "category": "dress",
       "color": "black",
       "rating": 4,
@@ -1511,7 +1461,6 @@
     },
 
     {
-      "id": 39,
       "title": "Reclaimed Vintage low rise straight trousers in dark floral co-ord",
       "price": 41.99,
       "discount": -40,
@@ -1523,7 +1472,6 @@
         "https://images.asos-media.com/products/reclaimed-vintage-low-rise-straight-trousers-in-dark-floral-co-ord/203079656-3?$n_640w$&wid=513&fit=constrain",
         "https://images.asos-media.com/products/reclaimed-vintage-low-rise-straight-trousers-in-dark-floral-co-ord/203079656-4?$n_640w$&wid=513&fit=constrain"
       ],
-      "video": "https://video.asos-media.com/products/reclaimed-vintage-low-rise-straight-trousers-in-dark-floral-co-ord/203079656-catwalk-AVS.m3u8",
       "category": "Sweatshirt",
       "color": "brown",
       "rating": 5,
@@ -1551,7 +1499,6 @@
     },
 
     {
-      "id": 40,
       "title": "Reclaimed Vintage mesh cami dress in check print in yellow",
       "price": 22.99,
       "discount": -20,
@@ -1563,7 +1510,6 @@
         "https://images.asos-media.com/products/reclaimed-vintage-mesh-cami-dress-in-check-print-in-yellow/203153023-3?$n_640w$&wid=513&fit=constrain",
         "https://images.asos-media.com/products/reclaimed-vintage-mesh-cami-dress-in-check-print-in-yellow/203153023-4?$n_640w$&wid=513&fit=constrain"
       ],
-      "video": "https://video.asos-media.com/products/reclaimed-vintage-mesh-cami-dress-in-check-print-in-yellow/203153023-catwalk-AVS.m3u8",
       "category": "dress",
       "color": "brown",
       "rating": 4,
@@ -1591,7 +1537,6 @@
     },
 
     {
-      "id": 41,
       "title": "Pull&Bear high waisted faux leather skinny trousers in brown",
       "price": 25.99,
       "discount": -15,
@@ -1603,7 +1548,6 @@
         "https://images.asos-media.com/products/pullbear-high-waisted-faux-leather-skinny-trousers-in-brown/204018703-3?$n_640w$&wid=513&fit=constrain",
         "https://images.asos-media.com/products/pullbear-high-waisted-faux-leather-skinny-trousers-in-brown/204018703-4?$n_640w$&wid=513&fit=constrain"
       ],
-      "video": "https://video.asos-media.com/products/pullbear-high-waisted-faux-leather-skinny-trousers-in-brown/204018703-catwalk-AVS.m3u8",
       "category": "Jean",
       "color": "brown",
       "rating": 3,
@@ -1631,7 +1575,6 @@
     },
 
     {
-      "id": 42,
       "title": "Pull&Bear skinny corduroy trousers in ecru",
       "price": 25.99,
       "discount": -15,
@@ -1643,7 +1586,6 @@
         "https://images.asos-media.com/products/pullbear-skinny-corduroy-trousers-in-ecru/204117135-3?$n_640w$&wid=513&fit=constrain",
         "https://images.asos-media.com/products/pullbear-skinny-corduroy-trousers-in-ecru/204117135-4?$n_640w$&wid=513&fit=constrain"
       ],
-      "video": "https://video.asos-media.com/products/pullbear-skinny-corduroy-trousers-in-ecru/204117135-catwalk-AVS.m3u8",
       "category": "Jean",
       "color": "white",
       "rating": 5,
@@ -1671,7 +1613,6 @@
     },
 
     {
-      "id": 43,
       "title": "ASYOU wrap mesh bandeau corset dress in red",
       "pprice": 35.0,
       "discount": -20,
@@ -1683,7 +1624,6 @@
         "https://images.asos-media.com/products/asyou-wrap-mesh-bandeau-corset-dress-in-red/203736275-3?$n_640w$&wid=513&fit=constrain",
         "https://images.asos-media.com/products/asyou-wrap-mesh-bandeau-corset-dress-in-red/203736275-4?$n_640w$&wid=513&fit=constrain"
       ],
-      "video": "https://video.asos-media.com/products/asyou-wrap-mesh-bandeau-corset-dress-in-red/203736275-catwalk-AVS.m3u8",
       "category": "dress",
       "color": "red",
       "rating": 2,
@@ -1707,7 +1647,6 @@
     },
 
     {
-      "id": 44,
       "title": "ASYOU square sequin flare trouser co-ord in turquoise",
       "price": 29.99,
       "discount": -20,
@@ -1719,7 +1658,6 @@
         "https://images.asos-media.com/products/asyou-square-sequin-flare-trouser-co-ord-in-turquoise/203915171-3?$n_640w$&wid=513&fit=constrain",
         "https://images.asos-media.com/products/asyou-square-sequin-flare-trouser-co-ord-in-turquoise/203915171-4?$n_640w$&wid=513&fit=constrain"
       ],
-      "video": "https://video.asos-media.com/products/asyou-square-sequin-flare-trouser-co-ord-in-turquoise/203915171-catwalk-AVS.m3u8",
       "category": "Sweatshirt",
       "color": "blue",
       "rating": 5,
@@ -1745,7 +1683,6 @@
     },
 
     {
-      "id": 45,
       "title": "ASYOU diamante strap detail flared jumpsuit in silver",
       "price": 37.99,
       "discount": -20,
@@ -1757,7 +1694,6 @@
         "https://images.asos-media.com/products/asyou-diamante-strap-detail-flared-jumpsuit-in-silver/203671983-3?$n_640w$&wid=513&fit=constrain",
         "https://images.asos-media.com/products/asyou-diamante-strap-detail-flared-jumpsuit-in-silver/203671983-4?$n_640w$&wid=513&fit=constrain"
       ],
-      "video": "https://video.asos-media.com/products/asyou-diamante-strap-detail-flared-jumpsuit-in-silver/203671983-catwalk-AVS.m3u8",
       "category": "Sweatshirt",
       "color": "white",
       "rating": 2,
@@ -1786,7 +1722,6 @@
     },
 
     {
-      "id": 46,
       "title": "ASYOU Shimmer cut out halterneck jumpsuit in silver",
       "price": 27.99,
       "discount": -20,
@@ -1798,7 +1733,6 @@
         "https://images.asos-media.com/products/asyou-shimmer-cut-out-halterneck-jumpsuit-in-silver/203784764-3?$n_640w$&wid=513&fit=constrain",
         "https://images.asos-media.com/products/asyou-shimmer-cut-out-halterneck-jumpsuit-in-silver/203784764-4?$n_640w$&wid=513&fit=constrain"
       ],
-      "video": "https://video.asos-media.com/products/asyou-shimmer-cut-out-halterneck-jumpsuit-in-silver/203784764-catwalk-AVS.m3u8",
       "category": "Sweatshirt",
       "color": "grey",
       "rating": 5,
@@ -1826,7 +1760,6 @@
     },
 
     {
-      "id": 47,
       "title": "Nike Unisex bold colour chest graphic long sleeve t-shirt in black",
       "price": 32.95,
       "discount": -20,
@@ -1864,7 +1797,6 @@
     },
 
     {
-      "id": 48,
       "title": "ASOS DESIGN cropped embellished cami in silver",
       "price": 34.0,
       "discount": -15,
@@ -1901,7 +1833,6 @@
     },
 
     {
-      "id": 49,
       "title": "Pull&Bear varisity bomber with collar and embroidery detail in red",
       "price": 59.0,
       "discount": -20,
