@@ -1,12 +1,14 @@
 /* top navbar */
-*
-{
-    box-sizing: border-box;
+
+#header {
+    position: relative;
 }
 
 #container
 {
     margin: auto;
+    position: sticky;
+    top: 0px;
 }
 
 #ltopnavbar

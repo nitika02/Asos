@@ -1,3 +1,14 @@
+import {header} from '../components/header.js';
+import {footer} from '../components/footer.js';
+
+let headerDiv = document.getElementById('header');
+headerDiv.innerHTML = header();
+
+let footerDiv = document.getElementById('footer');
+footerDiv.innerHTML = footer();
+
+
+
 // displaying items
 
 let displaySection = document.getElementById("main-product-section-div");
@@ -6,7 +17,7 @@ let data = [];
 
 let fetchData = async () => {
 
-    let url = `http://localhost:3000/men`;
+    let url = `https://asos-mock-data.onrender.com/men`;
 
     let response = await fetch(url);
     data = await response.json();

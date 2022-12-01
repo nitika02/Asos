@@ -322,7 +322,9 @@ let displayDetails = () => {
 
 }
 
-
-
 window.onload = displayProduct();
 window.onload = displayDetails();
+
+document.getElementById("lmen").addEventListener('click', ()=> {
+    window.location.href = "../menProduct.html";
+})

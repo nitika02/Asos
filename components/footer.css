@@ -7,7 +7,7 @@
 {
     display: flex;
     justify-content: center;
-    border: 2px solid red;
+    border-top: 1px solid lightgray;
 }
 #lfleftside
 {
