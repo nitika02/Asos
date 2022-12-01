@@ -8,39 +8,23 @@ let footerDiv = document.getElementById('footer');
 footerDiv.innerHTML = footer();
 
 
-
-// displaying items
-
 let displaySection = document.getElementById("main-product-section-div");
 let wishlistArr = [] || JSON.parse(localStorage.getItem("wishlist")) ;
-let data = [];
 
-let fetchData = async () => {
-
-    let url = `https://asos-mock-data.onrender.com/men`;
-
-    let response = await fetch(url);
-    data = await response.json();
-    console.log(data);
-    displayData(data);
-}
-
-fetchData();
-
-
-let displayData = (data) => {
+let displayData = (products) => {
     displaySection.innerText = "";
-    data.map((ele) => {
+    products.map((ele) => {
         let productDiv = document.createElement("div");
         productDiv.setAttribute("id", "product-section-card");
-        productDiv.addEventListener("click", () => {
-            localStorage.setItem("selected_product", JSON.stringify(ele));
-            window.location.href = 'indiv.html';
-        })
+        
 
         let img = document.createElement("img");
         img.src = ele.images[0];
         img.setAttribute("id", "product-img")
+        img.addEventListener("click", () => {
+            localStorage.setItem("selected_product", JSON.stringify(ele));
+            window.location.href = "../indiv.html";
+        })
 
         let title = document.createElement("h2");
         title.innerText = ele.title;
@@ -67,7 +51,6 @@ let displayData = (data) => {
             wishlistArr.push(ele);
             localStorage.setItem("wishlist", JSON.stringify(wishlistArr));
             favIcon.setAttribute("class", "fa-solid fa-heart faclass");
-            //  window.location.href = "../wishlist/wishlist.html"
         })
 
         priceDiv.append(price, discountedPrice);
@@ -76,45 +59,109 @@ let displayData = (data) => {
         displaySection.append(productDiv);
     })
 }
-
+let array;
+let array1;
+let showData = async() => {
+    let res = await fetch("https://asos-mock-data.onrender.com/men");
+    let data = await res.json();
+    console.log(data);
+    array = data;
+    array1 = data;
+    setTimeout(() => {
+        displayData(data);
+    }, 200);
+}
+showData();
 
 // filtering data
 // sort by price
 let sortPrice = document.getElementById("sort-price");
 
 
-let changePrice = () => {
+// let changePrice = async () => {
+//     let selectedVal = sortPrice.value;
+//     console.log(selectedVal);
+//     if(selectedVal === "lth") {
+//        let res = await fetch("http://localhost:3000/women?_sort=discounted_price&_order=asc");
+//        let data = await res.json();
+//        console.log(data);
+//        displayData(data);
+//     }
+//     if(selectedVal === "htl") {
+//         let res = await fetch("http://localhost:3000/women?_sort=discounted_price&_order=desc");
+//         let data = await res.json();
+//         console.log(data);
+//         displayData(data);
+//     }
+//     // displayData(women);
+// }
+// sortPrice.addEventListener("change", changePrice);
+
+
+let changePrice = async () => {
     let selectedVal = sortPrice.value;
     console.log(selectedVal);
     if(selectedVal === "lth") {
-        data.sort(function(a,b) {
+        array.sort(function(a,b) {
             return a.discounted_price - b.discounted_price;
         })
+        console.log(array);
+       displayData(array);
     }
     if(selectedVal === "htl") {
-        data.sort(function(a,b) {
+        array.sort(function(a,b) {
             return b.discounted_price - a.discounted_price;
         })
+        displayData(array);
     }
-    displayData(data);
+    // displayData(women);
 }
 sortPrice.addEventListener("change", changePrice);
 
 // filter by brand 
+// let filterBrand = document.getElementById("filter-by-sort");
+
+// let brandFilter = async () => {
+//     let selectedVal = filterBrand.value;
+//     console.log(selectedVal);
+//     let res = await fetch(`http://localhost:3000/women?brand=${selectedVal}`);
+//     let data = await res.json();
+//     console.log(data);
+//     displayData(data);
+// }
+
+// filterBrand.addEventListener("change", brandFilter);
+
+
 let filterBrand = document.getElementById("filter-by-sort");
 
-let brandFilter = () => {
-    let selectedVal = filterBrand.value;
-    console.log(selectedVal);
-    let filteredBrand = data.filter(function(e) {
-        if(selectedVal === "all") {
-            return true;
-        } else {
-            return e.brand === selectedVal;
+let brandFilter = async () => {
+    let selectedVal1 = filterCategory.value;
+    let selectedVal2 = filterColor.value;
+    let selectedVal3 = filterBrand.value;
+    let selectedVal4 = filterDiscount.value;
+    console.log(selectedVal3);
+    array = array1.filter(function(e) {
+        if(selectedVal2 === "" && selectedVal1 === "" && selectedVal4 === "") {
+            return e.brand === selectedVal3;
+        } else if(selectedVal2 === "" && selectedVal4 === "") {
+            return (e.brand === selectedVal3 && e.category === selectedVal1)
+        } else if(selectedVal1 === "" && selectedVal4 === "") {
+            return (e.brand === selectedVal3 && e.color === selectedVal2)
+        } else if (selectedVal2 === "" && selectedVal1 === "") {
+            return (e.brand === selectedVal3 && e.discount === selectedVal4)
+        } else if(selectedVal1 === "") {
+            return (e.color === selectedVal2 && e.brand === selectedVal3 && e.discount === selectedVal4)
+        } else if(selectedVal2 === "") {
+            return (e.category === selectedVal1 && e.brand === selectedVal3 && e.discount === selectedVal4)
+        } else if(selectedVal4 === "") {
+            return (e.category === selectedVal1 && e.color === selectedVal2 && e.brand === selectedVal3)
         }
-    });
-    console.log(filteredBrand);
-    displayData(filteredBrand);
+         else {
+            return (e.category === selectedVal1 && e.color === selectedVal2 && e.brand === selectedVal3 && e.discount === selectedVal4)
+        }
+    })
+    displayData(array);
 }
 
 filterBrand.addEventListener("change", brandFilter);
@@ -122,55 +169,110 @@ filterBrand.addEventListener("change", brandFilter);
 // filter by category
 
 let filterCategory = document.getElementById("category");
+let filterColor = document.getElementById("filter-by-color");
+let filterDiscount = document.getElementById("filter-by-discount");
 
-let categoryFilter = () => {
-    let selectedVal = filterCategory.value;
-    let filteredCategory = data.filter(function(e) {
-        if(selectedVal === "all") {
-            return true;
-        } else {
-            return e.category === selectedVal;
+let categoryFilter = async () => {
+    let selectedVal1 = filterCategory.value;
+    let selectedVal2 = filterColor.value;
+    let selectedVal3 = filterBrand.value;
+    let selectedVal4 = filterDiscount.value;
+    array = array1.filter(function(e) {
+        if(selectedVal2 === "" && selectedVal3 === "" && selectedVal4 === "") {
+            return e.category === selectedVal1;
+        } else if(selectedVal2 === "" && selectedVal3 === "") {
+            return (e.category === selectedVal1 && e.discount === selectedVal4)
+        } else if(selectedVal2 === "" && selectedVal4 === "") {
+            return (e.category === selectedVal1 && e.brand === selectedVal3)
+        } else if (selectedVal3 === "" && selectedVal4 === "") {
+            return (e.category === selectedVal1 && e.color === selectedVal2)
+        } else if(selectedVal3 === "") {
+            return (e.color === selectedVal2 && e.category === selectedVal1 && e.discount === selectedVal4)
+        } else if(selectedVal2 === "") {
+            return (e.category === selectedVal1 && e.brand === selectedVal3 && e.discount === selectedVal4)
+        } else if(selectedVal4 === "") {
+            return (e.category === selectedVal1 && e.color === selectedVal2 && e.brand === selectedVal3)
         }
-    });
-    displayData(filteredCategory);
+        else {
+            return (e.category === selectedVal1 && e.color === selectedVal2 && e.brand === selectedVal3 && e.discount === selectedVal4)
+        }
+    })
+    console.log(selectedVal1);
+    console.log(selectedVal2);
+    console.log(selectedVal3);
+    console.log(selectedVal4);
+    console.log(array);
+    displayData(array);
 }
 
 filterCategory.addEventListener("change", categoryFilter);
 
 // filter by color
 
-let filterColor = document.getElementById("filter-by-color");
 
-let colorFilter = () => {
-    let selectedVal = filterColor.value;
-    let filteredColor = data.filter(function(e) {
-        if(selectedVal === "all" ){
-            return true;
-        } else {
-            return e.color === selectedVal;
+
+let colorFilter = async () => {
+    let selectedVal1 = filterCategory.value;
+    let selectedVal2 = filterColor.value;
+    let selectedVal3 = filterBrand.value;
+    let selectedVal4 = filterDiscount.value;
+    array = array1.filter(function(e) {
+        if(selectedVal1 === "" && selectedVal3 === "" && selectedVal4 === "") {
+            return e.color === selectedVal2;
+        } else if(selectedVal1 === "" && selectedVal4 === "") {
+            return (e.color === selectedVal2 && e.brand === selectedVal3)
+        } else if(selectedVal1 === "" && selectedVal3 === "") {
+            return (e.color === selectedVal2 && e.discount === selectedVal4)
+        } else if (selectedVal3 === "" && selectedVal4 === "") {
+            return (e.color === selectedVal2 && e.category === selectedVal1)
+        } else if(selectedVal1 === "") {
+            return (e.color === selectedVal2 && e.brand === selectedVal3 && e.discount === selectedVal4)
+        } else if(selectedVal3 === "") {
+            return (e.category === selectedVal1 && e.color === selectedVal2 && e.discount === selectedVal4)
+        } else if(selectedVal4 === "") {
+            return (e.category === selectedVal1 && e.color === selectedVal2 && e.brand === selectedVal3)
         }
-    });
-    displayData(filteredColor);
+        else {
+            return (e.category === selectedVal1 && e.color === selectedVal2 && e.brand === selectedVal3 && e.discount === selectedVal4)
+        }
+    })
+    displayData(array);
 }
 
 filterColor.addEventListener("change", colorFilter);
 
 // filter by discount
 
-let filterDiscount = document.getElementById("filter-by-discount");
 
-let discountFilter = () => {
-    let selectedVal = filterDiscount.value;
-    console.log(selectedVal);
-    let filteredDiscount = data.filter(function(e) {
-        if(selectedVal === "all") {
-            return true;
-        } else {
-            return Number(e.discount) == selectedVal;
+let discountFilter = async () => {
+    let selectedVal1 = filterCategory.value;
+    let selectedVal2 = filterColor.value;
+    let selectedVal3 = filterBrand.value;
+    let selectedVal4 = parseInt(filterDiscount.value);
+    array = array1.filter(function(e) {
+        if(selectedVal2 === "" && selectedVal3 === "" && selectedVal1 === "") {
+            return e.discount === selectedVal4;
+        } else if(selectedVal2 === "" && selectedVal3 === "") {
+            return (e.discount === selectedVal4 && e.category === selectedVal1)
+        } else if(selectedVal2 === "" && selectedVal1 === "") {
+            return (e.discount === selectedVal4 && e.brand === selectedVal3)
+        } else if (selectedVal3 === "" && selectedVal1 === "") {
+            return (e.discount === selectedVal4 && e.color === selectedVal2)
+        } else if(selectedVal1 === "") {
+            return (e.color === selectedVal2 && e.brand === selectedVal3 && e.discount === selectedVal4)
+        } else if(selectedVal2 === "") {
+            return (e.category === selectedVal1 && e.brand === selectedVal3 && e.discount === selectedVal4)
+        } else if(selectedVal3 === "") {
+            return (e.category === selectedVal1 && e.color === selectedVal2 && e.discount === selectedVal4)
         }
-    });
-    console.log(filteredDiscount);
-    displayData(filteredDiscount);
+        else {
+            return (e.category === selectedVal1 && e.color === selectedVal2 && e.brand === selectedVal3 && e.discount === selectedVal4)
+        }
+        
+    })
+    console.log(selectedVal4);
+    console.log(typeof selectedVal4)
+    displayData(array);
 }
 
 filterDiscount.addEventListener("change", discountFilter);

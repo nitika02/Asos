@@ -1,3 +1,13 @@
+import {header} from '../components/header.js';
+import {footer} from '../components/footer.js';
+
+let headerDiv = document.getElementById('header');
+headerDiv.innerHTML = header();
+
+let footerDiv = document.getElementById('footer');
+footerDiv.innerHTML = footer();
+
+
 let displaySection = document.getElementById("main-product-section-div");
 let wishlistArr = [] || JSON.parse(localStorage.getItem("wishlist")) ;
 
@@ -13,7 +23,7 @@ let displayData = (product) => {
         img.setAttribute("id", "product-img")
         img.addEventListener("click", () => {
             localStorage.setItem("selected_product", JSON.stringify(ele));
-            window.location.href = "../individual page/indiv.html"
+            window.location.href = "../indiv.html";
         })
 
         let title = document.createElement("h2");
@@ -41,7 +51,6 @@ let displayData = (product) => {
             wishlistArr.push(ele);
             localStorage.setItem("wishlist", JSON.stringify(wishlistArr));
             favIcon.setAttribute("class", "fa-solid fa-heart faclass");
-            //  window.location.href = "../wishlist/wishlist.html"
         })
 
         priceDiv.append(price, discountedPrice);
@@ -53,7 +62,7 @@ let displayData = (product) => {
 let array;
 let array1;
 let showData = async() => {
-    let res = await fetch("http://localhost:3000/women");
+    let res = await fetch("https://asos-mock-data.onrender.com/women");
     let data = await res.json();
     console.log(data);
     array = data;
@@ -267,9 +276,4 @@ let discountFilter = async () => {
 }
 
 filterDiscount.addEventListener("change", discountFilter);
-
-
-
-
-
 
