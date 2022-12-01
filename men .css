@@ -1,7 +1,7 @@
 /* single image */
-#lwasosdesign
+#lmasosdesign
 {
-    background-image: url("https://content.asos-media.com/-/media/homepages/ww/2022/nov/29/ww_global_raw_edge_desktophero_1258x600.jpg");
+    background-image: url("https://content.asos-media.com/-/media/homepages/mw/2022/nov/29/mw_global_party_dress_up_desktophero_1258x600.jpg");
     width: 95%;
     height: 95vh;
     background-size: cover;
@@ -10,7 +10,7 @@
     justify-content: center;
     text-align: center;
 }
-#lwthread
+#lmparty
 {
     background-color: white;
     font-size: 70px;
@@ -19,14 +19,14 @@
     padding: 12px;
     margin-top: 360px;
 }
-#lwEdgy,#lwEdgy-2
+#lmszn-1,#lmszn-2
 {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
 }
-#lwsad
+#lmsad
 {
     background-color: white;
     font-size: 17px;
@@ -36,7 +36,7 @@
     padding: 12px;
 }
 /* grid part */
-#lwgridpart1
+#lmgridpart1
 {
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -44,35 +44,35 @@
     margin:33px;
     
 }
-#lwgridpart1 a
+#lmgridpart1 a
 {
     text-decoration: none;
 }
-#lwgridpart1 h5
+#lmgridpart1 h5
 {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     font-size: 16px;
     font-weight: 700;
 }
-#lwgridpart1 p
+#lmgridpart1 p
 {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     font-size: 16px;
 }  
-#lwgridpart1 div
+#lmgridpart1 div
 {
     width: 100%;
     text-align: center;
 }
-#lwgridpart1 img
+#lmgridpart1 img
 {
     width: 100%;
 }
 /* get gift-part */
 
-#lwgetgift
+#lmgetgift
 {
     background-image: url("https://content.asos-media.com/-/media/hubs/gifting/2022/01_jpeg/gifting/dt_live-text-banner_2880x600_compress.png");
     background-size: cover;
@@ -80,7 +80,7 @@
     height: 27vh;
     text-align: center;
 }
-#lwgetgift p
+#lmgetgift p
 {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
@@ -88,8 +88,8 @@
     font-weight: 900;
     padding:30px 0px 0px 0px;
     /* line-height: 30px; */
-}
-#lwdiscover
+} 
+#lmdiscover
 {
     background-color: black;
     color: white;
@@ -97,11 +97,9 @@
     font-weight: 900;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 2px;
-    
-
-}
+}  
 /* grid part-2 */
-#lwgridpart2
+#lmgridpart2
 {
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -109,11 +107,11 @@
     margin:43px 163px;
     
 }
-#lwgridpart2 a
+#lmgridpart2 a
 {
     text-decoration: none;
 }
-#lwgridpart2 h6
+#lmgridpart2 h6
 {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
@@ -121,34 +119,34 @@
     font-weight: 700;
     margin-top: 20px
 }
-#lwgridpart2 p
+#lmgridpart2 p
 {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     font-size: 16px;
     margin-top: -40px;
 } 
-#lwgridpart2 button
+#lmgridpart2 button
 {
     background-color: white;
     padding: 15px 40px;
     font-weight: bolder;
 } 
-#lwgridpart2 div
+#lmgridpart2 div
 {
     width: 100%;
     text-align: center;
 }
-#lwgridpart2 img
+#lmgridpart2 img
 {
     width: 100%;
 }
-#lwtrending
+#lmtrending 
 {
     width: 100%;
 
 }
-#lwbrands
+#lmbrands
 {
     text-align: center;
     font-size: 24px;
@@ -156,10 +154,10 @@
     font-weight: 700;
     line-height: 30px;
     font-family: Arial, Helvetica, sans-serif;
-}
+} 
 
 /* grid-part3 */
-#lwgridpart3
+#lmgridpart3
 {
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -167,12 +165,12 @@
     margin:33px;
     
 }
-#lwgridpart3 div
+#lmgridpart3 div
 {
     width: 100%;
 
 }
-#lwgridpart3 img
+#lmgridpart3 img
 {
     width: 100%;
 }
