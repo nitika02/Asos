@@ -7,7 +7,6 @@
 #container
 {
     margin: auto;
-    
 }
 #ltopnavbar
 {
@@ -201,8 +200,6 @@
     background-color: #f799ba;
     align-items: center;
     height:65px;
-    width: 103%;
-    margin-left:-9px;
 
 }
 #lpinknavbar button
