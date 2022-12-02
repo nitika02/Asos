@@ -5,10 +5,8 @@ import {footer} from '../components/footer.js';
 let headerDiv = document.getElementById('header');
 headerDiv.innerHTML = header();
 
-let footerDiv = document.getElementById('lfooter');
+let footerDiv = document.getElementById('footer');
 footerDiv.innerHTML = footer();
-
-console.log(headerDiv);
 
 
 let product = [

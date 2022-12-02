@@ -1,8 +1,8 @@
-import {header} from "./components/header.js";
-import {footer} from "./components/footer.js";
+import {header} from '../components/header.js';
+import {footer} from '../components/footer.js';
 
-document.querySelector(".header").innerHTML=header();
-document.querySelector(".lfooter").innerHTML=footer();
+let headerDiv = document.getElementById('header');
+headerDiv.innerHTML = header();
 
-
-
+let footerDiv = document.getElementById('footer');
+footerDiv.innerHTML = footer();
