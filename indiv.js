@@ -1,3 +1,12 @@
+import {header} from '../components/header.js';
+import {footer} from '../components/footer.js';
+
+let headerDiv = document.getElementById('header');
+headerDiv.innerHTML = header();
+
+let footerDiv = document.getElementById('footer');
+footerDiv.innerHTML = footer();
+
 let product = JSON.parse(localStorage.getItem('selected_product')) || {};
 
 let addToCart = () => {
@@ -313,6 +322,9 @@ let displayDetails = () => {
 
 }
 
-
 window.onload = displayProduct();
 window.onload = displayDetails();
+
+document.getElementById("lmen").addEventListener('click', ()=> {
+    window.location.href = "../menProduct.html";
+})

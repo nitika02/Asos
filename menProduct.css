@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap');
 
-body {
+
+html , body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -140,11 +146,7 @@ body {
 }
 
 #main-product-section-div img {
-<<<<<<< HEAD:mens_and_indiv_page/styles/menProduct.css
-    width: 100%;
-=======
    width: 100%;
->>>>>>> 47df927a80b1051bf46b8940762dcff8ee7453ea:women product page/womenProduct.css
 }
 
 #main-product-section-div h2 {
@@ -182,7 +184,7 @@ body {
     outline: none;
     padding: 10px 8px 8px;
     position: absolute;
-    top: 350px;
+    bottom: 110px;
     right: 10px;
     cursor: pointer;
     
@@ -194,5 +196,73 @@ body {
     background-color: #ffffffcc;
     padding: 2px 4px;
     position: absolute;
-    bottom: 460px
+    top: 0px;
+    left: 0px;
 }
+
+
+/* Media Queries */
+
+@media all and (max-width: 1100px) and (min-width:501px) {
+    /* Medium Screen Styles  */
+
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    #women-product-title-bar {
+        margin: 0px 10px;
+    }
+
+    #description-section {
+        margin: 0px 10px;
+    }
+
+    #button-section-div {
+        margin: 0px;
+    }
+
+    #filter-section {
+        margin: 0px;
+    }
+
+    #main-product-section-div {
+        margin: 10px;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+
+@media all and (max-width: 500px) and (min-width:0px) {
+    /* Small Screen Styles  */
+
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #women-product-title-bar {
+        margin: 0px 10px;
+    }
+
+    #description-section {
+        display: none;
+    }
+
+    #button-section-div {
+        margin: 0px;
+    }
+
+    #filter-section {
+        margin: 0px;
+    }
+
+    #main-product-section-div {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+}
+
