@@ -3,7 +3,7 @@
 
 #container
 {
-    width: 102%;
+    width: 100%;
     /* margin: auto; */
     /* position: fixed;
     top:30px; */
@@ -21,6 +21,8 @@
     border: 1px solid #eeeeee;
     /* position: fixed;
     margin-right: -10px; */
+    font-size: small;
+    letter-spacing: 1.5px;
     
 }
 #ltopnavbar a
@@ -31,7 +33,7 @@
 
 #ltopnavbar >div
 {
-    width: 10%;
+    /* width: 10%; */
     border: 1px solid #eeeeee;
     padding-top: 10px;
 }

@@ -1,0 +1,116 @@
+#truckImg {
+    height: 40px;
+}
+
+body {
+    background-color: lightgray;
+}
+
+#myBag {
+    width: 34%;
+    margin-left: 330px;
+    height: 100px;
+    border: 1px solid black;
+    background-color: aliceblue;
+    margin-top: 10px;
+}
+
+/* #myBag + #items + #subTotal + #delivery + #total{
+background-color: white
+} */
+#checkout {
+    width: 100px;
+    height: 100px;
+}
+
+
+#myBag {
+    padding-left: 15px;
+    /* background-color: grey; */
+    width: 512px;
+    /* background-color: white; */
+
+}
+
+.min {
+    padding-left: 250px;
+    margin-top: -50px;
+    /* background-color: white; */
+}
+
+#items {
+    margin-left:330px;
+    width: 512px;
+    /* height: 220px; */
+    /* background-color: white; */
+    margin-top: 10px;
+
+}
+.textDiv {
+    padding: 20px;
+
+}
+
+.textDiv button {
+    margin: 10px 0px;
+}
+
+.textDiv select {
+    margin: 0px 10px;
+}
+#items > div {
+    padding: 20px;
+    height: 200px;
+    display: flex;
+    margin: 10px 0px;
+    background-color: white;
+}
+
+#items > div > img {
+    height: 100%;
+}
+
+#checkout{
+    width:370px;
+    height: 320px;
+    background-color: white;
+    margin-left: 520px;
+    margin-top:-66px;
+    
+}
+
+#checkout h3{
+ padding-top:15px;
+ padding-left: 45px;
+}
+
+#checkout h4{
+    padding-top:15px;
+    padding-left: 45px;
+}
+
+.checkClass{
+    width: 150px;
+    height: 40px;
+    border: 2px solid black;
+    margin-top:20px;
+    margin-left: 100px;
+    background-color: rgb(7, 95, 38);
+}
+
+#visa{
+    width:250px;
+    margin-left: 44px;
+}
+
+#checkout p{
+    margin-left:44px;
+}
+
+#delivery{
+    background-color: white;
+    width: 515px;
+    margin-top: 15px;
+    margin-left: 330px;
+    padding-left: 20px;
+}

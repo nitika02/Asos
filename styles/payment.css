@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    /* background-color: #dddddd; */
+}
+
+div {
+
+    /* background-color: aliceblue; */
+    margin: 10px;
+}
+
+#cName {
+    margin-top: 45px;
+    width: 34%;
+    margin-left: 330px;
+    height: 100px;
+
+}
+
+#cName>h2 {
+    padding: 18px;
+}
+
+
+
+.check {
+    margin-left: 500%;
+    margin-top: -28px;
+}
+
+#logo {
+    width: 5%;
+    height: 5%;
+    background: transparent;
+    margin-top: 35px;
+    margin-left: 22%;
+}
+
+.form-control {
+    margin-top: 58px;
+    margin-left: 23px;
+    position: absolute;
+    width: 250px;
+    height: 30px;
+
+}
+
+.dc {
+    margin-top: -28px;
+}
+
+#promoCon {
+    width: 34%;
+    height: 100px;
+    margin-left: 330px;
+
+}
+
+.promoCode {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.inputCode {
+    margin-left: 25px;
+    width: 200px;
+    height: 28px;
+}
+
+.applyCode {
+    margin-left: 75px;
+    width: 120px;
+    height: 28px;
+}
+
+.emailAdd {
+    width: 34%;
+    margin-left: 330px;
+    height: 70px;
+}
+
+.inputMail {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#delAdd {
+    width: 34%;
+    height: 750px;
+    margin-left: 330px;
+}
+
+.delAdd {
+    padding-top: 15px;
+    padding-left: 10px;
+
+}
+
+.addAddress {
+    padding-left: 12px;
+
+}
+
+.fill {
+    padding-left: 10px;
+
+}
+
+.fullName {
+    margin-left: 10px;
+    width: 260px;
+    height: 40px;
+
+}
+
+.thisAdd {
+    margin-left: 11px;
+    padding-top: 4px;
+    padding-left: 18px;
+    border: 2px solid grey;
+    width: 225px;
+    height: 35px;
+    background-color: grey;
+}
+
+.thisAdd:hover {
+    color: rgb(94, 86, 86);
+    cursor: pointer;
+}
+
+#payType {
+    margin-left: 330px;
+    width: 34%;
+    height: 600px;
+}
+
+.pay {
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.addCard {
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.CARD {
+    margin-left: 15px;
+}
+
+.cardNum {
+    margin-left: 15px;
+    width: 250px;
+    height: 35px;
+}
+
+.expiry {
+    margin-left: 15px;
+}
+
+#expiryMonth {
+    margin-left: 15px;
+    padding-left: 10px;
+    height: 35px;
+    width: 130px;
+}
+
+#expiryYear {
+    margin-left: 15px;
+    padding-left: 25px;
+    height: 35px;
+    width: 100px;
+}
+
+.placeOrder {
+    padding-left: 25px;
+    padding-top: 4px;
+    background-color: grey;
+    margin-left: 15px;
+    border: 2px solid grey;
+    width: 200px;
+    height: 35px;
+    margin-top: 25px;
+}
+
+.placeOrder:hover {
+    color: rgb(220, 214, 214);
+    cursor: pointer;
+}
+
+#side {
+    width: 340px;
+    height: 380px;
+    background-color: rgb(192, 181, 181);
+    margin-left: 860px;
+    margin-top: -1913px;
+    position: fixed;
+}
+
+.edit {
+    padding-left: 78%;
+    padding-top: 19px;
+}
+
+.item {
+    width: 280px;
+    height: 200px;
+    margin-top: 45px;
+}
+
+.ttp {
+    padding-left: 18px;
+    size: 16px;
+}
+
+.accept {
+    width: 34%;
+    height: 200px;
+    margin-left: 330px;
+    padding-top: -4px;
+}
