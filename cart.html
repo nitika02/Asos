@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+        #truckImg {
+            height: 40px;
+        }
+
+        body {
+            background-color: #dddddd;
+        }
+
+        #myBag {
+            width: 34%;
+            margin-left: 330px;
+            height: 100px;
+            border: 1px solid black;
+            background-color: aliceblue;
+            margin-top: 10px;
+        }
+
+        /* #myBag + #items + #subTotal + #delivery + #total{
+    background-color: white
+   } */
+        #checkout {
+            width: 100px;
+            height: 100px;
+        }
+
+        .lfooter {
+            text-decoration: none;
+        }
+
+        /* top part start */
+        #lftop {
+            display: flex;
+            justify-content: center;
+        }
+
+        #lfleftside {
+            display: flex;
+            justify-content: right;
+            border-right: 1px solid #5a5a5a;
+            margin: 10px 0px;
+            align-items: center;
+        }
+
+        .social {
+            width: 30px;
+            padding: 0px 25px;
+        }
+
+        #lfrightside {
+            display: flex;
+            justify-content: right;
+            align-items: center;
+        }
+
+        .cards {
+            width: 30px;
+            padding: 0px 15px;
+            height: 20px;
+        }
+
+        /* middle part start */
+
+        #lfmiddle {
+            display: flex;
+            justify-content: space-between;
+            background-color: #eeeeee;
+            padding: 20px 50px
+        }
+
+        #lfmiddle h5 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #lfmiddle a {
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 30px;
+            color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #lfshopping>div {
+            display: flex;
+            align-items: center;
+        }
+
+        /* bottom part */
+        #lfbottom {
+            display: flex;
+            justify-content: space-between;
+            background-color: #dddddd;
+            align-items: center;
+            padding: 0px 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            color: grey;
+            padding: 13px 25px;
+        }
+
+        .flagindia {
+            width: 13px;
+        }
+
+        #lfbottom a {
+            text-decoration: none;
+            color: grey;
+
+        }
+
+        #flag-img {
+            align-items: center;
+        }
+
+        #acc {
+            border-left: 1px solid #5a5a5a;
+            border-right: 1px solid #5a5a5a;
+
+        }
+
+        #lfright a {
+            padding: 0px 10px;
+        }
+
+        /* /top nav bar / */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        #container {
+            margin: auto;
+        }
+
+        #ltopnavbar {
+            display: flex;
+            justify-content: end;
+            background-color: #f8f8f8;
+            align-items: center;
+            margin-left: -9px;
+            margin-top: -10px;
+            border: 1px solid #eeeeee;
+        }
+
+        #ltopnavbar a {
+            text-decoration: none;
+            color: gray;
+        }
+
+        #ltopnavbar>div {
+            width: 10%;
+            border: 1px solid #eeeeee;
+            padding-top: 10px;
+        }
+
+        #ltopnavbar>div:nth-child(3) {
+            width: 3%;
+            padding-right: 10px;
+            margin-right: 50px;
+        }
+
+        #ltopnavbar a {
+            width: 10%;
+            padding: 0px 19px;
+        }
+
+
+        #ltopnavbar>#country img {
+            width: 60%;
+        }
+
+        /* middle navbar */
+
+        #lmiddlenavbar {
+            display: flex;
+            background-color: #2d2d2d;
+            align-items: center;
+            height: 60px;
+
+        }
+
+        #lmiddlenavbar a {
+            text-decoration: none;
+
+            font-size: 14px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #logo {
+            filter: invert();
+        }
+
+        #lleftside {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+
+        }
+
+        #lleftside div {
+            border-right: 2px solid green;
+        }
+
+        #lleftside a {
+            padding: 0px 20px;
+            font-size: medium;
+            font-weight: 600;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #lcenterside {
+            display: flex;
+            width: 80%;
+        }
+
+        #lcenterside #linput {
+            width: 100%;
+        }
+
+        #lcenterside input {
+            width: 100%;
+            padding: 10px 25px;
+            border-top-left-radius: 40px;
+            border-bottom-left-radius: 40px;
+            outline: none;
+            border: none;
+            font-size: small;
+            margin-left: 25px;
+        }
+
+        #lcenterside #lsearch {
+            width: 20%;
+        }
+
+        #lcenterside button {
+            width: 100%;
+            padding: 10px 25px;
+            background: white;
+            border-top-right-radius: 40px;
+            border-bottom-right-radius: 40px;
+            font-size: small;
+            border: none;
+
+        }
+
+        #lrightside {
+            display: flex;
+            justify-content: left;
+            margin-left: 20px;
+        }
+
+        #lrightside a {
+            color: white;
+            font-size: 20px;
+
+        }
+
+        #lrightside div {
+            margin: 15px
+        }
+
+        #cart {
+            filter: invert(1);
+            margin-right: 70px;
+            font-size: 20px;
+        }
+
+
+
+        /* bottom navbar */
+        #lbottomnavbar {
+            display: flex;
+            justify-content: left;
+            background-color: #525050;
+            height: 50px;
+            /* margin: auto; */
+
+
+        }
+
+        #lbottomnavbar div {
+            padding: 0px 10px;
+            /* border:1px solid red; */
+            font-size: small;
+        }
+
+        #lbottomnavbar div:nth-child(1) {
+            transform: skew(-15deg);
+            background-color: #d01345;
+            margin-left: 30px;
+        }
+
+        #lbottomnavbar div:nth-child(1) a {
+            transform: skew(15deg);
+        }
+
+        #lbottomnavbar a {
+            color: white;
+            text-decoration: none;
+            /* padding:7px; */
+            font-size: 14px;
+            line-height: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        #lpinknavbar {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            font-size: larger;
+            font-weight: 700;
+            background-color: #f799ba;
+            align-items: center;
+            height: 65px;
+
+        }
+
+        #lpinknavbar button {
+            background-color: #f799ba;
+            padding: 10px 20px;
+            font-size: larger;
+            font-weight: 500;
+        }
+
+        .myBag {
+            padding-left: 15px;
+            /* background-color: grey; */
+            width: 220px;
+            /* background-color: white; */
+
+        }
+
+        .min {
+            padding-left: 250px;
+            margin-top: -50px;
+            /* background-color: white; */
+        }
+
+        #items {
+            margin-left:330px;
+            width: 512px;
+            height: 220px;
+            background-color: white;
+            margin-top: 10px;
+
+        }
+
+        #checkout{
+            width:370px;
+            height: 320px;
+            background-color: white;
+            margin-left: 520px;
+            margin-top:-66px;
+            
+        }
+
+        #checkout h3{
+         padding-top:15px;
+         padding-left: 45px;
+        }
+
+        #checkout h4{
+            padding-top:15px;
+            padding-left: 45px;
+        }
+
+        .checkClass{
+            width: 150px;
+            height: 40px;
+            border: 2px solid black;
+            margin-top:20px;
+            margin-left: 100px;
+            background-color: rgb(7, 95, 38);
+        }
+
+        #visa{
+            width:250px;
+            margin-left: 44px;
+        }
+
+        #checkout p{
+            margin-left:44px;
+        }
+
+        #delivery{
+            background-color: white;
+            width: 515px;
+            margin-top: 15px;
+            margin-left: 330px;
+            padding-left: 20px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <Section class="header">
+        <div id="ltopnavbar">
+            <div id="lmarketplace">
+                <a href="#">Marketplace</a>
+
+            </div>
+            <div id="lhelp"> <a href="#">Help & FAQs</a></div>
+            <div id="country">
+                <a href="#"><img src="https://assets.asosservices.com/storesa/images/flags/in.png" alt="flag"></img></a>
+            </div>
+        </div>
+
+        <div id="container">
+
+            <div id="lmiddlenavbar">
+
+                <div id="lleftside">
+                    <div id="llogo">
+
+                        <a href="#"><img
+                                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHN5bWJvbCBpZD0iYSIgdmlld0JveD0iMCAwIDIzIDI0Ij48cGF0aCBkPSJNNS4wNzYgMTIuMDE3YzAtMy44MTQgMi4zMjgtNy41MDkgNi41MjEtNy41MDkgNC4xOTQgMCA2LjUyMiAzLjY5NSA2LjUyMiA3LjUxIDAgMTAuMDk4LTEzLjA0MyAxMC4wOTUtMTMuMDQzIDBabTE3LjkxOC03LjUyMVYuNjAzaC00Ljg3NXYxLjUxNEMxNi4xMjcuNjgzIDEzLjk2Ny4wMTMgMTEuNjMgMGgtLjAzM0wxMS41NjQgMEM4Ljc0Mi4wMTYgNi4xNzguOTg4IDMuODU3IDMuMTEgMi41OCA0LjI5MSAxLjYwNyA1LjYzNS45NjQgNy4xMTQuMzI3IDguNTg4IDAgMTAuMjM5IDAgMTIuMDE1YzAgMS42NTguMjg4IDMuMjExLjg1MyA0LjYxNi41NjYgMS40MDUgMS40MjYgMi43MDUgMi41NiAzLjg2MyAxLjEzNCAxLjE2IDIuNDAxIDIuMDQyIDMuNzY2IDIuNjIgMS4zMzYuNTY1IDIuODA3Ljg1OCA0LjM2OS44N2guMDVsLjA0OS4wMDFjMS41NjItLjAxMyAzLjAzMy0uMzA2IDQuMzY5LS44NzEuNzMtLjMxIDEuNDMzLS43MDcgMi4xMDMtMS4xODd2MS40NTVoNC44NzVWNC40OTZaIi8+PC9zeW1ib2w+PHN5bWJvbCBpZD0iYiIgdmlld0JveD0iMCAwIDU3IDI0Ij48cGF0aCBkPSJNNTAuOTY0IDE5LjMxNmMtMS4wMTggMS4wMDktMy40OTUgMS40MDUtNS4yODIuMjUxLTEuMDYtLjY4NC0xLjgwMS0xLjkxMy0xLjc5OC0zLjE5OGwtNC41NTktLjAwMmMuNDk4LTEuMzM1Ljc1LTIuNzk4Ljc1LTQuMzUyIDAtLjM0OC0uMDEyLS42OS0uMDM3LTEuMDI4LjMuMzc2LjY1MS43MjEgMS4wNTggMS4wMjIgMi40OTUgMS44MzMgNS42NSAxLjcyNiA4LjQwNSAyLjg2Ny42NDQuMjY3IDEuMjgzLjYxOSAxLjcwNSAxLjE4Ni44NiAxLjE1OS44MDYgMi4yMTUtLjI0MiAzLjI1NFptLTI5LjAwNy03LjI5OWMwLTMuODE0IDIuMzI4LTcuNTEgNi41MjEtNy41MVMzNSA4LjIwNCAzNSAxMi4wMThjMCAxMC4xLTEzLjA0MiAxMC4wOTYtMTMuMDQyIDBabS02LjEzNi0uMDAzYy0yLjQ5NS0xLjgzMy01LjY1LTEuNzI1LTguNDA1LTIuODY2LS42NDUtLjI2Ny0xLjI4NC0uNjItMS43MDUtMS4xODctLjcwMy0uOTQ2LS41OTMtMi40MjcuMjQxLTMuMjUzIDEuMDE1LTEuMDA2IDMuNDkyLTEuNDA4IDUuMjgyLS4yNTIgMS4wNi42ODUgMS44MDIgMS45MTQgMS43OTggMy4xOThsNC41OTYuMDAyYy0uNDk0IDEuMzMzLS43NDcgMi43OTgtLjc0NyA0LjM1OSAwIC4zNjMuMDE1LjcyMi4wNDIgMS4wNzVhNS42OTIgNS42OTIgMCAwIDAtMS4xMDItMS4wNzZaTS4xOTQgOS41NDhhNS43MzMgNS43MzMgMCAwIDAgMS45IDIuNDY2YzIuNDk1IDEuODMzIDUuNjUgMS43MjUgOC40MDUgMi44NjcuNjQ1LjI2NyAxLjI4NC42MTggMS43MDUgMS4xODYuNzAzLjk0Ni41OTMgMi40MjctLjI0MiAzLjI1My0xLjAxNyAxLjAxLTMuNDk1IDEuNDA2LTUuMjgxLjI1Mi0xLjA2LS42ODUtMS44MDItMS45MTMtMS43OTgtMy4xOThsLTQuNjg5LS4wMDJtMCAyLjI3OGMuNDk0IDEuMzkxIDEuMzc1IDIuNjQgMi41MzIgMy41MjYgMi4xNDkgMS42NDcgNS4wMDggMS45OCA3LjY4MyAxLjc2NSAxLjY0OC0uMTMyIDMuMzE3LS40NjQgNC43NDUtMS4zMTcgMS43ODUtMS4wNjcgMi44MzYtMy4wMiAzLjAxNi01LjA0M2ExMi4xMiAxMi4xMiAwIDAgMCAyLjEyNCAyLjkxM2MxLjEzNCAxLjE2IDIuNDAyIDIuMDQyIDMuNzY2IDIuNjIgMS4zMzYuNTY1IDIuODA3Ljg1OCA0LjM2OS44N3YuMDAxaC4wOTljMS41NjItLjAxMyAzLjAzMy0uMzA2IDQuMzY4LS44NzEgMS4zNjUtLjU3OCAyLjYzMy0xLjQ2IDMuNzY2LTIuNjJhMTIuMDc4IDEyLjA3OCAwIDAgMCAyLjIwNy0zLjA3NWMuMzM3IDEuODcyIDEuMzcgMy42MTIgMi44NTggNC43NTMgMi4xNSAxLjY0NyA1LjAwOCAxLjk4IDcuNjgzIDEuNzY1IDIuMDc4LS4xNjggMy4yNi0uNDMgNC43NDYtMS4zMTggMy42Mi0yLjE2MyA0LjIyLTcuOTc1LjY2Ni0xMC42MS0yLjQ5NS0xLjgzMi01LjY1LTEuNzI1LTguNDA1LTIuODY2LS42NDUtLjI2Ny0xLjI4NC0uNjE5LTEuNzA1LTEuMTg2LS43MDItLjk0Ny0uNTkyLTIuNDI3LjI0Mi0zLjI1NCAxLjAxNS0xLjAwNiAzLjQ5Mi0xLjQwOCA1LjI4Mi0uMjUyIDEuMDYuNjg1IDEuODAxIDEuOTE0IDEuNzk4IDMuMTk4bDUuMTMuMDAzYy0uMDg1LTIuMjU4LTEuMjA4LTQuNDUyLTIuOTczLTUuODA1QzUyLjA0LjIgNDkuMTgyLS4xMzMgNDYuNTA4LjA4MiA0NC44Ni4yMTUgNDMuMTkuNTQ3IDQxLjc2MiAxLjRjLTEuNzc4IDEuMDYyLTIuODE1IDIuOTgtMy4wMSA0Ljk3LS42MjUtMS4xODgtMS40NzMtMi4yOC0yLjUzMy0zLjI2QzMzLjg5OC45ODcgMzEuMzM0LjAxNSAyOC41MSAwaC0uMDY2Yy0yLjgyMi4wMTYtNS4zODYuOTg4LTcuNzA3IDMuMTEtMS4xNDYgMS4wNi0yLjA0NCAyLjI0OS0yLjY4MSAzLjU1LS4zMjctMS44OTMtMS4zNjUtMy42NTYtMi44NjgtNC44MDhDMTMuMDQuMjA1IDEwLjE4MS0uMTI4IDcuNTA2LjA4NyA1Ljg1OC4yMiA0LjE5LjU1IDIuNzYgMS40MDUgMS41NTIgMi4xMjcuNjg2IDMuMjQ0LjE5NCA0LjUxIi8+PC9zeW1ib2w+PHVzZSBocmVmPSIjYSIgd2lkdGg9IjIzIi8+PHVzZSBocmVmPSIjYiIgeD0iMjIuOCIgd2lkdGg9IjU3Ii8+PC9zdmc+"
+                                alt="" id="logo"></a>
+                    </div>
+                    <div id="lwomen">
+                        <a href="#">WOMEN</a>
+                    </div>
+                    <div id="lmen">
+                        <a href="#">MEN</a>
+                    </div>
+                </div>
+                <div id="lcenterside">
+                    <div id="linput">
+                        <input type="search" name="" placeholder="Search for items and brands" id="search">
+                    </div>
+                    <div id="lsearchbtn">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+
+                    </div>
+
+                </div>
+                <div id="lrightside">
+                    <div id="laccount"><a href="#"><i class="fa-regular fa-user"></i></a></div>
+                    <div id="lwishlist"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                    <div id="lcart"><i class="fa-solid fa-cart-shopping" id="cart"></i></a></div>
+                </div>
+
+            </div>
+            <div id="lbottomnavbar">
+                <div id="lblackfridday"><a href="#">Cyber Saturday</a></div>
+                <div id="lnew"><a href="#">New in</a></div>
+                <div id="lclothing"><a href="#">Clothing</a></div>
+                <div id="lshoes"><a href="#">Shoes</a></div>
+                <div id="laccessories"><a href="#">Accessories</a></div>
+                <div id="lgifting"><a href="#">Gifting</a></div>
+                <div id="lbrands"><a href="#">Brands</a></div>
+                <div id="lsportswear"><a href="#">Sportswear</a></div>
+                <div id="lwinter"><a href="#">Winter</a></div>
+                <div id="ltopman"><a href="#">Topman</a></div>
+                <div id="lface"><a href="#">Face + Body</a></div>
+                <div id="loutlet"><a href="#">Outlet</a></div>
+                <div id="lmarketplace"><a href="#">Marketplace
+
+                    </a></div>
+            </div>
+        </div>
+        <div id="lpinknavbar">
+            <div id="lwomen">
+                <a href="#"><button>WOMEN</button></a>
+            </div>
+            <div>
+                <strong>CYBER SATURDAY: UP TO 80% OFF EVERYTHING!*<br>
+                    PLUS, GET AN EXTRA 20% OFF<br>
+                    With code: PLAYER20</strong>
+            </div>
+            <div id="lmen">
+                <a href="#"><button>MEN</button></a>
+            </div>
+
+        </div>
+    </Section>
+    <div id="myBag">
+        <h1 class="myBag">MY BAG</h1>
+        <div class="min">
+            <p>Items are reserved for 60 minutes</p>
+        </div>
+        <div id="checkout">
+           <h3>PAYMENT AMOUNT</h3>
+           <h4>Total</h4>
+           <button class="checkClass">CHECKOUT</button>
+             
+        <h4>WE ACCEPT:</h4>
+        <img src="https://assets.asosservices.com/asos-finance/images/marketing/single.png" alt="" id="visa">
+        <p>Got a discount code? Add it in the next step.</p>
+    </div>
+        </div>
+        <!-- <p class="min">Items are reserved for 60 minutes</p> -->
+    </div>
+    <div id="items"></div>
+    <div id="subTotal"></div>
+    <div id="delivery">
+        <img src="https://www.iconpacks.net/icons/1/free-truck-icon-1058-thumb.png" alt="" id="truckImg">
+        <H3>FREE* STANDARD DELIVERY</H3>
+        <P>Faster Delivery Options Avaible To Most Countries</P>
+        <p>More info</p>
+    </div>
+    <!-- <div id="total">
+        <h2>TOTAL</h2>
+        <h3>Sub-total </h3> <span id="subtotal"></span>
+        <h3>Delivery</h3>
+        <div id="checkout">
+            <h4>CHECKOUT</h4>
+        </div> -->
+
+<!--         
+        <h4>WE ACCEPT:</h4>
+        <img src="https://assets.asosservices.com/asos-finance/images/marketing/single.png" alt="" id="visa">
+        <p>Got a discount code? Add it in the next step.</p>
+    </div> -->
+
+
+    <section class="lfooter">
+        <div id="lftop">
+            <div id="lfleftside">
+                <a href="#">
+                    <img src="./image/facebook.svg" alt="facebook" class="social">
+                </a>
+                <a href="#">
+                    <img src="./image/instagram.svg" alt="instagram" class="social">
+                </a>
+                <a href="#">
+                    <img src="./image/snapchat.svg" alt="snapchat" class="social">
+                </a>
+
+            </div>
+            <div id="lfrightside">
+
+                <img src="./image/visa-png.jpeg" alt="visa" class="cards">
+                <img src="./image/mastercard-png.jpeg" alt="mastercard" class="cards">
+                <img src="./image/pay-pal-png.jpeg" alt="paypal" class="cards">
+                <img src="./image/american-express-png.jpeg" alt="express" class="cards">
+                <img src="./image/visa-electron-png.jpeg" alt="visa2" class="cards">
+            </div>
+
+        </div>
+        <div id="lfmiddle">
+            <div id="lfhelp">
+                <h5>HELP & INFORMATION</h5>
+                <div> <a href="#">Help</a>
+                </div>
+                <div> <a href="#">Track order</a>
+                </div>
+                <div> <a href="#">Delivery & returns</a>
+                </div>
+                <div> <a href="#">Sitemap</a>
+                </div>
+
+            </div>
+            <div id="lfabout">
+                <h5>ABOUT ASOS</h5>
+                <div> <a href="#">About us</a>
+                </div>
+                <div> <a href="#">Careers at ASOS</a>
+                </div>
+                <div> <a href="#">Coporate responsibily</a>
+                </div>
+                <div> <a href="#">Investors site</a>
+                </div>
+
+            </div>
+            <div id="lfmore">
+                <h5>MORE FROM ASOS</h5>
+                <div> <a href="#">Mobile and ASOS apps</a>
+                </div>
+                <div> <a href="#">ASOS Marketplace</a>
+                </div>
+                <div> <a href="#">Gift vouchers</a>
+                </div>
+                <div> <a href="#">Cyber Saturday</a>
+                </div>
+                <div> <a href="#">ASOS x Thrift+</a>
+                </div>
+
+            </div>
+            <div id="lfshoping">
+                <h5>SHOPPING FROM:</h5>
+                <div id="flag-img">
+                    <a href="#">You're in &nbsp;<img src="https://assets.asosservices.com/storesa/images/flags/in.png"
+                            alt="flag" class="flagindia"></a>
+                </div>
+            </div>
+        </div>
+        <div id="lfbottom">
+            <div id="lfleft">
+                <p>© 2022 ASOS</p>
+            </div>
+            <div id="lfright">
+                <a href="#">Privacy & Cookies</a>
+                <a href="#" id="acc">Accessibility</a>
+                <a href="#">Ts&Cs</a>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
+
+
+<script>
+    let product = [
+        {
+            "title": "Nike classic longline padded jacket with hood in olive grey",
+            "price": 134.95,
+            "discount": -15,
+            "discounted_price": 114.70,
+            "brand": "Nike",
+            "images": ["https://images.asos-media.com/products/nike-classic-longline-padded-jacket-with-hood-in-olive-grey/202897100-1-grey?$n_480w$&wid=476&fit=constrain",
+                "https://images.asos-media.com/products/nike-classic-longline-padded-jacket-with-hood-in-olive-grey/202897100-2?$n_750w$&wid=750&fit=constrain",
+                "https://images.asos-media.com/products/nike-classic-longline-padded-jacket-with-hood-in-olive-grey/202897100-3?$n_750w$&wid=750&fit=constrain",
+                "https://images.asos-media.com/products/nike-classic-longline-padded-jacket-with-hood-in-olive-grey/202897100-4?$n_750w$&wid=750&fit=constrain"],
+            "video": "https://video.asos-media.com/products/nike-classic-longline-padded-jacket-with-hood-in-olive-grey/202897100-catwalk-AVS.m3u8",
+            "category": "Jacket",
+            "color": "grey",
+            "rating": 4,
+            "details": {
+                "product_details": ["Coats by Nike", "That new-coat feeling", "Fixed hood", "Nike logo print to chest", "Zip fastening", "Zip side pockets", "Regular fit"],
+                "product_code": 118888991,
+                "brand": "Key players in everything activewear-related, it doesn't get more iconic than Nike. Sporting some of the most wanted trainers in the game, browse Air Max 90s and Air Force 1s, as well as Blazer and Waffle One styles. Get off-duty looks down with tracksuits, T-shirts and accessories in our Nike at ASOS edit, or scroll performance leggings and sports bras from Nike Training and Nike Running for an extra dose of motivation.",
+                "size_and_fit": ["Model wears: UK S/ EU S/ US XS", "Model's height: 175cm/5'9"],
+                "look_after_me": "Wipe clean with a damp cloth or sponge",
+                "about_me": ["Smooth woven fabric", "Uses Nike Therma-FIT technology", "Helps to regulate body temperature and retain heat to keep you warm in cold-weather conditions"],
+                "main": "100% Cotton.",
+
+            }
+        },
+
+        {
+            "title": "Pull&Bear Exclusive oversized tailored coat in brown",
+            "price": 59.99,
+            "discount": -15,
+            "discounted_price": 50.99,
+            "brand": "Pull&Bear",
+            "images": ["https://images.asos-media.com/products/pullbear-exclusive-oversized-tailored-coat-in-brown/203881814-1-brown?$n_640w$&wid=513&fit=constrain",
+                "https://images.asos-media.com/products/pullbear-exclusive-oversized-tailored-coat-in-brown/203881814-2?$n_750w$&wid=750&fit=constrain",
+                "https://images.asos-media.com/products/pullbear-exclusive-oversized-tailored-coat-in-brown/203881814-3?$n_640w$&wid=513&fit=constrain",
+                "https://images.asos-media.com/products/pullbear-exclusive-oversized-tailored-coat-in-brown/203881814-4?$n_640w$&wid=513&fit=constrain"],
+            "video": "https://video.asos-media.com/products/pullbear-exclusive-oversized-tailored-coat-in-brown/203881814-catwalk-AVS.m3u8",
+            "category": "Jacket",
+            "color": "brown",
+            "rating": 3,
+            "details": {
+                "product_details": ["Coats & Jackets by Pull&Bear", "Exclusive to ASOS", "Peak lapels", "Button placket", "Side pockets", "Oversized fit"],
+                "product_code": 123274975,
+                "brand": "When it comes to your casual rotation, no one does it better than Pull&Bear. Inspired by the laid-back vibe of Palm Springs, California, the brand references grunge influences, cool, sporty elements and street style across a collection of jeans, jackets, tops and trousers. And the good news is they’re all available in our Pull&Bear at ASOS edit, as well as shoes, bags and swimwear. What more could you want?",
+                "size_and_fit": ["Model wears: UK S/ EU S/ US XS", "Model's height: 170cm/5'7"],
+                "look_after_me": "Machine wash according to instructions on care label",
+                "about_me": ["Soft woven fabric"],
+                "main": "93% Polyester, 7% Viscose",
+            }
+        }
+    ]
+    // var product = JSON.parse(localStorage.getItem("cart"));
+
+    var total = 0;
+
+    var items = document.getElementById("items");
+    for (var i = 0; i < product.length; i++) {
+        var div = document.createElement("div");
+        var img = document.createElement("img");
+        img.src = product[i].images[1];
+        var p = document.createElement("p");
+        var p1 = document.createElement("p");
+        var smalldiv = document.createElement("div");
+        var span1 = document.createElement("span");
+        var select = document.createElement('select');
+        //  var option = document.createElement("option");
+        var select1 = document.createElement("select");
+        var button = document.createElement("button");
+
+        p.innerText = product[i].price;
+
+        p.style.fontWeight = "bold";
+        p1.innerText = product[i].title;
+        span1.innerText = product[i].color;
+        var option = document.createElement("option");
+        var option1 = document.createElement("option");
+        var option2 = document.createElement("option");
+        var option3 = document.createElement("option");
+        var option4 = document.createElement("option");
+        var option5 = document.createElement("option");
+        var option6 = document.createElement("option");
+        var option7 = document.createElement("option");
+
+        var ooption = document.createElement("option");
+        var ooption1 = document.createElement("option");
+        var ooption2 = document.createElement("option");
+        var ooption3 = document.createElement("option");
+        var ooption4 = document.createElement("option");
+        var ooption5 = document.createElement("option");
+        var ooption6 = document.createElement("option");
+        var ooption7 = document.createElement("option");
+        ooption.setAttribute('value', 1);
+        ooption1.setAttribute('value', 2)
+        ooption2.setAttribute('value', 3)
+        ooption3.setAttribute('value', 4)
+        ooption4.setAttribute('value', 5)
+        ooption5.setAttribute('value', 6)
+        ooption6.setAttribute('value', 7)
+        ooption7.setAttribute('value', 8)
+
+        var optionText = document.createTextNode("UK 4");
+        var optionText1 = document.createTextNode("UK 5");
+        var optionText2 = document.createTextNode("UK 6");
+        var optionText3 = document.createTextNode("UK 7");
+        var optionText4 = document.createTextNode("UK 8");
+        var optionText5 = document.createTextNode("UK 9");
+        var optionText6 = document.createTextNode("UK 10");
+        var optionText7 = document.createTextNode("UK 11");
+
+        var ooptionText = document.createTextNode("Qty 1");
+        var ooptionText1 = document.createTextNode("Qty 2");
+        var ooptionText2 = document.createTextNode("Qty 3");
+        var ooptionText3 = document.createTextNode("Qty 4");
+        var ooptionText4 = document.createTextNode("Qty 5");
+        var ooptionText5 = document.createTextNode("Qty 6");
+        var ooptionText6 = document.createTextNode("Qty 7");
+        var ooptionText7 = document.createTextNode("Qty 8");
+
+        option.appendChild(optionText);
+        option1.appendChild(optionText1);
+        option2.appendChild(optionText2);
+        option3.appendChild(optionText3);
+        option4.appendChild(optionText4);
+        option5.appendChild(optionText5);
+        option6.appendChild(optionText6);
+        option7.appendChild(optionText7);
+
+        ooption.appendChild(ooptionText);
+        ooption1.appendChild(ooptionText1);
+        ooption2.appendChild(ooptionText2);
+        ooption3.appendChild(ooptionText3);
+        ooption4.appendChild(ooptionText4);
+        ooption5.appendChild(ooptionText5);
+        ooption6.appendChild(ooptionText6);
+        ooption7.appendChild(ooptionText7);
+
+
+        select.append(option, option1, option2, option3, option4, option5, option6, option7);
+        select1.append(ooption, ooption1, ooption2, ooption3, ooption4, ooption5, ooption6, ooption7);
+        var quantity = select1.value;
+        total = total + product[i].price * quantity;
+
+        button.innerText = "Save For Later";
+        // button.addEventListener('click', removeItem);
+        //  span2.innerText = product[i].color;
+        smalldiv.append(span1, select, select1);
+        div.append(img, p, p1, smalldiv, button);
+        items.append(div);
+    }
+    document.getElementById("subtotal").innerText = total;
+    console.log(total);
+    // function removeItem(a){
+    //   items.removeChild(a);
+    // }
+    document.getElementById("checkout").addEventListener('click', gotopayment);
+    function gotopayment() {
+        window.location.href = "payment.html";
+    }
+
+    select1.addEventListener('change', gettotalvalue);
+    function gettotalvalue() {
+        var valuee = parseInt(select1.value);
+        var productt = product[i].price
+        var newtotal = 0;
+        newtotal = newtotal + productt * valuee
+        document.getElementById("subtotal").innerText = newtotal;
+        document.getElementById("subTotal").innerText = newtotal;
+        console.log(product[1].price);
+    }
+//    change
+
+</script> -->
