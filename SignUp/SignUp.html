@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="SignUp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/54e6af1f4c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- <img src="https://my.asos.com/Content/images/asos-logo-2022-93x28.png" alt="logo.png"> -->
+    <div class="wrapper">
+        <div id="logo">
+            <img src="https://my.asos.com/Content/images/asos-logo-2022-93x28.png" alt="logo.png">
+        </div>
+        <div class="modelForm">
+            <div class="actionBtns">
+                <button class="actionBtn signupBtn">JOIN</button>
+                <button class="actionBtn loginBtn">SIGN IN</button>
+                <button class="moveBtn">JOIN</button>
+            </div>
+            <div class="userForm">
+                <form action="" class="form signup signupForm">
+                    <h3 class="mail">SIGN UP WITH...</h3>
+                    <div class="three-option">
+                        <div class="space"> <i class="fa-brands fa-google"></i>GOOGLE</div>
+                        <div class="space"><i class="fa-brands fa-apple"></i>APPLE</div>
+                        <div class="space"><i class="fa-brands fa-square-facebook"></i>FACEBOOK</div>
+                    </div>
+                    <p class="detail">Signing up with social is super quick. No extra passwords to remember no brain
+                        fail. Don't
+                        worry, we'd never share any of your data or post anything on your behalf #notevil</p>
+                    <h3 class="mail">OR SIGN UP WITH EMAIL</h3>
+                    <!-- <div class="userForm">
+        <form action="" class="form signup signupForm"> -->
+                    <div class="inputGroup">
+                        <p class="center">EMAIL ADDRESS</p>
+                        <div class="error"></div>
+                        <input id="email" type="email" placeholder="" autocomplete="off">
+                        <!-- <p class="center">We'll send your order confirmation here</p> -->
+                    </div>
+                    <div class="inputGroup">
+                        <p class="center1">FIRST NAME</p>
+                        <div class="error"></div>
+                        <input id="fname" type="name" placeholder="" autocomplete="off">
+                    </div>
+                    <div class="inputGroup">
+                        <p class="center1">LAST NAME</p>
+                        <div class="error"></div>
+                        <input id="lname" type="name" placeholder="" autocomplete="off">
+                    </div>
+                    <div class="inputGroup">
+                        <p class="center1">PASSWORD</p>
+                        <div class="error"></div>
+                        <input id="password" type="password" placeholder="" autocomplete="off">
+                        <!-- <p class="center">Must be 10 or more characters</p> -->
+                    </div>
+                    <div class="inputGroup">
+                        <p class="center4">DOB</p>
+                        <input type="date" id="birthday" name="birthday">
+                        <!-- <p >You need to be 16 or over to use ASOS </p> -->
+                    </div>
+                    <button type="submit" onclick="saveData()" class="submitBtn">JOIN ASOS</button>
+                </form>
+
+                <form action="" class="form login">
+
+                    <div class="inputGroup1">
+                        <div id="loginMail">EMAIL ADDRESS</div>
+                        <input id="EMAIL" type="email" placeholder="" autocomplete="off">
+                    </div>
+                    <div class="inputGroup1">
+                        <div id="passwordMail">PASSWORD</div>
+                        <input id="PASSWORD" type="Password" placeholder="" autocomplete="off">
+                    </div>
+                    <p class="forgot">Forgot Password ?</p>
+                    <button onclick="userLogin()" type="submit" class="submitBtn1">SIGN IN</button>
+                    <h3 class="signin-form">OR SIGN UP WITH...</h3>
+                    <div class="three-option">
+                        <div class="space"> <i class="fa-brands fa-google"></i>GOOGLE</div>
+                        <div class="space"><i class="fa-brands fa-apple"></i>APPLE</div>
+                        <div class="space"><i class="fa-brands fa-square-facebook"></i>FACEBOOK</div>
+                    </div>
+                    <p class="twitter">Where has Twitter Gone?</p>
+                    <p class="privacy">Privacy Policy | Terms & Conditions</p>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="SignUp.js"></script>
+</body>
+
+</html>
