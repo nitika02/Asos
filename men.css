@@ -1,0 +1,179 @@
+/* single image */
+#lmasosdesign
+{
+    background-image: url("https://content.asos-media.com/-/media/homepages/mw/2022/nov/29/mw_global_party_dress_up_desktophero_1258x600.jpg");
+    width: 95%;
+    height: 95vh;
+    background-size: cover;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#lmparty
+{
+    background-color: white;
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;   
+    padding: 12px;
+    margin-top: 360px;
+}
+#lmszn-1,#lmszn-2
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+#lmsad
+{
+    background-color: white;
+    font-size: 17px;
+    font-weight: bolder; 
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    padding: 12px;
+}
+/* grid part */
+#lmgridpart1
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;
+    margin:33px;
+    
+}
+#lmgridpart1 a
+{
+    text-decoration: none;
+}
+#lmgridpart1 h5
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+}
+#lmgridpart1 p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 16px;
+}  
+#lmgridpart1 div
+{
+    width: 100%;
+    text-align: center;
+}
+#lmgridpart1 img
+{
+    width: 100%;
+}
+/* get gift-part */
+
+#lmgetgift
+{
+    background-image: url("https://content.asos-media.com/-/media/hubs/gifting/2022/01_jpeg/gifting/dt_live-text-banner_2880x600_compress.png");
+    background-size: cover;
+    width: 100%;
+    height: 27vh;
+    text-align: center;
+}
+#lmgetgift p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 20px;
+    font-weight: 900;
+    padding:30px 0px 0px 0px;
+    /* line-height: 30px; */
+} 
+#lmdiscover
+{
+    background-color: black;
+    color: white;
+    padding:10px 10px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}  
+/* grid part-2 */
+#lmgridpart2
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+    margin:43px 163px;
+    
+}
+#lmgridpart2 a
+{
+    text-decoration: none;
+}
+#lmgridpart2 h6
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px
+}
+#lmgridpart2 p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 16px;
+    margin-top: -40px;
+} 
+#lmgridpart2 button
+{
+    background-color: white;
+    padding: 15px 40px;
+    font-weight: bolder;
+} 
+#lmgridpart2 div
+{
+    width: 100%;
+    text-align: center;
+}
+#lmgridpart2 img
+{
+    width: 100%;
+}
+#lmtrending 
+{
+    width: 100%;
+
+}
+#lmbrands
+{
+    text-align: center;
+    font-size: 24px;
+    color: #000;
+    font-weight: 700;
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+/* grid-part3 */
+#lmgridpart3
+{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap:20px;
+    margin:33px;
+    
+}
+#lmgridpart3 div
+{
+    width: 100%;
+
+}
+#lmgridpart3 img
+{
+    width: 100%;
+}
+
+
+
