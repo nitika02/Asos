@@ -6,3 +6,13 @@ headerDiv.innerHTML = header();
 
 let footerDiv = document.getElementById('footer');
 footerDiv.innerHTML = footer();
+
+// linking to product page
+
+var linkedDivs = document.querySelectorAll('.clickable');
+
+linkedDivs.forEach(el => {
+    el.addEventListener('click', () => {
+        window.location.href = '../menProduct.html';
+    })
+})

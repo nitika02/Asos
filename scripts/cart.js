@@ -167,14 +167,14 @@ for (var i = 0; i < product.length; i++) {
         gettotalvalue(i);
     });
 }
-document.getElementById("subtotal").innerText = total;
-console.log(total);
+// document.getElementById("subtotal").innerText = total;
+// console.log(total);
 // function removeItem(a){
 //   items.removeChild(a);
 // }
-document.getElementById("checkout").addEventListener('click', gotopayment);
+document.getElementById("checkClass").addEventListener('click', gotopayment);
 function gotopayment() {
-    window.location.href = "payment.html";
+    window.location.href = "../payment.html";
 }
 
 

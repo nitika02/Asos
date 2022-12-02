@@ -17,10 +17,6 @@ body {
 #container
 {
     width: 100%;
-    /* margin: auto; */
-    /* position: fixed;
-    top:30px; */
-    
 }
 #ltopnavbar
 {
@@ -32,29 +28,25 @@ body {
     margin-left:-9px;
     margin-top: -10px;
     border: 1px solid #eeeeee;
-    /* position: fixed;
-    margin-right: -10px; */
-    font-size: small;
-    letter-spacing: 1.5px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 3px;
     
 }
 #ltopnavbar a
 {
     text-decoration: none;
-    color: gray;
+    color: rgb(88, 88, 88);
 }
 
 #ltopnavbar >div
 {
-    /* width: 10%; */
     border: 1px solid #eeeeee;
     padding-top: 10px;
 }
 #ltopnavbar >div:nth-child(3)
 {
-    width: 3%;
     padding-right: 10px;
-    margin-right: 50px;
 }
 #ltopnavbar a
 {
@@ -65,7 +57,7 @@ body {
 
 #ltopnavbar >#country img
 {
-    width: 60%;
+    width: 18px;
 }
 
 /* middle navbar */
@@ -164,7 +156,7 @@ body {
 {
     margin:15px
 }
-#cart
+#cartIcon
 {
     filter: invert(1);
     margin-right: 70px;
@@ -219,8 +211,7 @@ body {
     font-weight: 700;
     background-color: #f799ba;
     align-items: center;
-    height:65px;
-
+    padding: 10px 0px;
 }
 #lpinknavbar button
 {
