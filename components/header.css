@@ -1,15 +1,17 @@
 /* top navbar */
-*
-{
-    box-sizing: border-box;
-}
+
 
 #container
 {
-    margin: auto;
+    width: 102%;
+    /* margin: auto; */
+    /* position: fixed;
+    top:30px; */
+    
 }
 #ltopnavbar
 {
+    width: 100%;
     display: flex;
     justify-content: end;
     background-color: #f8f8f8;
@@ -17,6 +19,9 @@
     margin-left:-9px;
     margin-top: -10px;
     border: 1px solid #eeeeee;
+    /* position: fixed;
+    margin-right: -10px; */
+    
 }
 #ltopnavbar a
 {
