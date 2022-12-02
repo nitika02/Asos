@@ -154,11 +154,11 @@ function userLogin() {
     let user_records = new Array();
     user_records = JSON.parse(localStorage.getItem("users")) ? JSON.parse(localStorage.getItem("users")) : []
     if (user_records.some((v) => { return v.email == EMAIL && v.password == PASSWORD })) {
-        alert("Login Successfully");
-        //   window.location.href="profile.html"
+        // alert("Login Successfully");
+          window.location.href="menProduct.html"
     }
     else {
-        alert('Login Fail');
+        alert('Incorrect Email or Password');
     }
 
 }
