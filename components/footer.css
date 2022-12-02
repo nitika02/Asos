@@ -1,0 +1,104 @@
+/* *
+{
+    box-sizing: border-box;
+} */
+.lfooter
+{
+    text-decoration: none;
+}
+/* top part start */
+#lftop
+{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid lightgray;
+}
+#lfleftside
+{
+    display: flex;
+    justify-content: right;
+    border-right: 1px solid #5a5a5a;
+    margin:10px 0px;
+    align-items: center;
+}
+.social
+{
+    width: 30px;
+    padding: 0px 25px;
+}
+#lfrightside
+{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.cards
+{
+    width: 30px;
+    padding: 0px 15px;
+    height: 20px;
+}
+/* middle part start */
+
+#lfmiddle
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: #eeeeee;
+    padding:20px 50px
+}
+#lfmiddle h5
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#lfmiddle a
+{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 30px;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#lfshopping> div
+{
+    display: flex;
+    align-items: center;
+}
+
+/* bottom part */
+#lfbottom
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: #dddddd;
+    align-items: center;
+    padding: 0px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: grey;
+    padding:13px 25px;
+}
+.flagindia
+{
+    width:13px;
+}
+#lfbottom a
+{
+    text-decoration: none;
+    color: grey;
+
+}
+#flag-img
+{
+    align-items: center;
+}
+#acc
+{
+    border-left: 1px solid #5a5a5a;
+    border-right: 1px solid #5a5a5a;
+    
+}
+#lfright a
+{
+    padding: 0px 10px;
+}

@@ -1,3 +1,14 @@
+import {header} from '../components/header.js';
+import {footer} from '../components/footer.js';
+
+let headerDiv = document.getElementById('header');
+headerDiv.innerHTML = header();
+
+let footerDiv = document.getElementById('footer');
+footerDiv.innerHTML = footer();
+
+
+
 const signupBtn = document.querySelector(".signupBtn");
 const loginBtn = document.querySelector(".loginBtn");
 const moveBtn = document.querySelector(".moveBtn");

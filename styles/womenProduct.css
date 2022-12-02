@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* title bar */
+
+#women-product-div{
+    border-bottom: 1px solid #ddd;
+}
+#women-product-title-bar {  
+    margin-left: 100px;
+    margin-right: 100px;
+    /* width: 70% */
+}
+
+#women-product-title-bar ul a{
+    text-decoration: none;
+    color: #2D2D2D;
+    margin-right: 12px;
+    font-size: 14px;
+    
+}
+
+#women-product-title-bar span {
+    margin-right: 12px;
+}
+
+/* description section */
+#description-section-div {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#description-section {
+    text-align: center;
+    margin-left: 275px;
+    margin-right: 275px;
+}
+
+#description-section h1 {
+    color: #000000;
+    font-size: 24px;
+    padding: 0px 16px 8px;
+}
+
+#description-section p {
+    color: #2d2d2d;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.4px;
+    line-height: 1.38em;
+    max-width: 1000px;
+    overflow: hidden;
+}
+
+#button-section-div {
+    margin-left: 370px;
+    margin-right: 370px;
+    margin-top: 8px;
+}
+
+#button-section button {
+    padding: 9px 15px;
+    font-size: 12px;
+    color: #2d2d2d;
+    background-color: #eeeeee;
+    border-radius: 15px;
+    border: none;
+    font-weight: 700;
+    height: 30px;
+    letter-spacing: 1.7px;
+    line-height: 12px;
+}
+
+#button-section button:hover {
+    background-color: #ddd;
+}
+
+/* filter section */
+#filter-section-div {
+    background-color: #eeeeee;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#filter-section {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#filter-section-div select {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    border-left: none;
+    border-radius: 0;
+    border-right: none;
+    color: #666;
+    font-family: futura-pt,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: 42px;
+    letter-spacing: .3px;
+    line-height: 1.12;
+    padding: 3px 20px 3px 6px;
+    position: relative;
+    text-align: left;
+    margin-right: 20px;
+    width: 20%;
+    
+}
+
+#filter-section-div select:hover {
+    color: #0770cf;
+}
+
+#filter-section-div select::selection {
+    border: 1px solid #0770cf;
+}
+
+#filter-section-div select option {
+    color: #2d2d2d;
+    font-size: 16px;
+    padding: 0px 14px;
+    border: 1px solid black;
+    letter-spacing: .4px;
+}
+
+/* main product section */
+
+#main-product-section-div {
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+#main-product-section-div img {
+   width: 100%;
+   cursor: pointer;
+}
+
+#main-product-section-div h2 {
+    color: #2d2d2d;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#product-price-div {
+    display: flex;
+}
+
+#main-product-section-div #product-price {
+    color: #2d2d2d;
+    font-size: 12px;
+    text-decoration: line-through
+}
+#product-discount-price {
+    color: #d01345;
+    font-size: 12px;
+    margin-left: 2px;
+    font-weight: 900;
+}
+
+#product-section-card {
+    position: relative;
+}
+
+#main-product-section-div .faclass {
+    background-color: hsla(0,0%,100%,.8);
+    border: none;
+    border-radius: 50%;
+    color: #2d2d2d;
+    cursor: default;
+    outline: none;
+    padding: 10px 8px 8px;
+    position: absolute;
+    bottom: 110px;
+    right: 10px;
+    cursor: pointer;
+    
+}
+
+#main-product-section-div #product-discount {
+    color: #d01345;
+    font-size: 12px;
+    background-color: #ffffffcc;
+    padding: 2px 4px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+/* Media Queries */
+
+@media all and (max-width: 1100px) and (min-width:501px) {
+    /* Medium Screen Styles  */
+
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    #women-product-title-bar {
+        margin: 0px 10px;
+    }
+
+    #description-section {
+        margin: 0px 10px;
+    }
+
+    #button-section-div {
+        margin: 0px;
+    }
+
+    #filter-section {
+        margin: 0px;
+    }
+
+    #main-product-section-div {
+        margin: 10px;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+
+@media all and (max-width: 500px) and (min-width:0px) {
+    /* Small Screen Styles  */
+
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #women-product-title-bar {
+        margin: 0px 10px;
+    }
+
+    #description-section {
+        display: none;
+    }
+
+    #button-section-div {
+        margin: 0px;
+    }
+
+    #filter-section {
+        margin: 0px;
+    }
+
+    #main-product-section-div {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+}
+

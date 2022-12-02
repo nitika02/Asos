@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+#main-bar-section-div {
+    background-color: #eeeeee;
+}
+#main-bar-section h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #2d2d2d;
+    padding: 24px 0px;
+}
+
+#items-div {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#items {
+    display: flex;
+    justify-content: space-between;
+}
+#items p {
+    color: #666666;
+}
+
+#wishlist-items {
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+#wishlist-items img {
+    width: 100%;
+}
+
+#wishlist-items h2 {
+    color: #2d2d2d;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#product-price-div {
+    display: flex;
+    margin-top: -10px;
+}
+
+#wishlist-items #product-price {
+    color: #2d2d2d;
+    font-size: 12px;
+    text-decoration: line-through
+}
+#product-discount-price {
+    color: #d01345;
+    font-size: 12px;
+    margin-left: 2px;
+    font-weight: 900;
+}
+
+#product-section-card {
+    position: relative;
+}
+
+#wishlist-items .faclass {
+    background-color: hsla(0,0%,100%,.8);
+    border: none;
+    border-radius: 50%;
+    color: #2d2d2d;
+    cursor: default;
+    outline: none;
+    padding: 10px 8px 8px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    
+}
+
+#wishlist-items #product-discount {
+    color: #d01345;
+    font-size: 12px;
+    background-color: #ffffffcc;
+    padding: 2px 4px;
+    position: absolute;
+    bottom: 560px
+}
+
+#product-color {
+    font-size: 14px;
+    font-weight: 400;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: #767676
+}
+
+#product-button {
+    width: 320.73px;
+    height: 32px;
+    color: #2d2d2d;
+    margin: 8px 0px 0px;
+    padding: 4px 0px;
+    border: 2px solid #018849;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1000px) {
+
+    #main-product-section-div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
