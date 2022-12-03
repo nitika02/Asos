@@ -71,7 +71,6 @@ let showData = async() => {
         displayData(data);
     }, 200);
 }
-showData();
 
 // filtering data
 // sort by price
