@@ -115,3 +115,13 @@ background-color: white
     margin-left: 330px;
     padding-left: 20px;
 }
+#subTotal{
+    background-color: white;
+    width: 515px;
+    height: 100px;
+    margin-top: 15px;
+    margin-left: 330px;
+    padding-left: 20px;
+    display: flex;
+  
+}
