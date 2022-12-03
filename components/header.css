@@ -158,7 +158,6 @@ body {
 }
 #cartIcon
 {
-    filter: invert(1);
     margin-right: 70px;
     font-size: 20px;
 }

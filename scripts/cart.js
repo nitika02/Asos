@@ -9,6 +9,7 @@ let footerDiv = document.getElementById('footer');
 footerDiv.innerHTML = footer();
 
 
+<<<<<<< HEAD
 // let product = [
 //     {
 //         "title": "Nike classic longline padded jacket with hood in olive grey",
@@ -62,6 +63,10 @@ footerDiv.innerHTML = footer();
 //     }
 // ]
 var product = JSON.parse(localStorage.getItem("cart"));
+=======
+
+var product = JSON.parse(localStorage.getItem("cart")) || [];
+>>>>>>> 03a48ce1c965fe8f385624dbf7ec46ffa03bc9f1
 
 var total = 0;
 
@@ -69,7 +74,7 @@ var items = document.getElementById("items");
 for (let i = 0; i < product.length; i++) {
     var div = document.createElement("div");
     var img = document.createElement("img");
-    img.src = product[i].images[1];
+    img.src = product[i].images[0];
     var textDiv = document.createElement('div');
     textDiv.setAttribute('class', 'textDiv');
     var p = document.createElement("p");

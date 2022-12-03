@@ -1,14 +1,3 @@
-import {header} from '../components/header.js';
-import {footer} from '../components/footer.js';
-
-let headerDiv = document.getElementById('header');
-headerDiv.innerHTML = header();
-
-let footerDiv = document.getElementById('footer');
-footerDiv.innerHTML = footer();
-
-
-
 const signupBtn = document.querySelector(".signupBtn");
 const loginBtn = document.querySelector(".loginBtn");
 const moveBtn = document.querySelector(".moveBtn");
@@ -166,7 +155,7 @@ function userLogin() {
     user_records = JSON.parse(localStorage.getItem("users")) ? JSON.parse(localStorage.getItem("users")) : []
     if (user_records.some((v) => { return v.email == EMAIL && v.password == PASSWORD })) {
         // alert("Login Successfully");
-          window.location.href="menProduct.html"
+          window.location.href="men.html"
     }
     else {
         alert('Incorrect Email or Password');
