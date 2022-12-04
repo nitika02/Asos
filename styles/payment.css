@@ -220,3 +220,20 @@ div {
     margin-left: 330px;
     padding-top: -4px;
 }
+
+#item > div > img {
+    width: 50%;
+}
+#item > div {
+    width: 150px;
+    height: 100%;
+    border: 1px solid black;
+}
+#item{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+#side{
+    border: 1px solid black;
+}
