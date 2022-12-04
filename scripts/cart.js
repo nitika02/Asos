@@ -8,9 +8,8 @@ headerDiv.innerHTML = header();
 let footerDiv = document.getElementById('footer');
 footerDiv.innerHTML = footer();
 
-<<<<<<< HEAD
+// <<<<<<< HEAD
 var product = JSON.parse(localStorage.getItem("cart"));
-=======
 // searchbar functionality
 
 // searchbar functionality
@@ -94,12 +93,13 @@ var product = JSON.parse(localStorage.getItem("cart"));
 var product = JSON.parse(localStorage.getItem("cart")) || [];
 // >>>>>>> 03a48ce1c965fe8f385624dbf7ec46ffa03bc9f1
 
->>>>>>> e9d071a1e3864927cc0048728b60e5fc411f5c49
+// >>>>>>> e9d071a1e3864927cc0048728b60e5fc411f5c49
 var total = 0;
 
 var items = document.getElementById("items");
 for (let i = 0; i < product.length; i++) {
     var div = document.createElement("div");
+    div.setAttribute('class', 'products');
     var img = document.createElement("img");
     img.src = product[i].images[0];
     var textDiv = document.createElement('div');
@@ -114,9 +114,9 @@ for (let i = 0; i < product.length; i++) {
     select1.setAttribute('id', 'select1');
     var button = document.createElement("button");
 
-    p.innerText = product[i].price;
+    p.innerText = '£ ' + product[i].price;
     total = total + product[i].price
-    p.style.fontWeight = "bold";
+    p.setAttribute('id', 'price');
     p1.innerText = product[i].title;
     span1.innerText = product[i].color;
     var option = document.createElement("option");
@@ -186,15 +186,23 @@ for (let i = 0; i < product.length; i++) {
     select1.append(ooption, ooption1, ooption2, ooption3, ooption4, ooption5, ooption6, ooption7);
     var quantity = select1.value;
     total = total + product[i].price * quantity;
-    document.getElementById("total").innerText = total;
-    document.getElementById("subtotal").innerText = total;
-    button.innerText = "Save For Later";
+    document.getElementById("total").innerText = '£ ' + total;
+    document.getElementById("subtotal").innerText = '£ ' + total;
+    var wishIcon = document.createElement('span');
+    wishIcon.style.marginRight = "10px";
+    wishIcon.innerHTML = '<i class="fa-regular fa-heart"></i>';
+    var saveText = document.createElement('span');
+    saveText.innerText = 'Save for later';
+    button.append(wishIcon, saveText);
+    var cross = document.createElement('span');
+    cross.setAttribute('id', 'cross');
+    cross.innerHTML = '<i class="fa-solid fa-xmark"></i>';
     // button.addEventListener('click', removeItem);
     //  span2.innerText = product[i].color;
     smalldiv.append(span1, select, select1);
-    textDiv.append(p, p1, smalldiv, button);
+    textDiv.append(cross, p, p1, smalldiv, button);
     div.append(img, textDiv);
-    items[0].append(div);
+    items.append(div);
 
     select1.addEventListener('change', () => {
         gettotalvalue(i);
@@ -205,7 +213,7 @@ for (let i = 0; i < product.length; i++) {
 // function removeItem(a){
 //   items.removeChild(a);
 // }
-document.getElementById("checkClass").addEventListener('click', gotopayment);
+document.getElementById("checkoutBtn").addEventListener('click', gotopayment);
 function gotopayment() {
     window.location.href = "../payment.html";
 }

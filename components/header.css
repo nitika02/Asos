@@ -9,14 +9,16 @@ body {
     padding: 0px;
     overflow-x: hidden;
     font-family: 'Nunito', sans-serif;
+    position: relative;
 }
-
 
 /* top navbar */
 
 #container
 {
     width: 100%;
+    position: sticky;
+    top: 0px;
 }
 #ltopnavbar
 {
