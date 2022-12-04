@@ -7,6 +7,28 @@ headerDiv.innerHTML = header();
 let footerDiv = document.getElementById('footer');
 footerDiv.innerHTML = footer();
 
+// searchbar functionality
+
+let searchProducts = async () => {
+
+    let query = document.getElementById("search").value;
+
+    let response = await fetch(`https://asos-mock-data.onrender.com/women?category=${query}`);
+    let data = await response.json();
+    console.log(data);
+    localStorage.setItem("search_results", JSON.stringify(data));
+    localStorage.setItem("search", "true");
+    window.location.href = "../womenProduct.html";
+}
+
+document.getElementById('lsearchbtn').addEventListener("click", searchProducts);
+
+document.getElementById('search').addEventListener("keypress", (e) => {
+    if(e.key == 'Enter'){
+        searchProducts();
+    }
+});
+
 
 let displaySection = document.getElementById("main-product-section-div");
 let wishlistArr = [] || JSON.parse(localStorage.getItem("wishlist"));
@@ -82,7 +104,6 @@ if (search == "true") {
     else {
         let mesg = document.createElement("h1");
         mesg.innerText = "OOPS...No search results found!";
-        mesg.style.textAlign = "center";
         displaySection.append(mesg);
     }
 

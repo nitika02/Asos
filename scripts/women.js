@@ -16,7 +16,7 @@ linkedDivs.forEach(el => {
 
 
 
-// search functionality
+// searchbar functionality
 
 let searchProducts = async () => {
 
@@ -30,6 +30,10 @@ let searchProducts = async () => {
     window.location.href = "../womenProduct.html";
 }
 
-
-
 document.getElementById('lsearchbtn').addEventListener("click", searchProducts);
+
+document.getElementById('search').addEventListener("keypress", (e) => {
+    if(e.key == 'Enter'){
+        searchProducts();
+    }
+});

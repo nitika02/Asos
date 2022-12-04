@@ -1,11 +1,33 @@
-import {header} from '../components/header.js';
-import {footer} from '../components/footer.js';
+import { header } from '../components/header.js';
+import { footer } from '../components/footer.js';
 
 let headerDiv = document.getElementById('header');
 headerDiv.innerHTML = header();
 
 let footerDiv = document.getElementById('footer');
 footerDiv.innerHTML = footer();
+
+// searchbar functionality
+
+let searchProducts = async () => {
+
+    let query = document.getElementById("search").value;
+
+    let response = await fetch(`https://asos-mock-data.onrender.com/women?category=${query}`);
+    let data = await response.json();
+    console.log(data);
+    localStorage.setItem("search_results", JSON.stringify(data));
+    localStorage.setItem("search", "true");
+    window.location.href = "../womenProduct.html";
+}
+
+document.getElementById('lsearchbtn').addEventListener("click", searchProducts);
+
+document.getElementById('search').addEventListener("keypress", (e) => {
+    if (e.key == 'Enter') {
+        searchProducts();
+    }
+});
 
 let product = JSON.parse(localStorage.getItem('selected_product')) || {};
 
@@ -96,8 +118,8 @@ let displayProduct = () => {
     prevBtn.setAttribute('id', 'carousel-button-prev');
     prevBtn.addEventListener('click', () => {
         currIndex--;
-        if(currIndex < 0){
-            currIndex = product.images.length-1;
+        if (currIndex < 0) {
+            currIndex = product.images.length - 1;
         }
         image.src = product.images[currIndex];
     });
@@ -108,7 +130,7 @@ let displayProduct = () => {
     nextBtn.setAttribute('id', 'carousel-button-next');
     nextBtn.addEventListener('click', () => {
         currIndex++;
-        if(currIndex >= product.images.length){
+        if (currIndex >= product.images.length) {
             currIndex = 0;
         }
         image.src = product.images[currIndex];
@@ -325,6 +347,10 @@ let displayDetails = () => {
 window.onload = displayProduct();
 window.onload = displayDetails();
 
-document.getElementById("lmen").addEventListener('click', ()=> {
-    window.location.href = "../menProduct.html";
+document.getElementById("lmen").addEventListener("click", () => {
+    window.location.href = "../men.html";
+})
+
+document.getElementById("lwomen").addEventListener("click", () => {
+    window.location.href = "../index.html";
 })

@@ -8,8 +8,31 @@ headerDiv.innerHTML = header();
 let footerDiv = document.getElementById('footer');
 footerDiv.innerHTML = footer();
 
+// searchbar functionality
 
-<<<<<<< HEAD
+// searchbar functionality
+
+let searchProducts = async () => {
+
+    let query = document.getElementById("search").value;
+
+    let response = await fetch(`https://asos-mock-data.onrender.com/women?category=${query}`);
+    let data = await response.json();
+    console.log(data);
+    localStorage.setItem("search_results", JSON.stringify(data));
+    localStorage.setItem("search", "true");
+    window.location.href = "../womenProduct.html";
+}
+
+document.getElementById('lsearchbtn').addEventListener("click", searchProducts);
+
+document.getElementById('search').addEventListener("keypress", (e) => {
+    if(e.key == 'Enter'){
+        searchProducts();
+    }
+});
+
+// <<<<<<< HEAD
 // let product = [
 //     {
 //         "title": "Nike classic longline padded jacket with hood in olive grey",
@@ -63,10 +86,10 @@ footerDiv.innerHTML = footer();
 //     }
 // ]
 var product = JSON.parse(localStorage.getItem("cart"));
-=======
+// =======
 
 var product = JSON.parse(localStorage.getItem("cart")) || [];
->>>>>>> 03a48ce1c965fe8f385624dbf7ec46ffa03bc9f1
+// >>>>>>> 03a48ce1c965fe8f385624dbf7ec46ffa03bc9f1
 
 var total = 0;
 
