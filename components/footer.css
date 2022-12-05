@@ -102,3 +102,12 @@
 {
     padding: 0px 10px;
 }
+
+@media(max-width:730px)
+{
+    
+    #lfmiddle,#lftop
+    {
+        display: none;
+    }
+}

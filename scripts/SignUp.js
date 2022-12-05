@@ -163,6 +163,7 @@ btnClear.addEventListener('click', () => {
     user_records = JSON.parse(localStorage.getItem("users")) ? JSON.parse(localStorage.getItem("users")) : []
     if (user_records.some((v) => { return v.email == EMAIL && v.password == PASSWORD })) {
         alert("Login Successfully");
+// >>>>>>> f78b9189f1828f92423fb4023c2584f3f4350ae3
     }
     else {
         alert('Incorrect Email or Password');
