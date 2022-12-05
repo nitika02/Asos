@@ -23,7 +23,7 @@ product.map( (el, i) => {
     deleteBut.addEventListener('click', () => {
         deleteElement(i);
     });
-    p.innerText = el.price;
+    p.innerText = el.discounted_price;
     // total = total + product[i].price
     p.style.fontWeight = "bold";
     p1.innerText = el.title;
@@ -38,7 +38,7 @@ product.map( (el, i) => {
 document.getElementById('placeOrder').addEventListener('click', goToHome);
 // var confirmFun = confirm;
 function goToHome(){
-    alert("Your order has Been placed");
+    alert("Your order has been placed");
    
         window.location.href = "./index.html";
    
@@ -48,13 +48,14 @@ var promoval = promo.value
 
 function deleteElement(i){
 
+    total = total - product[i].discounted_price;
+    localStorage.setItem("total", total);
     product.splice(i, 1);
     console.log(i);
     console.log(product);
     localStorage.setItem('cart', JSON.stringify(product));
     window.location.reload();
 }
-document.getElementById("totaltopay").innerText = total;
 
 document.getElementById("applyCode").addEventListener("click", applyPromo);
 function applyPromo(){
@@ -63,7 +64,7 @@ function applyPromo(){
         var promoTotal =  total;
         promoTotal = promoTotal*0.8;
         total = promoTotal;
-         document.getElementById("totaltopay").innerText = promoTotal;
+         document.getElementById("totaltopay").innerText = promoTotal.toFixed(2);
          console.log(promoTotal)
         //  document.getElementById("subtotal").innerText = promoTotal;
         //  window.location.reload();
@@ -73,3 +74,6 @@ function applyPromo(){
      }
     //  console.log(promo.value)
 }
+
+var finalTotal = Number(total).toFixed(2);
+document.getElementById("totaltopay").innerText = finalTotal;

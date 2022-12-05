@@ -30,6 +30,13 @@ document.getElementById('search').addEventListener("keypress", (e) => {
     }
 });
 
+let deleteItem = (index) => {
+    wishlistItems.splice(index, 1);
+    localStorage.setItem("wishlist", JSON.stringify(wishlistItems));
+    displayWishlist(wishlistItems);
+    noOfItems.innerText = wishlistItems.length;
+}
+
 let wishlistItems = JSON.parse(localStorage.getItem("wishlist"));
 console.log(wishlistItems);
 
@@ -95,12 +102,6 @@ let displayWishlist = (data) => {
 
 displayWishlist(wishlistItems);
 
-let deleteItem = (index) => {
-    wishlistItems.splice(index, 1);
-    localStorage.setItem("wishlist", JSON.stringify(wishlistItems));
-    displayWishlist(wishlistItems);
-    noOfItems.innerText = wishlistItems.length;
-}
 
 let cartProducts = [] || JSON.parse(localStorage.getItem("cart")) ;
 let addToCart = (product) => {

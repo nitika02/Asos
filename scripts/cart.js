@@ -57,7 +57,7 @@ product.map( (el, i) => {
     select1.setAttribute('id', 'select1');
     var button = document.createElement("button");
 
-    p.innerText = '£ ' + product[i].price;
+    p.innerText = '£ ' + el.discounted_price;
     // total = total + product[i].price
     p.setAttribute('id', 'price');
     p1.innerText = el.title;
@@ -128,16 +128,16 @@ product.map( (el, i) => {
     select.append(option, option1, option2, option3, option4, option5, option6, option7);
     select1.append(ooption, ooption1, ooption2, ooption3, ooption4, ooption5, ooption6, ooption7);
     var quantity = select1.value;
-    total = total + el.price * quantity;
-    document.getElementById("total").innerText = '£ ' + total;
-    document.getElementById("subtotal").innerText = '£ ' + total;
+    total = total + el.discounted_price * quantity;
+    document.getElementById("total").innerText = '£ ' + total.toFixed(2);
+    document.getElementById("subtotal").innerText = '£ ' + total.toFixed(2);
     var wishIcon = document.createElement('span');
     wishIcon.style.marginRight = "10px";
     wishIcon.innerHTML = '<i class="fa-regular fa-heart"></i>';
     var saveText = document.createElement('span');
     saveText.innerText = 'Save for later';
     saveText.addEventListener('click', () =>{
-        addToWishlist(i, el);
+        addToWishlist(el, i);
     });
     button.append(wishIcon, saveText);
     var cross = document.createElement('span');
@@ -177,12 +177,12 @@ function addToWishlist(el, i){
 function gettotalvalue(i) {
 
     var valuee = document.getElementById('select1').value;
-    var productt = product[i].price;
+    var productt = product[i].discounted_price;
     var newtotal = total;
     newtotal = newtotal + productt * valuee;
     console.log(newtotal);
-    document.getElementById("total").innerText = newtotal;
-    document.getElementById("subtotal").innerText = newtotal;
+    document.getElementById("total").innerText = newtotal.toFixed(2);
+    document.getElementById("subtotal").innerText = newtotal.toFixed(2);
     localStorage.setItem('total', newtotal);
     console.log(newtotal);
 }
