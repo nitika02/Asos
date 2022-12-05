@@ -5,6 +5,7 @@ const signup = document.querySelector(".signup");
 const login = document.querySelector(".login");
 
 
+
 loginBtn.addEventListener("click", () => {
     moveBtn.classList.add("rightBtn");
     login.classList.add("loginForm");
@@ -18,6 +19,8 @@ signupBtn.addEventListener("click", () => {
     login.classList.remove("loginForm");
     signup.classList.add("signupForm");
     moveBtn.innerHTML = "JOIN";
+   
+
 })
 
 
@@ -31,6 +34,7 @@ form.addEventListener('submit', e => {
     e.preventDefault();
 
     validateInputs();
+    // window.location.href="index.html";
 });
 
 const setError = (element, message) => {
@@ -127,6 +131,8 @@ function saveData() {
 let success = document.querySelector('.submitBtn');
 success.addEventListener("click", () => {
     alert("You are successfully registered");
+    
+    
 })
 
 
@@ -145,24 +151,25 @@ btnClear.addEventListener('click', () => {
 // id= emailVer and id=passwordVer
 // onclick= login()
 
-function userLogin() {
-
+// document.getElementById("submitBtn1").addEventListener("click", () => {
+    // let flag=false;
+    function userLogin() {
     let EMAIL = document.getElementById("EMAIL").value;
 
     let PASSWORD = document.getElementById("PASSWORD").value;
+    
 
     let user_records = new Array();
     user_records = JSON.parse(localStorage.getItem("users")) ? JSON.parse(localStorage.getItem("users")) : []
     if (user_records.some((v) => { return v.email == EMAIL && v.password == PASSWORD })) {
-        // alert("Login Successfully");
-<<<<<<< HEAD
-          window.location.href="./index.html"
-=======
-          window.location.href="index.html"
->>>>>>> c43fb83a464929f9552ebf6da66c97e57e04c2c7
+        alert("Login Successfully");
+// >>>>>>> f78b9189f1828f92423fb4023c2584f3f4350ae3
     }
     else {
         alert('Incorrect Email or Password');
     }
-
 }
+  
+  function go(){
+    window.location.href="index.html";
+  }

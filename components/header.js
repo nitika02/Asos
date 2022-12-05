@@ -45,7 +45,7 @@ function header()
 
     </div>
     <div id="lbottomnavbar">
-        <div id="lblackfridday"><a href="#">Cyber Saturday</a></div>
+        <div id="lblackfridday"><a href="#">Cyber Monday</a></div>
         <div id="lnew"><a href="#">New in</a></div>
         <div id="lclothing"><a href="#">Clothing</a></div>
         <div id="lshoes"><a href="#">Shoes</a></div>
@@ -59,7 +59,7 @@ function header()
         <div id="loutlet"><a href="#">Outlet</a></div>
         <div id="lmarketplace"><a href="#">Marketplace
 
-            </a></div>
+        </a></div>
     </div>
 </div>
 <div id="lpinknavbar">
@@ -67,7 +67,7 @@ function header()
         <a href="./index.html"><button>WOMEN</button></a>
     </div>
     <div>
-        <strong>CYBER SATURDAY: UP TO 80% OFF EVERYTHING!*<br>
+        <strong>CYBER MONDAY: UP TO 80% OFF EVERYTHING!*<br>
             PLUS, GET AN EXTRA 20% OFF<br>
             With code: PLAYER20</strong>
     </div>

@@ -228,3 +228,41 @@ body {
     font-size: larger;
     font-weight: 500;
 }
+/* media query */
+@media(max-width:880px)
+{
+    #lcenterside input
+    {
+        display: none;
+    }  
+    #lcenterside button{
+        background-color: #2d2d2d;
+        color: white;
+        font-size: 18px;
+        margin-right: -25px;
+    }  
+    #lleftside div:nth-child(1)
+    {
+        border-right: none;
+    }
+    #lleftside div:nth-child(2),#lleftside div:nth-child(3)
+    {
+        display: none;
+    }
+    #lbottomnavbar
+    {
+        display: none;
+    }
+    #lpinknavbar button
+    {
+        display: none;
+    }
+
+}
+@media(max-width:1045px)
+{
+    #lbottomnavbar div:nth-child(11),#lbottomnavbar div:nth-child(13)
+    {
+        display: none;
+    }   
+}

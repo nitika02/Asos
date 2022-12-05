@@ -32,16 +32,19 @@ document.getElementById('search').addEventListener("keypress", (e) => {
 });
 
 
+var product = JSON.parse(localStorage.getItem("cart"));
+// =======
+
 var product = JSON.parse(localStorage.getItem("cart")) || [];
 
 var total = 0;
 
 var items = document.getElementById("items");
-for (let i = 0; i < product.length; i++) {
+product.map( (el, i) => {
     var div = document.createElement("div");
     div.setAttribute('class', 'products');
     var img = document.createElement("img");
-    img.src = product[i].images[0];
+    img.src = el.images[0];
     var textDiv = document.createElement('div');
     textDiv.setAttribute('class', 'textDiv');
     var p = document.createElement("p");
@@ -57,8 +60,8 @@ for (let i = 0; i < product.length; i++) {
     p.innerText = '£ ' + product[i].price;
     // total = total + product[i].price
     p.setAttribute('id', 'price');
-    p1.innerText = product[i].title;
-    span1.innerText = product[i].color;
+    p1.innerText = el.title;
+    span1.innerText = el.color;
     var option = document.createElement("option");
     var option1 = document.createElement("option");
     var option2 = document.createElement("option");
@@ -125,7 +128,7 @@ for (let i = 0; i < product.length; i++) {
     select.append(option, option1, option2, option3, option4, option5, option6, option7);
     select1.append(ooption, ooption1, ooption2, ooption3, ooption4, ooption5, ooption6, ooption7);
     var quantity = select1.value;
-    total = total + product[i].price * quantity;
+    total = total + el.price * quantity;
     document.getElementById("total").innerText = '£ ' + total;
     document.getElementById("subtotal").innerText = '£ ' + total;
     var wishIcon = document.createElement('span');
@@ -133,6 +136,9 @@ for (let i = 0; i < product.length; i++) {
     wishIcon.innerHTML = '<i class="fa-regular fa-heart"></i>';
     var saveText = document.createElement('span');
     saveText.innerText = 'Save for later';
+    saveText.addEventListener('click', () =>{
+        addToWishlist(i, el);
+    });
     button.append(wishIcon, saveText);
     var cross = document.createElement('span');
     cross.setAttribute('id', 'cross');
@@ -147,7 +153,7 @@ for (let i = 0; i < product.length; i++) {
     select1.addEventListener('change', () => {
         gettotalvalue(i);
     });
-}
+});
 // document.getElementById("subtotal").innerText = total;
 // console.log(total);
 // function removeItem(a){
@@ -157,6 +163,15 @@ document.getElementById("checkoutBtn").addEventListener('click', gotopayment);
 function gotopayment() {
     window.location.href = "./payment.html";
 }
+  var wish = JSON.parse(localStorage.getItem("wishlist")) || []
+function addToWishlist(el, i){
+    wish.push(el);
+    product.splice(i, 1);
+    localStorage.setItem('cart', JSON.stringify(product));
+    localStorage.setItem("wishlist", JSON.stringify(wish))
+    window.location.reload();
+}
+
 
 
 function gettotalvalue(i) {
@@ -171,4 +186,4 @@ function gettotalvalue(i) {
     localStorage.setItem('total', newtotal);
     console.log(newtotal);
 }
-
+//    change

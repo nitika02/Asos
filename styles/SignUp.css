@@ -40,6 +40,7 @@
    background:transparent;
    margin-top:-970px;
    margin-left:-20px;
+   position: absolute;
 }
 .actionBtns {
     width: 80%;
@@ -271,7 +272,7 @@
     font-weight: 600;
     transition: all 0.2s ease-in-out;
     color: white;
-    margin-left: -10px;
+    margin-left:58px;
 }
 
 .privacy {
@@ -314,3 +315,28 @@
     transition: all 0.2s ease-in-out;
 }
 
+#EMAIL{
+    width: 65%;
+    margin-left:55px;
+}
+
+#PASSWORD{
+    width: 65%;
+    margin-left:55px;
+}
+
+#gotoHome{
+    width: 88px;
+    height: 35px;
+    background-color:rgb(14, 220, 239);
+    margin-top: -975px;
+    margin-left: 550px;
+    border-radius: 25px;
+    color:rgb(8, 10, 10);
+}
+
+#gotoHome:hover{
+    background-color:rgb(174, 175, 185);
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
