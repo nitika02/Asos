@@ -34,59 +34,7 @@ document.getElementById('search').addEventListener("keypress", (e) => {
     }
 });
 
-// <<<<<<< HEAD
-// let product = [
-//     {
-//         "title": "Nike classic longline padded jacket with hood in olive grey",
-//         "price": 134.95,
-//         "discount": -15,
-//         "discounted_price": 114.70,
-//         "brand": "Nike",
-//         "images": ["https://images.asos-media.com/products/nike-classic-longline-padded-jacket-with-hood-in-olive-grey/202897100-1-grey?$n_480w$&wid=476&fit=constrain",
-//             "https://images.asos-media.com/products/nike-classic-longline-padded-jacket-with-hood-in-olive-grey/202897100-2?$n_750w$&wid=750&fit=constrain",
-//             "https://images.asos-media.com/products/nike-classic-longline-padded-jacket-with-hood-in-olive-grey/202897100-3?$n_750w$&wid=750&fit=constrain",
-//             "https://images.asos-media.com/products/nike-classic-longline-padded-jacket-with-hood-in-olive-grey/202897100-4?$n_750w$&wid=750&fit=constrain"],
-//         "video": "https://video.asos-media.com/products/nike-classic-longline-padded-jacket-with-hood-in-olive-grey/202897100-catwalk-AVS.m3u8",
-//         "category": "Jacket",
-//         "color": "grey",
-//         "rating": 4,
-//         "details": {
-//             "product_details": ["Coats by Nike", "That new-coat feeling", "Fixed hood", "Nike logo print to chest", "Zip fastening", "Zip side pockets", "Regular fit"],
-//             "product_code": 118888991,
-//             "brand": "Key players in everything activewear-related, it doesn't get more iconic than Nike. Sporting some of the most wanted trainers in the game, browse Air Max 90s and Air Force 1s, as well as Blazer and Waffle One styles. Get off-duty looks down with tracksuits, T-shirts and accessories in our Nike at ASOS edit, or scroll performance leggings and sports bras from Nike Training and Nike Running for an extra dose of motivation.",
-//             "size_and_fit": ["Model wears: UK S/ EU S/ US XS", "Model's height: 175cm/5'9"],
-//             "look_after_me": "Wipe clean with a damp cloth or sponge",
-//             "about_me": ["Smooth woven fabric", "Uses Nike Therma-FIT technology", "Helps to regulate body temperature and retain heat to keep you warm in cold-weather conditions"],
-//             "main": "100% Cotton.",
 
-//         }
-//     },
-
-//     {
-//         "title": "Pull&Bear Exclusive oversized tailored coat in brown",
-//         "price": 59.99,
-//         "discount": -15,
-//         "discounted_price": 50.99,
-//         "brand": "Pull&Bear",
-//         "images": ["https://images.asos-media.com/products/pullbear-exclusive-oversized-tailored-coat-in-brown/203881814-1-brown?$n_640w$&wid=513&fit=constrain",
-//             "https://images.asos-media.com/products/pullbear-exclusive-oversized-tailored-coat-in-brown/203881814-2?$n_750w$&wid=750&fit=constrain",
-//             "https://images.asos-media.com/products/pullbear-exclusive-oversized-tailored-coat-in-brown/203881814-3?$n_640w$&wid=513&fit=constrain",
-//             "https://images.asos-media.com/products/pullbear-exclusive-oversized-tailored-coat-in-brown/203881814-4?$n_640w$&wid=513&fit=constrain"],
-//         "video": "https://video.asos-media.com/products/pullbear-exclusive-oversized-tailored-coat-in-brown/203881814-catwalk-AVS.m3u8",
-//         "category": "Jacket",
-//         "color": "brown",
-//         "rating": 3,
-//         "details": {
-//             "product_details": ["Coats & Jackets by Pull&Bear", "Exclusive to ASOS", "Peak lapels", "Button placket", "Side pockets", "Oversized fit"],
-//             "product_code": 123274975,
-//             "brand": "When it comes to your casual rotation, no one does it better than Pull&Bear. Inspired by the laid-back vibe of Palm Springs, California, the brand references grunge influences, cool, sporty elements and street style across a collection of jeans, jackets, tops and trousers. And the good news is they’re all available in our Pull&Bear at ASOS edit, as well as shoes, bags and swimwear. What more could you want?",
-//             "size_and_fit": ["Model wears: UK S/ EU S/ US XS", "Model's height: 170cm/5'7"],
-//             "look_after_me": "Machine wash according to instructions on care label",
-//             "about_me": ["Soft woven fabric"],
-//             "main": "93% Polyester, 7% Viscose",
-//         }
-//     }
-// ]
 var product = JSON.parse(localStorage.getItem("cart"));
 // =======
 
@@ -97,11 +45,11 @@ var product = JSON.parse(localStorage.getItem("cart")) || [];
 var total = 0;
 
 var items = document.getElementById("items");
-for (let i = 0; i < product.length; i++) {
+product.map( (el, i) => {
     var div = document.createElement("div");
     div.setAttribute('class', 'products');
     var img = document.createElement("img");
-    img.src = product[i].images[0];
+    img.src = el.images[0];
     var textDiv = document.createElement('div');
     textDiv.setAttribute('class', 'textDiv');
     var p = document.createElement("p");
@@ -117,8 +65,8 @@ for (let i = 0; i < product.length; i++) {
     p.innerText = '£ ' + product[i].price;
     // total = total + product[i].price
     p.setAttribute('id', 'price');
-    p1.innerText = product[i].title;
-    span1.innerText = product[i].color;
+    p1.innerText = el.title;
+    span1.innerText = el.color;
     var option = document.createElement("option");
     var option1 = document.createElement("option");
     var option2 = document.createElement("option");
@@ -185,7 +133,7 @@ for (let i = 0; i < product.length; i++) {
     select.append(option, option1, option2, option3, option4, option5, option6, option7);
     select1.append(ooption, ooption1, ooption2, ooption3, ooption4, ooption5, ooption6, ooption7);
     var quantity = select1.value;
-    total = total + product[i].price * quantity;
+    total = total + el.price * quantity;
     document.getElementById("total").innerText = '£ ' + total;
     document.getElementById("subtotal").innerText = '£ ' + total;
     var wishIcon = document.createElement('span');
@@ -193,6 +141,9 @@ for (let i = 0; i < product.length; i++) {
     wishIcon.innerHTML = '<i class="fa-regular fa-heart"></i>';
     var saveText = document.createElement('span');
     saveText.innerText = 'Save for later';
+    saveText.addEventListener('click', () =>{
+        addToWishlist(i, el);
+    });
     button.append(wishIcon, saveText);
     var cross = document.createElement('span');
     cross.setAttribute('id', 'cross');
@@ -207,7 +158,7 @@ for (let i = 0; i < product.length; i++) {
     select1.addEventListener('change', () => {
         gettotalvalue(i);
     });
-}
+});
 // document.getElementById("subtotal").innerText = total;
 // console.log(total);
 // function removeItem(a){
@@ -231,4 +182,13 @@ function gettotalvalue(i) {
     localStorage.setItem('total', newtotal);
     console.log(newtotal);
 }
+var wish = JSON.parse(localStorage.getItem('wishlist')) || [];
+function addToWishlist(i, el){
+    wish.push(el);
+    product.splice(i, 1)
+    localStorage.setItem('cart', JSON.stringify(product));
+    localStorage.setItem("wishlist",JSON.stringify( wish));
+    window.location.reload();
+}
+// console.log(wish)
 //    change
