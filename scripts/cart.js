@@ -173,6 +173,7 @@ function addToWishlist(el, i){
 }
 
 
+
 function gettotalvalue(i) {
 
     var valuee = document.getElementById('select1').value;

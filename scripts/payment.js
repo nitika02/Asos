@@ -37,6 +37,8 @@ function goToHome(){
         window.location.href = "./index.html";
    
 }
+var promo = document.getElementById("inputCode");
+var promoval = promo.value
 
 function deleteElement(i){
 
@@ -47,3 +49,21 @@ function deleteElement(i){
     window.location.reload();
 }
 document.getElementById("totaltopay").innerText = total;
+
+document.getElementById("applyCode").addEventListener("click", applyPromo);
+function applyPromo(){
+    if(promo.value == "masai20"){
+        alert("Promo Code applied")
+        var promoTotal =  total;
+        promoTotal = promoTotal-20;
+        total = promoTotal;
+         document.getElementById("totaltopay").innerText = promoTotal;
+         console.log(promoTotal)
+        //  document.getElementById("subtotal").innerText = promoTotal;
+        //  window.location.reload();
+     }
+     else{
+        alert("Promo Code Invalid")
+     }
+    //  console.log(promo.value)
+}
