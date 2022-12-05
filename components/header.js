@@ -69,7 +69,7 @@ function header()
     <div>
         <strong>CYBER MONDAY: UP TO 80% OFF EVERYTHING!*<br>
             PLUS, GET AN EXTRA 20% OFF<br>
-            With code: PLAYER20</strong>
+            With code: MASAI20</strong>
     </div>
     <div id="lmen">
         <a href="./men.html"><button>MEN</button></a>

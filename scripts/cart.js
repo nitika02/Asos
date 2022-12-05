@@ -1,6 +1,6 @@
 // header and footer
-import {header} from '../components/header.js';
-import {footer} from '../components/footer.js';
+import { header } from '../components/header.js';
+import { footer } from '../components/footer.js';
 
 let headerDiv = document.getElementById('header');
 headerDiv.innerHTML = header();
@@ -26,7 +26,7 @@ let searchProducts = async () => {
 document.getElementById('lsearchbtn').addEventListener("click", searchProducts);
 
 document.getElementById('search').addEventListener("keypress", (e) => {
-    if(e.key == 'Enter'){
+    if (e.key == 'Enter') {
         searchProducts();
     }
 });
@@ -40,7 +40,7 @@ var product = JSON.parse(localStorage.getItem("cart"));
 var total = 0;
 
 var items = document.getElementById("items");
-product.map( (el, i) => {
+product.map((el, i) => {
     var div = document.createElement("div");
     div.setAttribute('class', 'products');
     var img = document.createElement("img");
@@ -136,17 +136,19 @@ product.map( (el, i) => {
     wishIcon.innerHTML = '<i class="fa-regular fa-heart"></i>';
     var saveText = document.createElement('span');
     saveText.innerText = 'Save for later';
-    saveText.addEventListener('click', () =>{
+    saveText.addEventListener('click', () => {
         addToWishlist(el, i);
     });
     button.append(wishIcon, saveText);
     var cross = document.createElement('span');
     cross.setAttribute('id', 'cross');
     cross.innerHTML = '<i class="fa-solid fa-xmark"></i>';
-    // button.addEventListener('click', removeItem);
-    //  span2.innerText = product[i].color;
+    cross.addEventListener("click", () => {
+        removeFromCart(i);
+    });
+
     smalldiv.append(span1, select, select1);
-    textDiv.append(cross, p, p1, smalldiv, button);
+    textDiv.append(p, p1, smalldiv, button, cross);
     div.append(img, textDiv);
     items.append(div);
     console.log(total)
@@ -154,17 +156,13 @@ product.map( (el, i) => {
         gettotalvalue(i);
     });
 });
-// document.getElementById("subtotal").innerText = total;
-// console.log(total);
-// function removeItem(a){
-//   items.removeChild(a);
-// }
+
 document.getElementById("checkoutBtn").addEventListener('click', gotopayment);
 function gotopayment() {
     window.location.href = "./payment.html";
 }
-  var wish = JSON.parse(localStorage.getItem("wishlist")) || []
-function addToWishlist(el, i){
+var wish = JSON.parse(localStorage.getItem("wishlist")) || []
+function addToWishlist(el, i) {
     wish.push(el);
     product.splice(i, 1);
     localStorage.setItem('cart', JSON.stringify(product));
@@ -172,7 +170,11 @@ function addToWishlist(el, i){
     window.location.reload();
 }
 
-
+function removeFromCart(i) {
+    product.splice(i, 1);
+    localStorage.setItem("cart", JSON.stringify(product));
+    window.location.reload();
+}
 
 function gettotalvalue(i) {
 

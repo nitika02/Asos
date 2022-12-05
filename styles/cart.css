@@ -31,6 +31,7 @@ body {
     padding: 20px;
     height: 180px;
     border-bottom: 1px solid rgb(209, 208, 208);
+    position: relative;
 }
 
 .products img {
@@ -39,7 +40,6 @@ body {
 
 .textDiv {
     margin-left: 20px;
-    position: relative;
 }
 
 .textDiv  select {
@@ -60,8 +60,8 @@ body {
 
 #cross {
     position: absolute;
-    top: 0px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
     font-size: 20px;
 }
 

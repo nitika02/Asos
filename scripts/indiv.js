@@ -36,6 +36,7 @@ let addToCart = () => {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     cart.push(product);
     localStorage.setItem('cart', JSON.stringify(cart));
+    alert("Product is added to cart");
 }
 
 let addToWishlist = () => {
@@ -43,6 +44,7 @@ let addToWishlist = () => {
     let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
     wishlist.push(product);
     localStorage.setItem('wishlist', JSON.stringify(wishlist));
+    alert("Product is added to wishlist");
 }
 
 let showRating = (rating) => {
