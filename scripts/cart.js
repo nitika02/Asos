@@ -215,7 +215,7 @@ for (let i = 0; i < product.length; i++) {
 // }
 document.getElementById("checkoutBtn").addEventListener('click', gotopayment);
 function gotopayment() {
-    window.location.href = "../payment.html";
+    window.location.href = "payment.html";
 }
 
 
@@ -223,11 +223,12 @@ function gettotalvalue(i) {
 
     var valuee = document.getElementById('select1').value;
     var productt = product[i].price;
-    var newtotal = 0;
+    var newtotal = total;
     newtotal = newtotal + productt * valuee;
     console.log(newtotal);
     document.getElementById("total").innerText = newtotal;
     document.getElementById("subtotal").innerText = newtotal;
+    localStorage.setItem('total', newtotal);
     console.log(newtotal);
 }
 //    change

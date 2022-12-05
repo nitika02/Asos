@@ -1,7 +1,7 @@
 var product = JSON.parse(localStorage.getItem("cart"));
 var items = document.getElementById("item");
 // console.log(product);
-var total = 0;
+var total = localStorage.getItem('total');
 for(var i = 0; i<product.length; i++){
     var div = document.createElement("div");
     var img = document.createElement("img");
@@ -18,7 +18,7 @@ for(var i = 0; i<product.length; i++){
         deleteElement(i);
     });
     p.innerText = product[i].price;
-    total = total + product[i].price
+    // total = total + product[i].price
     p.style.fontWeight = "bold";
     p1.innerText = product[i].title;
     span1.innerText = product[i].color;
