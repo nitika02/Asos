@@ -13,7 +13,7 @@ var linkedDivs = document.querySelectorAll('.clickable');
 
 linkedDivs.forEach(el => {
     el.addEventListener('click', () => {
-        window.location.href = '../menProduct.html';
+        window.location.href = './menProduct.html';
     })
 })
 
@@ -29,7 +29,7 @@ let searchProducts = async () => {
     console.log(data);
     localStorage.setItem("search_results", JSON.stringify(data));
     localStorage.setItem("search", "true");
-    window.location.href = "../womenProduct.html";
+    window.location.href = "./womenProduct.html";
 }
 
 document.getElementById('lsearchbtn').addEventListener("click", searchProducts);
