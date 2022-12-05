@@ -65,7 +65,7 @@ select, input, button {
     padding: 15px;
 }
 
-#orderBtn {
+#placeOrder {
     display: block;
     width: 80%;
     margin: auto;
@@ -79,7 +79,7 @@ select, input, button {
     font-size: large;
 }
 
-#orderBtn:hover {
+#placeOrder:hover {
     cursor: pointer;
     background-color:  rgb(1, 95, 51);
 }
