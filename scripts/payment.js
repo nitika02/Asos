@@ -1,8 +1,8 @@
-var product = JSON.parse(localStorage.getItem("cart"));
-var items = document.getElementById("item");
-// console.log(product);
+var product = JSON.parse(localStorage.getItem("cart")) || [];
+var items = document.getElementById("items");
+
 var total = localStorage.getItem('total');
-for(var i = 0; i<product.length; i++){
+for (var i = 0; i < product.length; i++) {
     var div = document.createElement("div");
     var img = document.createElement("img");
     img.src = product[i].images[0];
@@ -26,21 +26,18 @@ for(var i = 0; i<product.length; i++){
     textDiv.append(p, p1, smalldiv, deleteBut);
     div.append(img, textDiv);
     items.append(div);
-    
+
 
 }
-document.getElementById('placeOrder').addEventListener('click', goToHome);
-// var confirmFun = confirm;
-function goToHome(){
+document.getElementById('orderBtn').addEventListener('click', goToHome);
+function goToHome() {
     alert("Your order has Been placed");
-   
-        window.location.href = "./index.html";
-   
+    window.location.href = "./index.html";
 }
 
-function deleteElement(i){
+function deleteElement(i) {
 
-    product.splice(i-1, 1);
+    product.splice(i - 1, 1);
     console.log(i);
     console.log(product);
     localStorage.setItem('cart', JSON.stringify(product));
