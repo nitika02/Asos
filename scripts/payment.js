@@ -55,7 +55,7 @@ function applyPromo(){
     if(promo.value == "masai20"){
         alert("Promo Code applied")
         var promoTotal =  total;
-        promoTotal = promoTotal-20;
+        promoTotal = promoTotal*20/100;
         total = promoTotal;
          document.getElementById("totaltopay").innerText = promoTotal;
          console.log(promoTotal)
