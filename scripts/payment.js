@@ -34,7 +34,7 @@ document.getElementById('placeOrder').addEventListener('click', goToHome);
 function goToHome(){
     alert("Your order has Been placed");
    
-        window.location.href = "index.html";
+        window.location.href = "./index.html";
    
 }
 

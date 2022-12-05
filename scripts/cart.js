@@ -215,7 +215,7 @@ for (let i = 0; i < product.length; i++) {
 // }
 document.getElementById("checkoutBtn").addEventListener('click', gotopayment);
 function gotopayment() {
-    window.location.href = "payment.html";
+    window.location.href = "./payment.html";
 }
 
 

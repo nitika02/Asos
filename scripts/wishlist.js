@@ -19,7 +19,7 @@ let searchProducts = async () => {
     console.log(data);
     localStorage.setItem("search_results", JSON.stringify(data));
     localStorage.setItem("search", "true");
-    window.location.href = "../womenProduct.html";
+    window.location.href = "./womenProduct.html";
 }
 
 document.getElementById('lsearchbtn').addEventListener("click", searchProducts);

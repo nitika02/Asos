@@ -18,7 +18,7 @@ let searchProducts = async () => {
     console.log(data);
     localStorage.setItem("search_results", JSON.stringify(data));
     localStorage.setItem("search", "true");
-    window.location.href = "../womenProduct.html";
+    window.location.href = "./womenProduct.html";
 }
 
 document.getElementById('lsearchbtn').addEventListener("click", searchProducts);
@@ -45,7 +45,7 @@ let displayData = (product) => {
         img.setAttribute("id", "product-img")
         img.addEventListener("click", () => {
             localStorage.setItem("selected_product", JSON.stringify(ele));
-            window.location.href = "../indiv.html";
+            window.location.href = "./indiv.html";
         })
 
         let title = document.createElement("h2");
