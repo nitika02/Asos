@@ -155,7 +155,7 @@ function userLogin() {
     user_records = JSON.parse(localStorage.getItem("users")) ? JSON.parse(localStorage.getItem("users")) : []
     if (user_records.some((v) => { return v.email == EMAIL && v.password == PASSWORD })) {
         // alert("Login Successfully");
-          window.location.href=".html"
+          window.location.href="index.html"
     }
     else {
         alert('Incorrect Email or Password');
