@@ -115,7 +115,7 @@ for (let i = 0; i < product.length; i++) {
     var button = document.createElement("button");
 
     p.innerText = '£ ' + product[i].price;
-    total = total + product[i].price
+    // total = total + product[i].price
     p.setAttribute('id', 'price');
     p1.innerText = product[i].title;
     span1.innerText = product[i].color;
@@ -203,7 +203,7 @@ for (let i = 0; i < product.length; i++) {
     textDiv.append(cross, p, p1, smalldiv, button);
     div.append(img, textDiv);
     items.append(div);
-
+    console.log(total)
     select1.addEventListener('change', () => {
         gettotalvalue(i);
     });
@@ -224,10 +224,10 @@ function gettotalvalue(i) {
     var valuee = document.getElementById('select1').value;
     var productt = product[i].price;
     var newtotal = 0;
-    total = total + productt * valuee;
+    newtotal = newtotal + productt * valuee;
     console.log(newtotal);
-    document.getElementById("total").innerText = total;
-    document.getElementById("subtotal").innerText = total;
+    document.getElementById("total").innerText = newtotal;
+    document.getElementById("subtotal").innerText = newtotal;
     console.log(newtotal);
 }
 //    change

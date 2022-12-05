@@ -1,6 +1,6 @@
 var product = JSON.parse(localStorage.getItem("cart"));
 var items = document.getElementById("item");
-console.log(product);
+// console.log(product);
 var total = 0;
 for(var i = 0; i<product.length; i++){
     var div = document.createElement("div");
@@ -29,8 +29,21 @@ for(var i = 0; i<product.length; i++){
     
 
 }
+document.getElementById('placeOrder').addEventListener('click', goToHome);
+// var confirmFun = confirm;
+function goToHome(){
+    alert("Your order has Been placed");
+   
+        window.location.href = "index.html";
+   
+}
+
 function deleteElement(i){
-    product.splice(i, 1);
-    localStorage.setItem('cart', product);
+
+    product.splice(i-1, 1);
+    console.log(i);
+    console.log(product);
+    localStorage.setItem('cart', JSON.stringify(product));
+    window.location.reload();
 }
 document.getElementById("totaltopay").innerText = total;
