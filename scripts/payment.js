@@ -1,9 +1,14 @@
 var product = JSON.parse(localStorage.getItem("cart"));
-var items = document.getElementById("item");
+var items = document.getElementById("items");
 // console.log(product);
 var total = localStorage.getItem('total');
+
+var count_of_items = document.getElementById('count_of_items');
+count_of_items.innerText = `${product.length} ITEMS`;
+
 product.map( (el, i) => {
     var div = document.createElement("div");
+    div.setAttribute('class', 'products');
     var img = document.createElement("img");
     img.src = el.images[0];
     var textDiv = document.createElement('div');
@@ -12,8 +17,9 @@ product.map( (el, i) => {
     var p1 = document.createElement("p");
     var smalldiv = document.createElement("div");
     var span1 = document.createElement("span");
-    var deleteBut = document.createElement("div");
-    deleteBut.innerText = "Delete Button"
+    var deleteBut = document.createElement("button");
+    deleteBut.setAttribute('id', 'deleteBut');
+    deleteBut.innerText = "Delete"
     deleteBut.addEventListener('click', () => {
         deleteElement(i);
     });
@@ -22,8 +28,8 @@ product.map( (el, i) => {
     p.style.fontWeight = "bold";
     p1.innerText = el.title;
     span1.innerText = el.color;
-    smalldiv.append(span1);
-    textDiv.append(p, p1, smalldiv, deleteBut);
+    // smalldiv.append(span1);
+    textDiv.append(p, p1, span1, deleteBut);
     div.append(img, textDiv);
     items.append(div);
     
@@ -55,7 +61,7 @@ function applyPromo(){
     if(promo.value == "masai20"){
         alert("Promo Code applied")
         var promoTotal =  total;
-        promoTotal = promoTotal*20/100;
+        promoTotal = promoTotal*0.8;
         total = promoTotal;
          document.getElementById("totaltopay").innerText = promoTotal;
          console.log(promoTotal)

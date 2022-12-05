@@ -35,7 +35,7 @@ document.getElementById('search').addEventListener("keypress", (e) => {
 var product = JSON.parse(localStorage.getItem("cart"));
 // =======
 
-var product = JSON.parse(localStorage.getItem("cart")) || [];
+// var product = JSON.parse(localStorage.getItem("cart")) || [];
 
 var total = 0;
 
@@ -186,4 +186,4 @@ function gettotalvalue(i) {
     localStorage.setItem('total', newtotal);
     console.log(newtotal);
 }
-//    change
+localStorage.setItem('total', total);

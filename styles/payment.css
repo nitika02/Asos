@@ -22,7 +22,7 @@ body {
     width: 75%;
     margin: auto;
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 60% 40%;
     gap: 10px;
     position: relative;
 }
@@ -85,3 +85,44 @@ select, input, button {
 }
 
 
+.products {
+    display: flex;
+    padding: 20px;
+    height: 180px;
+    border-bottom: 1px solid rgb(209, 208, 208);
+}
+
+.products img {
+    height: 90%;
+    margin-right: 20px;
+}
+
+#deleteBut {
+    margin: 0px 20px;
+    background-color: white;
+    border: 1px solid grey;
+}
+
+#edit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+#edit a {
+    text-decoration: none;
+    color: black;
+}
+
+.ttp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#logo > img:last-child {
+    height: 40px;
+    background-color: white;
+}
